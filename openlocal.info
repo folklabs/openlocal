@@ -1,0 +1,7 @@
+name = OpenLocal
+core = 7.x
+description = A distribution for local communities.
+base = openoutreach
+
+
+
