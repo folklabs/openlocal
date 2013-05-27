@@ -1,8 +1,7 @@
 name = OpenLocal
 core = 7.x
 description = A distribution for local communities.
-base = openoutreach
-distribution_name = "Open Outreach"
+distribution_name = "OpenLocal"
 
 ; Panopoly Foundation
 dependencies[] = panopoly_core

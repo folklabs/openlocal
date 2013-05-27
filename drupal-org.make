@@ -10,6 +10,20 @@
 api = 2
 core = 7.x
 
+
+; Local modules
+
+projects[local_foodhub][type] = module
+projects[local_foodhub][download][type] = git
+projects[local_foodhub][download][url] = /Users/pmackay/dev/openlocal/local_foodhub
+projects[local_foodhub][download][branch] = master
+
+; TODO: remove
+
+includes[debut_location] = "http://drupalcode.org/project/debut_location.git/blob_plain/refs/heads/7.x-1.x:/debut_location.make.inc"
+
+
+
 ; The Panopoly Foundation
 
 projects[panopoly_core][version] = 1.0-rc4
@@ -44,5 +58,8 @@ projects[panopoly_wysiwyg][subdir] = panopoly
 projects[panopoly_search][version] = 1.0-rc4
 projects[panopoly_search][subdir] = panopoly
 projects[panopoly_search][patch][1976178] = http://drupal.org/files/1976178-disable-solr-on-pantheon-1.patch
+
+
+
 
 
