@@ -20,7 +20,8 @@ projects[local_foodhub][download][branch] = master
 
 ; TODO: remove
 
-includes[debut_location] = "http://drupalcode.org/project/debut_location.git/blob_plain/refs/heads/7.x-1.x:/debut_location.make.inc"
+;includes[debut_location] = "http://drupalcode.org/project/debut_location.git/blob_plain/refs/heads/7.x-1.x:/debut_location.make.inc"
+
 
 
 
@@ -28,6 +29,14 @@ includes[debut_location] = "http://drupalcode.org/project/debut_location.git/blo
 
 projects[panopoly_core][version] = 1.0-rc4
 projects[panopoly_core][subdir] = panopoly
+
+projects[apps_compatible][subdir] = contrib
+projects[apps_compatible][version] = 1.0-alpha3
+projects[better_exposed_filters][subdir] = contrib
+projects[better_exposed_filters][version] = 3.0-beta3
+projects[debut_location][subdir] = contrib
+projects[debut_location][version] = 1.0-alpha2
+
 
 ;projects[panopoly_images][version] = 1.0-rc4
 ;projects[panopoly_images][subdir] = panopoly
