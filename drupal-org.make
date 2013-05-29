@@ -27,8 +27,8 @@ projects[local_foodhub][download][branch] = master
 
 ; The Panopoly Foundation
 
-;projects[panopoly_core][version] = 1.0-rc4
-;projects[panopoly_core][subdir] = panopoly
+projects[panopoly_core][version] = 1.0-rc4
+projects[panopoly_core][subdir] = panopoly
 
 projects[apps_compatible][subdir] = contrib
 projects[apps_compatible][version] = 1.0-alpha3
