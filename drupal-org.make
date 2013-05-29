@@ -13,10 +13,10 @@ core = 7.x
 
 ; Local modules
 
-;projects[local_foodhub][type] = module
-;projects[local_foodhub][download][type] = git
-;projects[local_foodhub][download][url] = /Users/pmackay/dev/openlocal/local_foodhub
-;projects[local_foodhub][download][branch] = master
+projects[local_foodhub][type] = module
+projects[local_foodhub][download][type] = git
+projects[local_foodhub][download][url] = /Users/pmackay/dev/openlocal/local_foodhub
+projects[local_foodhub][download][branch] = master
 
 ; TODO: remove
 
