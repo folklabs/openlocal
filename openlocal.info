@@ -18,9 +18,11 @@ dependencies[] = panopoly_search
 dependencies[] = panopoly_wysiwyg
 
 ; Panopoly Recommended - Admin
-dependencies[] = navbar
+;dependencies[] = navbar
 dependencies[] = backports
-dependencies[] = simplified_menu_admin
+;dependencies[] = simplified_menu_admin
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
 dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
