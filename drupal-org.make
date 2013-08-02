@@ -58,6 +58,7 @@ projects[panopoly_admin][subdir] = panopoly
 projects[panopoly_users][version] = 1.0-rc4
 projects[panopoly_users][subdir] = panopoly
 
+
 ; The Panopoly Toolset
 
 projects[panopoly_pages][version] = 1.0-rc4
@@ -69,6 +70,22 @@ projects[panopoly_wysiwyg][subdir] = panopoly
 projects[panopoly_search][version] = 1.0-rc4
 projects[panopoly_search][subdir] = panopoly
 projects[panopoly_search][patch][1976178] = http://drupal.org/files/1976178-disable-solr-on-pantheon-1.patch
+
+
+; Panopoly apps
+
+projects[panopoly_news][version] = 1.0-rc2
+projects[panopoly_news][subdir] = panopoly
+
+projects[panopoly_faq][version] = 2.x-dev
+projects[panopoly_faq][subdir] = panopoly
+
+
+; Debut
+
+projects[debut_seo][version] = 2.x-dev
+projects[debut_seo][subdir] = debut
+
 
 
 
