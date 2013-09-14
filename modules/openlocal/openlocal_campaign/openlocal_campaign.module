@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Campaign feature.
+ */
+
+include_once 'openlocal_campaign.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Business feature.
+ */
+
+include_once 'openlocal_business.features.inc';
