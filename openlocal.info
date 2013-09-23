@@ -31,6 +31,19 @@ dependencies[] = date_popup_authored
 dependencies[] = devel
 dependencies[] = uuid
 
+; Development
+dependencies[] = masquerade
+
+; Apps
+dependencies[] = panopoly_news
+;dependencies[] = panopoly_faq
+
+dependencies[] = debut_blog
+dependencies[] = debut_forum
+dependencies[] = debut_seo
+dependencies[] = debut_social
+
+
 files[] = "openlocal.profile"
 
 

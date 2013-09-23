@@ -25,8 +25,6 @@ projects[local_foodhub][download][branch] = master
 ;includes[debut_location] = "http://drupalcode.org/project/debut_location.git/blob_plain/refs/heads/7.x-1.x:/debut_location.make.inc"
 
 
-
-
 ; The Panopoly Foundation
 
 projects[panopoly_core][version] = 1.0-rc4
@@ -81,13 +79,51 @@ projects[panopoly_faq][version] = 2.x-dev
 projects[panopoly_faq][subdir] = panopoly
 
 
+; Development / maintenance
+
+projects[masquerade][version] = 1.0-rc5
+projects[masquerade][subdir] = contrib
+
+
 ; Debut
+
+projects[debut_blog][version] = 2.x-dev
+projects[debut_blog][subdir] = debut
+
+projects[debut_comment][version] = 2.x-dev
+projects[debut_comment][subdir] = debut
+
+projects[debut_event][version] = 2.x-dev
+projects[debut_event][subdir] = debut
+
+projects[debut_forum][version] = 2.x-dev
+projects[debut_forum][subdir] = debut
 
 projects[debut_seo][version] = 2.x-dev
 projects[debut_seo][subdir] = debut
 
+projects[debut_social][version] = 2.x-dev
+projects[debut_social][subdir] = debut
 
 
+; OpenLocal dependencies
 
+projects[features][version] = 2.0-rc3
+projects[features][subdir] = contrib
+
+projects[og][version] = 2.3
+projects[og][subdir] = contrib
+
+
+; OpenLocal
+
+;projects[local_campaign][version] = 2.x-dev
+;projects[local_campaign][subdir] = debut
+
+;projects[debut_poll][version] = 2.x-dev
+;projects[debut_poll][subdir] = debut
+
+;projects[debut_survey][version] = 2.x-dev
+;projects[debut_survey][subdir] = debut
 
 
