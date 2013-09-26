@@ -34,14 +34,31 @@ dependencies[] = uuid
 ; Development
 dependencies[] = masquerade
 
-; Apps
-dependencies[] = panopoly_news
-;dependencies[] = panopoly_faq
+; Other modules
+dependencies[] = mass_contact
+dependencies[] = oauth
+dependencies[] = oauth2
+dependencies[] = connector
+dependencies[] = oauthconnector
+dependencies[] = http_client
+dependencies[] = http_client_oauth
 
+; Panopoly apps
+dependencies[] = panopoly_news
+dependencies[] = panopoly_faq
+
+; Debut apps
 dependencies[] = debut_blog
 dependencies[] = debut_forum
 dependencies[] = debut_seo
 dependencies[] = debut_social
+
+; OpenLocal apps
+dependencies[] = openlocal_business
+dependencies[] = openlocal_campaign
+dependencies[] = openlocal_group
+dependencies[] = openlocal_idea
+dependencies[] = openlocal_location
 
 
 files[] = "openlocal.profile"

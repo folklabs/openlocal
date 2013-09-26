@@ -111,8 +111,26 @@ projects[debut_social][subdir] = debut
 projects[features][version] = 2.0-rc3
 projects[features][subdir] = contrib
 
+projects[mass_contact][version] = 1.0-beta3
+projects[mass_contact][subdir] = contrib
+
 projects[og][version] = 2.3
 projects[og][subdir] = contrib
+
+projects[connector][version] = 1.0-beta2
+projects[connector][subdir] = contrib
+
+projects[oauthconnector][version] = 1.0-beta2
+projects[oauthconnector][subdir] = contrib
+
+projects[http_client][version] = 2.4
+projects[http_client][subdir] = contrib
+
+projects[oauth][version] = 3.1
+projects[oauth][subdir] = contrib
+
+projects[office_hours][version] = 1.3
+projects[office_hours][subdir] = contrib
 
 
 ; OpenLocal
