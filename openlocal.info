@@ -36,8 +36,8 @@ dependencies[] = masquerade
 
 ; Other modules
 dependencies[] = mass_contact
-dependencies[] = oauth
-dependencies[] = oauth2
+dependencies[] = oauth_common
+dependencies[] = oauth2_common
 dependencies[] = connector
 dependencies[] = oauthconnector
 dependencies[] = http_client
