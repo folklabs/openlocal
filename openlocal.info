@@ -32,9 +32,13 @@ dependencies[] = devel
 dependencies[] = uuid
 
 ; Development
+dependencies[] = field_ui
 dependencies[] = masquerade
 
 ; Other modules
+dependencies[] = book
+dependencies[] = contact
+dependencies[] = honeypot
 dependencies[] = mass_contact
 dependencies[] = oauth_common
 dependencies[] = oauth2_common
@@ -42,23 +46,31 @@ dependencies[] = connector
 dependencies[] = oauthconnector
 dependencies[] = http_client
 dependencies[] = http_client_oauth
+dependencies[] = privatemsg
+dependencies[] = site_map
+; For FAQ
+; TODO: replace with makefile from FAQ feature
+dependencies[] = draggableviews
+dependencies[] = entityreference_prepopulate
 
 ; Panopoly apps
 dependencies[] = panopoly_news
-dependencies[] = panopoly_faq
+dependencies[] = panopoly_faq_page
+dependencies[] = panopoly_faq_question
 
 ; Debut apps
-dependencies[] = debut_blog
+;dependencies[] = debut_blog
 dependencies[] = debut_forum
 dependencies[] = debut_seo
 dependencies[] = debut_social
 
 ; OpenLocal apps
 dependencies[] = openlocal_business
-dependencies[] = openlocal_campaign
+;dependencies[] = openlocal_campaign
 dependencies[] = openlocal_group
 dependencies[] = openlocal_idea
 dependencies[] = openlocal_location
+dependencies[] = openlocal_news
 
 
 files[] = "openlocal.profile"

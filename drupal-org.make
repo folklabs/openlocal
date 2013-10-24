@@ -14,60 +14,46 @@ core = 7.x
 ; Local modules
 
 ;projects[local_foodhub][version] = contrib
-projects[local_foodhub][type] = module
-projects[local_foodhub][subdir] = openlocal
-projects[local_foodhub][download][type] = git
-projects[local_foodhub][download][url] = /Users/pmackay/dev/openlocal/local_foodhub
-projects[local_foodhub][download][branch] = master
-
-; TODO: remove
-
-;includes[debut_location] = "http://drupalcode.org/project/debut_location.git/blob_plain/refs/heads/7.x-1.x:/debut_location.make.inc"
+;projects[local_foodhub][type] = module
+;projects[local_foodhub][subdir] = openlocal
+;projects[local_foodhub][download][type] = git
+;projects[local_foodhub][download][url] = /Users/pmackay/dev/openlocal/local_foodhub
+;projects[local_foodhub][download][branch] = master
 
 
 ; The Panopoly Foundation
 
-projects[panopoly_core][version] = 1.0-rc4
+projects[panopoly_core][version] = 1.0-rc5
 projects[panopoly_core][subdir] = panopoly
 
-projects[apps_compatible][subdir] = contrib
-projects[apps_compatible][version] = 1.0-alpha3
-projects[better_exposed_filters][subdir] = contrib
-projects[better_exposed_filters][version] = 3.0-beta3
-projects[debut_location][subdir] = contrib
-projects[debut_location][version] = 1.0-alpha2
-
-
-projects[panopoly_images][version] = 1.0-rc4
+projects[panopoly_images][version] = 1.0-rc5
 projects[panopoly_images][subdir] = panopoly
 
-projects[panopoly_theme][version] = 1.0-rc4
+projects[panopoly_theme][version] = 1.0-rc5
 projects[panopoly_theme][subdir] = panopoly
 
-projects[panopoly_magic][version] = 1.0-rc4
+projects[panopoly_magic][version] = 1.0-rc5
 projects[panopoly_magic][subdir] = panopoly
 
-projects[panopoly_widgets][version] = 1.0-rc4
+projects[panopoly_widgets][version] = 1.0-rc5
 projects[panopoly_widgets][subdir] = panopoly
 
-projects[panopoly_admin][version] = 1.0-rc4
+projects[panopoly_admin][version] = 1.0-rc5
 projects[panopoly_admin][subdir] = panopoly
 
-projects[panopoly_users][version] = 1.0-rc4
+projects[panopoly_users][version] = 1.0-rc5
 projects[panopoly_users][subdir] = panopoly
-
 
 ; The Panopoly Toolset
 
-projects[panopoly_pages][version] = 1.0-rc4
+projects[panopoly_pages][version] = 1.0-rc5
 projects[panopoly_pages][subdir] = panopoly
 
-projects[panopoly_wysiwyg][version] = 1.0-rc4
+projects[panopoly_wysiwyg][version] = 1.0-rc5
 projects[panopoly_wysiwyg][subdir] = panopoly
 
-projects[panopoly_search][version] = 1.0-rc4
+projects[panopoly_search][version] = 1.0-rc5
 projects[panopoly_search][subdir] = panopoly
-projects[panopoly_search][patch][1976178] = http://drupal.org/files/1976178-disable-solr-on-pantheon-1.patch
 
 
 ; Panopoly apps
@@ -105,17 +91,42 @@ projects[debut_seo][subdir] = debut
 projects[debut_social][version] = 2.x-dev
 projects[debut_social][subdir] = debut
 
+projects[apps_compatible][subdir] = contrib
+projects[apps_compatible][version] = 1.0-alpha3
+projects[better_exposed_filters][subdir] = contrib
+projects[better_exposed_filters][version] = 3.0-beta3
+projects[debut_location][subdir] = contrib
+projects[debut_location][version] = 1.0-alpha2
+
 
 ; OpenLocal dependencies
 
+projects[colorbox][version] = 2.4
+projects[colorbox][subdir] = contrib
+
 projects[features][version] = 2.0-rc3
 projects[features][subdir] = contrib
+
+projects[geocoder][version] = 1.2
+projects[geocoder][subdir] = contrib
+
+projects[honeypot][version] = 1.15
+projects[honeypot][subdir] = contrib
+
+projects[leaflet][version] = 1.0-beta3
+projects[leaflet][subdir] = contrib
+
+projects[leaflet_more_maps][version] = 1.7
+projects[leaflet_more_maps][subdir] = contrib
 
 projects[mass_contact][version] = 1.0-beta3
 projects[mass_contact][subdir] = contrib
 
 projects[og][version] = 2.3
 projects[og][subdir] = contrib
+
+projects[og_extras][version] = 1.1
+projects[og_extras][subdir] = contrib
 
 projects[connector][version] = 1.0-beta2
 projects[connector][subdir] = contrib
@@ -132,6 +143,18 @@ projects[oauth][subdir] = contrib
 projects[office_hours][version] = 1.3
 projects[office_hours][subdir] = contrib
 
+projects[draggableviews][version] = 2.0
+projects[draggableviews][subdir] = contrib
+
+projects[entityreference_prepopulate][version] = 1.3
+projects[entityreference_prepopulate][subdir] = contrib
+
+projects[registration][version] =	1.2
+projects[registration][subdir] = contrib
+
+projects[privatemsg][version] = 1.4
+projects[privatemsg][subdir] = contrib
+
 
 ; OpenLocal
 
@@ -143,5 +166,16 @@ projects[office_hours][subdir] = contrib
 
 ;projects[debut_survey][version] = 2.x-dev
 ;projects[debut_survey][subdir] = debut
+
+
+; Libraries
+
+libraries[leaflet][download][type] = get
+libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.6.4.zip
+libraries[leaflet][destination] = libraries
+
+libraries[colorbox][download][type] = get
+libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archive/1.x.zip
+libraries[colorbox][destination] = libraries
 
 
