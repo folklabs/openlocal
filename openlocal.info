@@ -56,7 +56,6 @@ dependencies[] = draggableviews
 dependencies[] = entityreference_prepopulate
 
 ; Panopoly apps
-dependencies[] = panopoly_news
 dependencies[] = panopoly_faq_page
 dependencies[] = panopoly_faq_question
 

@@ -83,8 +83,23 @@ projects[better_exposed_filters][version] = 3.0-beta3
 
 ; OpenLocal dependencies
 
+projects[addressfield][version] = 1.0-beta4
+projects[adressfield][subdir] = contrib
+
 projects[advpoll][version] = 3.x-dev
 projects[advpoll][subdir] = contrib
+
+projects[autocomplete_deluxe][version] =
+projects[autocomplete_deluxe][subdir] = contrib
+
+projects[context][version] = 3.1
+projects[context][subdir] = contrib
+
+projects[eck][version] = 2.0-rc2
+projects[eck][subdir] = contrib
+
+projects[calendar][version] = 3.4
+projects[calendar][subdir] = contrib
 
 projects[colorbox][version] = 2.4
 projects[colorbox][subdir] = contrib
@@ -92,8 +107,20 @@ projects[colorbox][subdir] = contrib
 projects[draggableviews][version] = 2.0
 projects[draggableviews][subdir] = contrib
 
+projects[email][version] = 1.2
+projects[email][subdir] = contrib
+
+projects[field_collection][version] = 1.0-beta5
+projects[field_collection][subdir] = contrib
+
+projects[geofield][version] = 2.0
+projects[geofield][subdir] = contrib
+
 projects[geocoder][version] = 1.2
 projects[geocoder][subdir] = contrib
+
+projects[geophp][version] = 1.7
+projects[geophp][subdir] = contrib
 
 projects[honeypot][version] = 1.15
 projects[honeypot][subdir] = contrib
@@ -134,11 +161,20 @@ projects[office_hours][subdir] = contrib
 projects[entityreference_prepopulate][version] = 1.3
 projects[entityreference_prepopulate][subdir] = contrib
 
+projects[references][version] =	2.1
+projects[references][subdir] = contrib
+
 projects[registration][version] =	1.2
 projects[registration][subdir] = contrib
 
+projects[rules][version] = 2.6
+projects[rules][subdir] = contrib
+
 projects[privatemsg][version] = 1.4
 projects[privatemsg][subdir] = contrib
+
+projects[site_map][version] = 1.0
+projects[site_map[subdir] = contrib
 
 projects[votingapi][version] = 2.11
 projects[votingapi][subdir] = contrib
@@ -153,15 +189,36 @@ projects[workbench_moderation][version] = 1.3
 projects[workbench_moderation][subdir] = contrib
 
 
+; Migration
+
+projects[migrate][version] = 2.5
+projects[migrate][subdir] = contrib
+
+projects[migrate_d2d][version] = 2.0
+projects[migrate_d2d][subdir] = contrib
+
+projects[migrate_extras][version] = 2.5
+projects[migrate_extras][subdir] = contrib
+
+;projects[migrate_rpforum][version] = 1.0
+projects[migrate_rpforum][subdir] = contrib
+projects[migrate_rpforum][type] = module
+projects[migrate_rpforum][download][type] = git
+projects[migrate_rpforum][download][url] = https://github.com/pmackay/migrate_rpforum.git
+;projects[migrate_rpforum][download][revision] = 8c18fbb
+
+
 ; Libraries
+
+libraries[colorbox][download][type] = get
+libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archive/1.x.zip
+libraries[colorbox][destination] = libraries
 
 libraries[leaflet][download][type] = get
 libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.6.4.zip
 libraries[leaflet][destination] = libraries
 
-libraries[colorbox][download][type] = get
-libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archive/1.x.zip
-libraries[colorbox][destination] = libraries
+
 
 
 ; Themes
