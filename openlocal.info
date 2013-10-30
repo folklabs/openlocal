@@ -48,6 +48,8 @@ dependencies[] = http_client
 dependencies[] = http_client_oauth
 dependencies[] = privatemsg
 dependencies[] = site_map
+dependencies[] = workbench
+dependencies[] = workbench_moderation
 ; For FAQ
 ; TODO: replace with makefile from FAQ feature
 dependencies[] = draggableviews
@@ -65,12 +67,19 @@ dependencies[] = debut_seo
 dependencies[] = debut_social
 
 ; OpenLocal apps
+dependencies[] = openlocal_alert
 dependencies[] = openlocal_business
-;dependencies[] = openlocal_campaign
+dependencies[] = openlocal_contact
+dependencies[] = openlocal_core
+dependencies[] = openlocal_event
+dependencies[] = openlocal_gallery
 dependencies[] = openlocal_group
-dependencies[] = openlocal_idea
+dependencies[] = openlocal_home
+;dependencies[] = openlocal_idea
 dependencies[] = openlocal_location
 dependencies[] = openlocal_news
+;dependencies[] = openlocal_poll
+;dependencies[] = openlocal_survey
 
 
 files[] = "openlocal.profile"

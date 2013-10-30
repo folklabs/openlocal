@@ -24,6 +24,9 @@ function openlocal_location_strongarm() {
         'path' => array(
           'weight' => '6',
         ),
+        'metatags' => array(
+          'weight' => '100',
+        ),
       ),
       'display' => array(),
     ),

@@ -79,9 +79,6 @@ projects[debut_blog][subdir] = debut
 projects[debut_comment][version] = 2.x-dev
 projects[debut_comment][subdir] = debut
 
-projects[debut_event][version] = 2.x-dev
-projects[debut_event][subdir] = debut
-
 projects[debut_forum][version] = 2.x-dev
 projects[debut_forum][subdir] = debut
 
@@ -95,17 +92,20 @@ projects[apps_compatible][subdir] = contrib
 projects[apps_compatible][version] = 1.0-alpha3
 projects[better_exposed_filters][subdir] = contrib
 projects[better_exposed_filters][version] = 3.0-beta3
-projects[debut_location][subdir] = contrib
-projects[debut_location][version] = 1.0-alpha2
+;projects[debut_location][subdir] = contrib
+;projects[debut_location][version] = 1.0-alpha2
 
 
 ; OpenLocal dependencies
 
+projects[advpoll][version] = 3.x-dev
+projects[advpoll][subdir] = contrib
+
 projects[colorbox][version] = 2.4
 projects[colorbox][subdir] = contrib
 
-projects[features][version] = 2.0-rc3
-projects[features][subdir] = contrib
+projects[draggableviews][version] = 2.0
+projects[draggableviews][subdir] = contrib
 
 projects[geocoder][version] = 1.2
 projects[geocoder][subdir] = contrib
@@ -137,14 +137,14 @@ projects[oauthconnector][subdir] = contrib
 projects[http_client][version] = 2.4
 projects[http_client][subdir] = contrib
 
+projects[nice_menus][version] = 2.5
+projects[nice_menus][subdir] = contrib
+
 projects[oauth][version] = 3.1
 projects[oauth][subdir] = contrib
 
 projects[office_hours][version] = 1.3
 projects[office_hours][subdir] = contrib
-
-projects[draggableviews][version] = 2.0
-projects[draggableviews][subdir] = contrib
 
 projects[entityreference_prepopulate][version] = 1.3
 projects[entityreference_prepopulate][subdir] = contrib
@@ -154,6 +154,21 @@ projects[registration][subdir] = contrib
 
 projects[privatemsg][version] = 1.4
 projects[privatemsg][subdir] = contrib
+
+projects[votingapi][version] = 2.11
+projects[votingapi][subdir] = contrib
+
+projects[webform][version] = 3.19
+projects[webform][subdir] = contrib
+
+projects[workbench][version] = 1.2
+projects[workbench][subdir] = contrib
+
+projects[workbench_moderation][version] = 1.3
+projects[workbench_moderation][subdir] = contrib
+
+;projects[][version] =
+;projects[][subdir] = contrib
 
 
 ; OpenLocal
