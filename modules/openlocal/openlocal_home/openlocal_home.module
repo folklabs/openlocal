@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Home feature.
+ */
+
+include_once 'openlocal_home.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Gallery feature.
+ */
+
+include_once 'openlocal_gallery.features.inc';

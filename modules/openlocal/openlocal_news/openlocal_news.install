@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implementation of hook_install
+ */
+function openlocal_news_install() {
+}
+
+/**
+ * Implementation of hook_uninstall
+ */
+function openlocal_news_uninstall() {
+}
+
+/**
+ * Implementation of hook_enable
+ */
+function openlocal_news_enable() {
+  module_enable(array('openlocal_news_demo'));
+}

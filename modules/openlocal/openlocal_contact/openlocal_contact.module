@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Contact feature.
+ */
+
+include_once 'openlocal_contact.features.inc';
