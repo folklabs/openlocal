@@ -84,12 +84,12 @@ projects[better_exposed_filters][version] = 3.0-beta3
 ; OpenLocal dependencies
 
 projects[addressfield][version] = 1.0-beta4
-projects[adressfield][subdir] = contrib
+projects[addressfield][subdir] = contrib
 
 projects[advpoll][version] = 3.x-dev
 projects[advpoll][subdir] = contrib
 
-projects[autocomplete_deluxe][version] =
+projects[autocomplete_deluxe][version] = 2.0-beta3
 projects[autocomplete_deluxe][subdir] = contrib
 
 projects[context][version] = 3.1
