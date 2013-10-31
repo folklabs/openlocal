@@ -397,75 +397,75 @@ function openlocal_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_event-field_ol_event_registration'
-  $field_instances['node-ol_event-field_ol_event_registration'] = array(
-    'bundle' => 'ol_event',
-    'default_value' => array(
-      0 => array(
-        'registration_type' => '',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'registration',
-        'settings' => array(),
-        'type' => 'registration_form',
-        'weight' => 5,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_event_registration',
-    'label' => 'Registration',
-    'required' => 0,
-    'settings' => array(
-      'default_registration_settings' => array(
-        'capacity' => 0,
-        'reminder' => array(
-          'reminder_settings' => array(
-            'reminder_date' => NULL,
-            'reminder_template' => '',
-          ),
-          'send_reminder' => 0,
-        ),
-        'scheduling' => array(
-          'close' => NULL,
-          'open' => NULL,
-        ),
-        'settings' => array(
-          'from_address' => 'pauljmackay@gmail.com',
-          'maximum_spaces' => 1,
-          'multiple_registrations' => 0,
-        ),
-        'status' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'registration',
-      'settings' => array(),
-      'type' => 'registration_select',
-      'weight' => 9,
-    ),
-  );
+  // // Exported field_instance: 'node-ol_event-field_ol_event_registration'
+  // $field_instances['node-ol_event-field_ol_event_registration'] = array(
+  //   'bundle' => 'ol_event',
+  //   'default_value' => array(
+  //     0 => array(
+  //       'registration_type' => '',
+  //     ),
+  //   ),
+  //   'deleted' => 0,
+  //   'description' => '',
+  //   'display' => array(
+  //     'default' => array(
+  //       'label' => 'above',
+  //       'module' => 'registration',
+  //       'settings' => array(),
+  //       'type' => 'registration_form',
+  //       'weight' => 5,
+  //     ),
+  //     'featured' => array(
+  //       'label' => 'above',
+  //       'settings' => array(),
+  //       'type' => 'hidden',
+  //       'weight' => 0,
+  //     ),
+  //     'teaser' => array(
+  //       'label' => 'above',
+  //       'settings' => array(),
+  //       'type' => 'hidden',
+  //       'weight' => 0,
+  //     ),
+  //   ),
+  //   'entity_type' => 'node',
+  //   'field_name' => 'field_ol_event_registration',
+  //   'label' => 'Registration',
+  //   'required' => 0,
+  //   'settings' => array(
+  //     'default_registration_settings' => array(
+  //       'capacity' => 0,
+  //       'reminder' => array(
+  //         'reminder_settings' => array(
+  //           'reminder_date' => NULL,
+  //           'reminder_template' => '',
+  //         ),
+  //         'send_reminder' => 0,
+  //       ),
+  //       'scheduling' => array(
+  //         'close' => NULL,
+  //         'open' => NULL,
+  //       ),
+  //       'settings' => array(
+  //         'from_address' => 'pauljmackay@gmail.com',
+  //         'maximum_spaces' => 1,
+  //         'multiple_registrations' => 0,
+  //       ),
+  //       'status' => 0,
+  //     ),
+  //     'user_register_form' => FALSE,
+  //   ),
+  //   'widget' => array(
+  //     'active' => 0,
+  //     'module' => 'registration',
+  //     'settings' => array(),
+  //     'type' => 'registration_select',
+  //     'weight' => 9,
+  //   ),
+  // );
 
-  // Exported field_instance: 'node-ol_event-field_ol_event_venue'
-  $field_instances['node-ol_event-field_ol_event_venue'] = array(
+  // Exported field_instance: 'node-ol_event-field_ol_event_venue_ref'
+  $field_instances['node-ol_event-field_ol_event_venue_ref'] = array(
     'bundle' => 'ol_event',
     'default_value' => NULL,
     'default_value_function' => '',
@@ -495,7 +495,7 @@ function openlocal_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_event_venue',
+    'field_name' => 'field_ol_event_venue_ref',
     'label' => 'Venue',
     'required' => 0,
     'settings' => array(
@@ -648,7 +648,7 @@ function openlocal_event_field_default_field_instances() {
   t('Disabled toilet');
   t('Groups audience');
   t('Image');
-  t('Registration');
+  // t('Registration');
   t('Venue');
   t('Wheelchair accessible');
 

@@ -406,7 +406,7 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['fields']['field_ol_geolocation']['id'] = 'field_ol_geolocation';
   $handler->display->display_options['fields']['field_ol_geolocation']['table'] = 'field_data_field_ol_geolocation';
   $handler->display->display_options['fields']['field_ol_geolocation']['field'] = 'field_ol_geolocation';
-  $handler->display->display_options['fields']['field_ol_geolocation']['relationship'] = 'field_ol_event_venue_target_id';
+  $handler->display->display_options['fields']['field_ol_geolocation']['relationship'] = 'field_ol_event_venue_ref_target_id';
   $handler->display->display_options['fields']['field_ol_geolocation']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ol_geolocation']['click_sort_column'] = 'geom';
   $handler->display->display_options['fields']['field_ol_geolocation']['settings'] = array(
@@ -637,10 +637,10 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ol_event_venue_target_id']['id'] = 'field_ol_event_venue_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_target_id']['table'] = 'field_data_field_ol_event_venue';
-  $handler->display->display_options['relationships']['field_ol_event_venue_target_id']['field'] = 'field_ol_event_venue_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_target_id']['required'] = TRUE;
+  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['id'] = 'field_ol_event_venue_ref_target_id';
+  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['table'] = 'field_data_field_ol_event_venue_ref';
+  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['field'] = 'field_ol_event_venue_ref_target_id';
+  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['required'] = TRUE;
   $export['openlocal_event'] = $view;
 
   $view = new view();
@@ -745,11 +745,11 @@ function openlocal_event_views_default_views() {
     'ol_business' => 'ol_business',
     'ol_place' => 'ol_place',
   );
-  /* Filter criterion: Content: Event venue (field_ol_event_venue) */
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['id'] = 'field_ol_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['table'] = 'field_data_field_ol_event_venue';
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['field'] = 'field_ol_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['value'] = array(
+  /* Filter criterion: Content: Event venue (field_ol_event_venue_ref) */
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['id'] = 'field_ol_event_venue_ref_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['table'] = 'field_data_field_ol_event_venue_ref';
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['field'] = 'field_ol_event_venue_ref_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['value'] = array(
     1 => '1',
   );
   /* Filter criterion: Content: Wheelchair accessible (field_ol_wheelchair_accessible) */
@@ -825,10 +825,10 @@ function openlocal_event_views_default_views() {
     'ol_place' => 'ol_place',
   );
   /* Filter criterion: Content: Event venue (field_ol_event_venue) */
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['id'] = 'field_ol_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['table'] = 'field_data_field_ol_event_venue';
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['field'] = 'field_ol_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_event_venue_value']['value'] = array(
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['id'] = 'field_ol_event_venue_ref_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['table'] = 'field_data_field_ol_event_venue_ref';
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['field'] = 'field_ol_event_venue_ref_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_ref_value']['value'] = array(
     1 => '1',
   );
   $export['openlocal_event_venues'] = $view;

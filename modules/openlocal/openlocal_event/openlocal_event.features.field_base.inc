@@ -91,40 +91,40 @@ function openlocal_event_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_ol_event_registration'
-  $field_bases['field_ol_event_registration'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ol_event_registration',
-    'foreign keys' => array(
-      'registration_type' => array(
-        'columns' => array(
-          'registration_type' => 'name',
-        ),
-        'table' => 'registration_type',
-      ),
-    ),
-    'indexes' => array(
-      'registration_type' => array(
-        0 => 'registration_type',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'registration',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'registration',
-  );
+  // // Exported field_base: 'field_ol_event_registration'
+  // $field_bases['field_ol_event_registration'] = array(
+  //   'active' => 1,
+  //   'cardinality' => 1,
+  //   'deleted' => 0,
+  //   'entity_types' => array(),
+  //   'field_name' => 'field_ol_event_registration',
+  //   'foreign keys' => array(
+  //     'registration_type' => array(
+  //       'columns' => array(
+  //         'registration_type' => 'name',
+  //       ),
+  //       'table' => 'registration_type',
+  //     ),
+  //   ),
+  //   'indexes' => array(
+  //     'registration_type' => array(
+  //       0 => 'registration_type',
+  //     ),
+  //   ),
+  //   'locked' => 0,
+  //   'module' => 'registration',
+  //   'settings' => array(),
+  //   'translatable' => 0,
+  //   'type' => 'registration',
+  // );
 
   // Exported field_base: 'field_ol_event_venue'
-  $field_bases['field_ol_event_venue'] = array(
+  $field_bases['field_ol_event_venue_ref'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ol_event_venue',
+    'field_name' => 'field_ol_event_venue_ref',
     'foreign keys' => array(
       'node' => array(
         'columns' => array(

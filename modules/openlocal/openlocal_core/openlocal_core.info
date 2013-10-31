@@ -12,7 +12,6 @@ dependencies[] = geocoder
 dependencies[] = geofield
 dependencies[] = image
 dependencies[] = list
-dependencies[] = openlocal_location
 dependencies[] = options
 dependencies[] = panelizer
 dependencies[] = strongarm
