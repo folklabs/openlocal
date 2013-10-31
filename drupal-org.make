@@ -11,16 +11,6 @@ api = 2
 core = 7.x
 
 
-; Local modules
-
-;projects[local_foodhub][version] = contrib
-;projects[local_foodhub][type] = module
-;projects[local_foodhub][subdir] = openlocal
-;projects[local_foodhub][download][type] = git
-;projects[local_foodhub][download][url] = /Users/pmackay/dev/openlocal/local_foodhub
-;projects[local_foodhub][download][branch] = master
-
-
 ; The Panopoly Foundation
 
 projects[panopoly_core][version] = 1.0-rc5
@@ -58,9 +48,6 @@ projects[panopoly_search][subdir] = panopoly
 
 ; Panopoly apps
 
-projects[panopoly_news][version] = 1.0-rc2
-projects[panopoly_news][subdir] = panopoly
-
 projects[panopoly_faq][version] = 2.x-dev
 projects[panopoly_faq][subdir] = panopoly
 
@@ -92,8 +79,6 @@ projects[apps_compatible][subdir] = contrib
 projects[apps_compatible][version] = 1.0-alpha3
 projects[better_exposed_filters][subdir] = contrib
 projects[better_exposed_filters][version] = 3.0-beta3
-;projects[debut_location][subdir] = contrib
-;projects[debut_location][version] = 1.0-alpha2
 
 
 ; OpenLocal dependencies
@@ -166,21 +151,6 @@ projects[workbench][subdir] = contrib
 
 projects[workbench_moderation][version] = 1.3
 projects[workbench_moderation][subdir] = contrib
-
-;projects[][version] =
-;projects[][subdir] = contrib
-
-
-; OpenLocal
-
-;projects[local_campaign][version] = 2.x-dev
-;projects[local_campaign][subdir] = debut
-
-;projects[debut_poll][version] = 2.x-dev
-;projects[debut_poll][subdir] = debut
-
-;projects[debut_survey][version] = 2.x-dev
-;projects[debut_survey][subdir] = debut
 
 
 ; Libraries
