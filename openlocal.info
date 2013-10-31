@@ -75,9 +75,10 @@ dependencies[] = openlocal_event
 dependencies[] = openlocal_gallery
 dependencies[] = openlocal_group
 dependencies[] = openlocal_home
-;dependencies[] = openlocal_idea
-dependencies[] = openlocal_location
 dependencies[] = openlocal_news
+
+; Optional features
+;dependencies[] = openlocal_idea
 ;dependencies[] = openlocal_poll
 ;dependencies[] = openlocal_survey
 
