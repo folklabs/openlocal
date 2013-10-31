@@ -34,6 +34,7 @@ dependencies[] = uuid
 ; Development
 dependencies[] = field_ui
 dependencies[] = masquerade
+dependencies[] = views_ui
 
 ; Other modules
 dependencies[] = book
