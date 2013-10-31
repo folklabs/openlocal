@@ -135,8 +135,8 @@ function openlocal_core_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_business_event_venue'
-  $field_instances['node-ol_place-field_ol_business_event_venue'] = array(
+  // Exported field_instance: 'node-ol_place-field_ol_event_venue'
+  $field_instances['node-ol_place-field_ol_event_venue'] = array(
     'bundle' => 'ol_place',
     'default_value' => array(
       0 => array(
@@ -166,7 +166,7 @@ function openlocal_core_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_business_event_venue',
+    'field_name' => 'field_ol_event_venue',
     'label' => 'Event venue',
     'required' => 0,
     'settings' => array(

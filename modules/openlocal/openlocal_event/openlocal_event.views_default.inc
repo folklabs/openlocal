@@ -745,11 +745,11 @@ function openlocal_event_views_default_views() {
     'ol_business' => 'ol_business',
     'ol_place' => 'ol_place',
   );
-  /* Filter criterion: Content: Event venue (field_ol_business_event_venue) */
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['id'] = 'field_ol_business_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['table'] = 'field_data_field_ol_business_event_venue';
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['field'] = 'field_ol_business_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['value'] = array(
+  /* Filter criterion: Content: Event venue (field_ol_event_venue) */
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['id'] = 'field_ol_event_venue_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['table'] = 'field_data_field_ol_event_venue';
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['field'] = 'field_ol_event_venue_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['value'] = array(
     1 => '1',
   );
   /* Filter criterion: Content: Wheelchair accessible (field_ol_wheelchair_accessible) */
@@ -824,11 +824,11 @@ function openlocal_event_views_default_views() {
     'ol_business' => 'ol_business',
     'ol_place' => 'ol_place',
   );
-  /* Filter criterion: Content: Event venue (field_ol_business_event_venue) */
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['id'] = 'field_ol_business_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['table'] = 'field_data_field_ol_business_event_venue';
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['field'] = 'field_ol_business_event_venue_value';
-  $handler->display->display_options['filters']['field_ol_business_event_venue_value']['value'] = array(
+  /* Filter criterion: Content: Event venue (field_ol_event_venue) */
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['id'] = 'field_ol_event_venue_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['table'] = 'field_data_field_ol_event_venue';
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['field'] = 'field_ol_event_venue_value';
+  $handler->display->display_options['filters']['field_ol_event_venue_value']['value'] = array(
     1 => '1',
   );
   $export['openlocal_event_venues'] = $view;
