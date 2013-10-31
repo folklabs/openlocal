@@ -1,0 +1,302 @@
+/* @file
+ * Print Styles
+ * This probably needs work, but it's a good starting point. */
+/* Body */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000311}}
+body {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4;
+  word-spacing: 1.1pt;
+  letter-spacing: 0.2pt;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: black;
+  background: none;
+  font-size: 11pt;
+}
+
+/* Links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000325}}
+a {
+  background: transparent;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #0000ee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000331}}
+a[href^="http://"]:after, a[href^="http://"]:visited:after {
+  content: "(" attr(href) ")";
+  font-size: 10pt;
+}
+
+/* Strip background from likely candidates */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000339}}
+div[id*="wrapper"],
+[class*="title"],
+[class*="inner"],
+header,
+footer,
+#branding,
+#container,
+#columns,
+.columns-inner,
+#content-column,
+.content-inner,
+.region,
+.region-header,
+.region-content,
+.article,
+.article-title,
+.article-content,
+.comment,
+.comment-title,
+.comment-content,
+.block,
+.block-inner,
+.block-title,
+.block-content,
+table,
+table * {
+  background: none !important;
+}
+
+/* Hide various bits of the page */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000370}}
+.sidebar,
+#breadcrumb,
+.nav,
+.field-type-taxonomy-term-reference,
+ul.links,
+.feed-icon,
+.poll .bar,
+.poll .foreground,
+.comment-form,
+#comment-form,
+.book-navigation,
+.tabs,
+.action-links,
+.pager,
+.messages,
+.help {
+  display: none;
+}
+
+/* Ensure the display the main content region */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000390}}
+#content {
+  display: block !important;
+}
+
+/* Layout */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000395}}
+#header {
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\0000398}}
+.content-inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* HTML elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003105}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003116}}
+h1 {
+  font-size: 14pt;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003119}}
+h2 {
+  font-size: 13pt;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003122}}
+h3 {
+  font-size: 12pt;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003125}}
+h4,
+h5,
+h6 {
+  font-size: 11pt;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003130}}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+#site-name a,
+#site-slogan {
+  text-decoration: none !important;
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003142}}
+hgroup a:link, hgroup a:visited {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003146}}
+#page-title {
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003149}}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-size: 10pt;
+  font-family: Consolas, "Lucida Console", Menlo, Monaco, "DejaVu Sans Mono", monospace, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003158}}
+blockquote {
+  margin: 20px;
+  padding: 10px;
+  font-size: 10pt;
+  font-style: italic;
+  background: #eeeeee;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003165}}
+hr {
+  background-color: #666666;
+}
+
+/* Header, Logo, Site name */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003170}}
+#header {
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003173}}
+#logo img {
+  padding: 0 10px 0 0;
+  margin: 0 !important;
+  float: none !important;
+}
+
+/* Images */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003180}}
+img {
+  float: left;
+  margin: 4px 20px 10px 0;
+  page-break-inside: avoid;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003185}}
+a img {
+  border: none;
+}
+
+/* Tables */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003190}}
+table {
+  margin: 1px;
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003194}}
+th {
+  border-bottom: 1px solid #333333;
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003198}}
+td {
+  border-bottom: 1px solid #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003201}}
+th,
+td {
+  padding: 4px 10px 4px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003205}}
+tfoot {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003208}}
+caption {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003212}}
+thead {
+  display: table-header-group;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003215}}
+tr {
+  page-break-inside: avoid;
+}
+
+/* Forms */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003220}}
+form {
+  margin-bottom: 10px;
+}
+
+/* Poll module */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003226}}
+.poll .text,
+.poll .percent,
+.poll .total {
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003230}}
+.poll form {
+  margin-bottom: 0;
+}
+
+/* Articles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003236}}
+.node,
+.comment {
+  margin-bottom: 20px;
+  overflow: hidden;
+  page-break-inside: avoid;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003242}}
+.submitted {
+  color: #666666;
+  text-decoration: none;
+  font-size: 9pt;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/print\.sass}line{font-family:\00003249}}
+.submitted a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 9pt;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

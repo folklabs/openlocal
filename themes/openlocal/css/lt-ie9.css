@@ -1,0 +1,7 @@
+/* Target IE 6, 7 and 8 (less than IE9) */
+/* Assuming a mobile first approach with respond.js OFF, we must reset the font
+ * size for lt IE9 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pmackay\/dev\/herne-hill\/dev\.openlocal-hernehill\/sites\/all\/themes\/openlocal_at\/sass\/lt-ie9\.sass}line{font-family:\0000310}}
+html {
+  font-size: 81.3%;
+}

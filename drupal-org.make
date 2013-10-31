@@ -194,3 +194,6 @@ libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archi
 libraries[colorbox][destination] = libraries
 
 
+; Themes
+
+projects[adaptivetheme][version] = 3.1
