@@ -49,7 +49,7 @@ projects[panopoly_search][subdir] = panopoly
 
 ; Development / maintenance
 
-projects[masquerade][version] = 1.17
+projects[masquerade][version] = 1.0-rc7
 projects[masquerade][subdir] = contrib
 
 
