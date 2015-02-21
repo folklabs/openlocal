@@ -73,7 +73,7 @@ projects[commentaccess][subdir] = contrib
 projects[comment_notify][version] = 1.2
 projects[comment_notify][subdir] = contrib
 
-projects[context][version] = 3.1
+projects[context][version] = 3.6
 projects[context][subdir] = contrib
 
 projects[eck][version] = 2.0-rc7
@@ -141,9 +141,6 @@ projects[logintoboggan][subdir] = contrib
 
 projects[mailchimp][version] = 2.12
 projects[mailchimp][subdir] = contrib
-
-projects[mass_contact][version] = 1.0-beta3
-projects[mass_contact][subdir] = contrib
 
 projects[maxlength][version] = 3.0
 projects[maxlength][subdir] = contrib
