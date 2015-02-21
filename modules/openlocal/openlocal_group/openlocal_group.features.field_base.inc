@@ -36,85 +36,6 @@ function openlocal_group_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_ol_group_category'
-  $field_bases['field_ol_group_category'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ol_group_category',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'ol_groups',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_ol_group_coordinators'
-  $field_bases['field_ol_group_coordinators'] = array(
-    'active' => 1,
-    'cardinality' => 3,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ol_group_coordinators',
-    'foreign keys' => array(
-      'uid' => array(
-        'columns' => array(
-          'uid' => 'uid',
-        ),
-        'table' => 'users',
-      ),
-    ),
-    'indexes' => array(
-      'uid' => array(
-        0 => 'uid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'user_reference',
-    'settings' => array(
-      'referenceable_roles' => array(
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-        7 => 7,
-      ),
-      'referenceable_status' => array(
-        0 => 0,
-        1 => 1,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'user_reference',
-  );
-
   // Exported field_base: 'group_group'
   $field_bases['group_group'] = array(
     'active' => 1,
@@ -170,11 +91,18 @@ function openlocal_group_field_default_field_bases() {
           'og_behavior' => array(
             'status' => TRUE,
           ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
         ),
         'membership_type' => 'og_membership_type_default',
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(),
       ),
       'handler_submit' => 'Change handler',
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'target_type' => 'node',

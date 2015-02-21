@@ -10,25 +10,28 @@
 function openlocal_contact_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access site-wide contact form.
+  // Exported permission: 'access site-wide contact form'.
   $permissions['access site-wide contact form'] = array(
     'name' => 'access site-wide contact form',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'contact',
   );
 
-  // Exported permission: access user contact forms.
+  // Exported permission: 'access user contact forms'.
   $permissions['access user contact forms'] = array(
     'name' => 'access user contact forms',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'contact',
   );
 
-  // Exported permission: administer contact forms.
+  // Exported permission: 'administer contact forms'.
   $permissions['administer contact forms'] = array(
     'name' => 'administer contact forms',
     'roles' => array(
@@ -37,14 +40,30 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'contact',
   );
 
-  // Exported permission: administer panelizer node mass_contact defaults.
+  // Exported permission: 'administer newsletters'.
+  $permissions['administer newsletters'] = array(
+    'name' => 'administer newsletters',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'simplenews',
+  );
+
+  // Exported permission: 'administer panelizer node mass_contact defaults'.
   $permissions['administer panelizer node mass_contact defaults'] = array(
     'name' => 'administer panelizer node mass_contact defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: administer privatemsg settings.
+  // Exported permission: 'administer panelizer node ol_newsletter defaults'.
+  $permissions['administer panelizer node ol_newsletter defaults'] = array(
+    'name' => 'administer panelizer node ol_newsletter defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer privatemsg settings'.
   $permissions['administer privatemsg settings'] = array(
     'name' => 'administer privatemsg settings',
     'roles' => array(
@@ -53,7 +72,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: allow disabling privatemsg.
+  // Exported permission: 'allow disabling privatemsg'.
   $permissions['allow disabling privatemsg'] = array(
     'name' => 'allow disabling privatemsg',
     'roles' => array(
@@ -62,7 +81,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: create mass_contact content.
+  // Exported permission: 'create mass_contact content'.
   $permissions['create mass_contact content'] = array(
     'name' => 'create mass_contact content',
     'roles' => array(
@@ -71,7 +90,16 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any mass_contact content.
+  // Exported permission: 'create ol_newsletter content'.
+  $permissions['create ol_newsletter content'] = array(
+    'name' => 'create ol_newsletter content',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any mass_contact content'.
   $permissions['delete any mass_contact content'] = array(
     'name' => 'delete any mass_contact content',
     'roles' => array(
@@ -80,7 +108,16 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own mass_contact content.
+  // Exported permission: 'delete any ol_newsletter content'.
+  $permissions['delete any ol_newsletter content'] = array(
+    'name' => 'delete any ol_newsletter content',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own mass_contact content'.
   $permissions['delete own mass_contact content'] = array(
     'name' => 'delete own mass_contact content',
     'roles' => array(
@@ -89,7 +126,16 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete privatemsg.
+  // Exported permission: 'delete own ol_newsletter content'.
+  $permissions['delete own ol_newsletter content'] = array(
+    'name' => 'delete own ol_newsletter content',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete privatemsg'.
   $permissions['delete privatemsg'] = array(
     'name' => 'delete privatemsg',
     'roles' => array(
@@ -98,7 +144,14 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: edit any mass_contact content.
+  // Exported permission: 'delete terms in newsletter'.
+  $permissions['delete terms in newsletter'] = array(
+    'name' => 'delete terms in newsletter',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit any mass_contact content'.
   $permissions['edit any mass_contact content'] = array(
     'name' => 'edit any mass_contact content',
     'roles' => array(
@@ -107,7 +160,16 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own mass_contact content.
+  // Exported permission: 'edit any ol_newsletter content'.
+  $permissions['edit any ol_newsletter content'] = array(
+    'name' => 'edit any ol_newsletter content',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own mass_contact content'.
   $permissions['edit own mass_contact content'] = array(
     'name' => 'edit own mass_contact content',
     'roles' => array(
@@ -116,7 +178,23 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: mass contact administer.
+  // Exported permission: 'edit own ol_newsletter content'.
+  $permissions['edit own ol_newsletter content'] = array(
+    'name' => 'edit own ol_newsletter content',
+    'roles' => array(
+      'editor' => 'editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in newsletter'.
+  $permissions['edit terms in newsletter'] = array(
+    'name' => 'edit terms in newsletter',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'mass contact administer'.
   $permissions['mass contact administer'] = array(
     'name' => 'mass contact administer',
     'roles' => array(
@@ -125,7 +203,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact archive messages.
+  // Exported permission: 'mass contact archive messages'.
   $permissions['mass contact archive messages'] = array(
     'name' => 'mass contact archive messages',
     'roles' => array(
@@ -134,7 +212,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact change default sender information.
+  // Exported permission: 'mass contact change default sender information'.
   $permissions['mass contact change default sender information'] = array(
     'name' => 'mass contact change default sender information',
     'roles' => array(
@@ -143,7 +221,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact include attachments.
+  // Exported permission: 'mass contact include attachments'.
   $permissions['mass contact include attachments'] = array(
     'name' => 'mass contact include attachments',
     'roles' => array(
@@ -152,7 +230,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact override archiving.
+  // Exported permission: 'mass contact override archiving'.
   $permissions['mass contact override archiving'] = array(
     'name' => 'mass contact override archiving',
     'roles' => array(
@@ -161,7 +239,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact override bcc.
+  // Exported permission: 'mass contact override bcc'.
   $permissions['mass contact override bcc'] = array(
     'name' => 'mass contact override bcc',
     'roles' => array(
@@ -170,7 +248,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact override text format.
+  // Exported permission: 'mass contact override text format'.
   $permissions['mass contact override text format'] = array(
     'name' => 'mass contact override text format',
     'roles' => array(
@@ -179,7 +257,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: mass contact send messages.
+  // Exported permission: 'mass contact send messages'.
   $permissions['mass contact send messages'] = array(
     'name' => 'mass contact send messages',
     'roles' => array(
@@ -188,7 +266,34 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'mass_contact',
   );
 
-  // Exported permission: read all private messages.
+  // Exported permission: 'mass contact send to users in the Content authors category'.
+  $permissions['mass contact send to users in the Content authors category'] = array(
+    'name' => 'mass contact send to users in the Content authors category',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'mass_contact',
+  );
+
+  // Exported permission: 'mass contact send to users in the Group managers category'.
+  $permissions['mass contact send to users in the Group managers category'] = array(
+    'name' => 'mass contact send to users in the Group managers category',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'mass_contact',
+  );
+
+  // Exported permission: 'mass contact send to users in the Traders category'.
+  $permissions['mass contact send to users in the Traders category'] = array(
+    'name' => 'mass contact send to users in the Traders category',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'mass_contact',
+  );
+
+  // Exported permission: 'read all private messages'.
   $permissions['read all private messages'] = array(
     'name' => 'read all private messages',
     'roles' => array(
@@ -197,16 +302,17 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: read privatemsg.
+  // Exported permission: 'read privatemsg'.
   $permissions['read privatemsg'] = array(
     'name' => 'read privatemsg',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'privatemsg',
   );
 
-  // Exported permission: reply only privatemsg.
+  // Exported permission: 'reply only privatemsg'.
   $permissions['reply only privatemsg'] = array(
     'name' => 'reply only privatemsg',
     'roles' => array(
@@ -215,7 +321,7 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: select text format for privatemsg.
+  // Exported permission: 'select text format for privatemsg'.
   $permissions['select text format for privatemsg'] = array(
     'name' => 'select text format for privatemsg',
     'roles' => array(
@@ -224,7 +330,27 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: use tokens in privatemsg.
+  // Exported permission: 'send newsletter'.
+  $permissions['send newsletter'] = array(
+    'name' => 'send newsletter',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'simplenews',
+  );
+
+  // Exported permission: 'subscribe to newsletters'.
+  $permissions['subscribe to newsletters'] = array(
+    'name' => 'subscribe to newsletters',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'simplenews',
+  );
+
+  // Exported permission: 'use tokens in privatemsg'.
   $permissions['use tokens in privatemsg'] = array(
     'name' => 'use tokens in privatemsg',
     'roles' => array(
@@ -233,11 +359,12 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: write privatemsg.
+  // Exported permission: 'write privatemsg'.
   $permissions['write privatemsg'] = array(
     'name' => 'write privatemsg',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'privatemsg',
   );

@@ -10,40 +10,6 @@
 function openlocal_event_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ol_event_category'
-  $field_bases['field_ol_event_category'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_ol_event_category',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'ol_events',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
   // Exported field_base: 'field_ol_event_contact'
   $field_bases['field_ol_event_contact'] = array(
     'active' => 1,
@@ -60,10 +26,40 @@ function openlocal_event_field_default_field_bases() {
     'type' => 'email',
   );
 
+  // Exported field_base: 'field_ol_event_contact_telephone'
+  $field_bases['field_ol_event_contact_telephone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ol_event_contact_telephone',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 15,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_ol_event_date'
   $field_bases['field_ol_event_date'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ol_event_date',
@@ -82,6 +78,7 @@ function openlocal_event_field_default_field_bases() {
         'second' => 0,
         'year' => 'year',
       ),
+      'profile2_private' => FALSE,
       'repeat' => 1,
       'timezone_db' => 'UTC',
       'todate' => 'optional',
@@ -91,34 +88,7 @@ function openlocal_event_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // // Exported field_base: 'field_ol_event_registration'
-  // $field_bases['field_ol_event_registration'] = array(
-  //   'active' => 1,
-  //   'cardinality' => 1,
-  //   'deleted' => 0,
-  //   'entity_types' => array(),
-  //   'field_name' => 'field_ol_event_registration',
-  //   'foreign keys' => array(
-  //     'registration_type' => array(
-  //       'columns' => array(
-  //         'registration_type' => 'name',
-  //       ),
-  //       'table' => 'registration_type',
-  //     ),
-  //   ),
-  //   'indexes' => array(
-  //     'registration_type' => array(
-  //       0 => 'registration_type',
-  //     ),
-  //   ),
-  //   'locked' => 0,
-  //   'module' => 'registration',
-  //   'settings' => array(),
-  //   'translatable' => 0,
-  //   'type' => 'registration',
-  // );
-
-  // Exported field_base: 'field_ol_event_venue'
+  // Exported field_base: 'field_ol_event_venue_ref'
   $field_bases['field_ol_event_venue_ref'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -154,6 +124,7 @@ function openlocal_event_field_default_field_bases() {
           'view_name' => 'openlocal_event',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal SEO feature.
+ */
+
+include_once 'openlocal_seo.features.inc';

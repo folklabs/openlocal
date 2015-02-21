@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Images feature.
+ */
+
+include_once 'openlocal_images.features.inc';

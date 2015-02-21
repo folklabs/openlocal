@@ -23,6 +23,7 @@ function openlocal_home_content_menu_links_defaults() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -50,
+    'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.

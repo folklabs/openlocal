@@ -39,34 +39,39 @@ function openlocal_alert_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_ol_alert_image'
-  $field_bases['field_ol_alert_image'] = array(
+  // Exported field_base: 'field_ol_alert_category'
+  $field_bases['field_ol_alert_category'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ol_alert_image',
+    'field_name' => 'field_ol_alert_category',
     'foreign keys' => array(
-      'fid' => array(
+      'tid' => array(
         'columns' => array(
-          'fid' => 'fid',
+          'tid' => 'tid',
         ),
-        'table' => 'file_managed',
+        'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'image',
+    'module' => 'taxonomy',
     'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ol_alerts',
+          'parent' => 0,
+        ),
+      ),
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'image',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_ol_alert_link'

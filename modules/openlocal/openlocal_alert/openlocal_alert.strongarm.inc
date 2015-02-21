@@ -68,19 +68,33 @@ function openlocal_alert_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
       ),
       'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__ol_alert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_label_ol_alert';
+  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
+  $export['maxlength_js_label_ol_alert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_ol_alert';
+  $strongarm->value = '60';
+  $export['maxlength_js_ol_alert'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

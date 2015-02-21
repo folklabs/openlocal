@@ -1,0 +1,17 @@
+name = OpenLocal Highlight
+description = Highlights for the homepage.
+core = 7.x
+package = OpenLocal
+version = 7.x-1.0-alpha1
+project = openlocal_highlight
+dependencies[] = ctools
+dependencies[] = fe_nodequeue
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_slideshow
+features[ctools][] = views:views_default:3.0
+features[fe_nodequeue][] = ol_highlights
+features[features_api][] = api:2
+features[views_view][] = openlocal_highlight
+mtime = 1391700071
+project path = profiles/openlocal/modules/openlocal

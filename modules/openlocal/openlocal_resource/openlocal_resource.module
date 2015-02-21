@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Resource feature.
+ */
+
+include_once 'openlocal_resource.features.inc';

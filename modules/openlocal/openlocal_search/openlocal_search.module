@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Search feature.
+ */
+
+include_once 'openlocal_search.features.inc';

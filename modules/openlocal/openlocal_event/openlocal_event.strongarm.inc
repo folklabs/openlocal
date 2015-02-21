@@ -35,14 +35,14 @@ function openlocal_event_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_ol_event';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['comment_form_location_ol_event'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_ol_event';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['comment_ol_event'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -58,6 +58,13 @@ function openlocal_event_strongarm() {
   $strongarm->name = 'comment_subject_field_ol_event';
   $strongarm->value = 1;
   $export['comment_subject_field_ol_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_ol_simple_date';
+  $strongarm->value = 'j M';
+  $export['date_format_ol_simple_date'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -89,17 +96,20 @@ function openlocal_event_strongarm() {
       'print' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
       ),
       'display' => array(),
@@ -111,9 +121,7 @@ function openlocal_event_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_ol_event';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_ol_event'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -128,8 +136,9 @@ function openlocal_event_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_ol_event';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
+    1 => 'moderation',
+    2 => 'revision',
   );
   $export['node_options_ol_event'] = $strongarm;
 
@@ -164,37 +173,12 @@ function openlocal_event_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
-      'full' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
       'teaser' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
       ),
-      'rss' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'search_index' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'search_result' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
       'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'token' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -220,17 +204,7 @@ function openlocal_event_strongarm() {
         'default' => 0,
         'choice' => 0,
       ),
-      'full' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
       'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'token' => array(
         'status' => 0,
         'default' => 0,
         'choice' => 0,
@@ -250,7 +224,7 @@ function openlocal_event_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_ol_events_pattern';
-  $strongarm->value = 'categories/events/[term:name]';
+  $strongarm->value = '';
   $export['pathauto_taxonomy_term_ol_events_pattern'] = $strongarm;
 
   return $export;

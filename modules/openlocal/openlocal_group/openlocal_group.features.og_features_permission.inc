@@ -33,17 +33,23 @@ function openlocal_group_og_features_default_permissions() {
 
   // Exported og permission: 'node:ol_group:create ol_event content'
   $permissions['node:ol_group:create ol_event content'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'member' => 'member',
+    ),
   );
 
   // Exported og permission: 'node:ol_group:create ol_gallery content'
   $permissions['node:ol_group:create ol_gallery content'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'member' => 'member',
+    ),
   );
 
   // Exported og permission: 'node:ol_group:create ol_group_post content'
   $permissions['node:ol_group:create ol_group_post content'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'member' => 'member',
+    ),
   );
 
   // Exported og permission: 'node:ol_group:delete any ol_event content'
@@ -140,17 +146,23 @@ function openlocal_group_og_features_default_permissions() {
 
   // Exported og permission: 'node:ol_group:update own ol_event content'
   $permissions['node:ol_group:update own ol_event content'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'member' => 'member',
+    ),
   );
 
   // Exported og permission: 'node:ol_group:update own ol_gallery content'
   $permissions['node:ol_group:update own ol_gallery content'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'member' => 'member',
+    ),
   );
 
   // Exported og permission: 'node:ol_group:update own ol_group_post content'
   $permissions['node:ol_group:update own ol_group_post content'] = array(
-    'roles' => array(),
+    'roles' => array(
+      'member' => 'member',
+    ),
   );
 
   return $permissions;

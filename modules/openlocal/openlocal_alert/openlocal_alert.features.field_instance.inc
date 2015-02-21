@@ -43,11 +43,11 @@ function openlocal_alert_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_alert-field_ol_alert_image'
-  $field_instances['node-ol_alert-field_ol_alert_image'] = array(
+  // Exported field_instance: 'node-ol_alert-field_featured_image'
+  $field_instances['node-ol_alert-field_featured_image'] = array(
     'bundle' => 'ol_alert',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Add a photo of your missing pet, person or property that this alert relates to.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -57,7 +57,7 @@ function openlocal_alert_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -73,46 +73,89 @@ function openlocal_alert_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_alert_image',
+    'field_name' => 'field_featured_image',
     'label' => 'Image',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'focus' => 1,
+      'focus_lock_ratio' => 0,
+      'focus_min_size' => '',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '300x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'image',
       'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-          'youtube' => 0,
-        ),
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'openlocal_panel_deep',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'image_image',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_alert-field_ol_alert_category'
+  $field_instances['node-ol_alert-field_ol_alert_category'] = array(
+    'bundle' => 'ol_alert',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select what type of alert or issue this relates to.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 5,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_alert_category',
+    'label' => 'Category',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_buttons',
+      'weight' => 3,
     ),
   );
 
@@ -121,7 +164,7 @@ function openlocal_alert_field_default_field_instances() {
     'bundle' => 'ol_alert',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A link to a forum post or other web page that gives more information.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -148,11 +191,12 @@ function openlocal_alert_field_default_field_instances() {
     'label' => 'Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -160,11 +204,13 @@ function openlocal_alert_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'rel_remove' => 'default',
-      'title' => 'value',
+      'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'More details',
       'url' => 0,
@@ -176,7 +222,7 @@ function openlocal_alert_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -221,7 +267,7 @@ function openlocal_alert_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -230,7 +276,7 @@ function openlocal_alert_field_default_field_instances() {
     'bundle' => 'ol_alert',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A short summary that will be displayed in the alert.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -258,8 +304,9 @@ function openlocal_alert_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -268,7 +315,9 @@ function openlocal_alert_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 80,
       ),
       'type' => 'text_textfield',
       'weight' => 1,
@@ -277,12 +326,17 @@ function openlocal_alert_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A link to a forum post or other web page that gives more information.');
+  t('A short summary that will be displayed in the alert.');
+  t('Add a photo of your missing pet, person or property that this alert relates to.');
+  t('Category');
   t('Comment');
   t('Description');
   t('Image');
   t('Link');
   t('Mark this alert as resolved when it is sorted.');
   t('Resolved');
+  t('Select what type of alert or issue this relates to.');
 
   return $field_instances;
 }

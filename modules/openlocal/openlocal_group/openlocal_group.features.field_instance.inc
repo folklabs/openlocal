@@ -10,6 +10,49 @@
 function openlocal_group_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-ol_group-field_featured_categories'
+  $field_instances['node-ol_group-field_featured_categories'] = array(
+    'bundle' => 'ol_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose the categories that best describe what your group would come under. It makes it easier for others to find your group by only showing groups that are in particular categories.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_featured_categories',
+    'label' => 'Categories',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-ol_group-field_featured_image'
   $field_instances['node-ol_group-field_featured_image'] = array(
     'bundle' => 'ol_group',
@@ -24,7 +67,7 @@ function openlocal_group_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'featured' => array(
         'label' => 'above',
@@ -45,9 +88,12 @@ function openlocal_group_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 0,
+      'default_image' => 105,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'focus' => 0,
+      'focus_lock_ratio' => 0,
+      'focus_min_size' => '',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -58,7 +104,20 @@ function openlocal_group_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'preview_image_style' => 'openlocal_panel_deep',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -75,11 +134,13 @@ function openlocal_group_field_default_field_instances() {
         'thoroughfare' => '',
         'premise' => '',
         'locality' => '',
-        'country' => 'AF',
+        'administrative_area' => '',
+        'postal_code' => '',
+        'country' => 'GB',
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If the group has a physical location or a regular meetup place, add the address.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -91,7 +152,7 @@ function openlocal_group_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -129,7 +190,7 @@ function openlocal_group_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -138,14 +199,14 @@ function openlocal_group_field_default_field_instances() {
     'bundle' => 'ol_group',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This will appear in lists, .e.g. the Community section.',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -166,8 +227,9 @@ function openlocal_group_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -188,14 +250,14 @@ function openlocal_group_field_default_field_instances() {
     'bundle' => 'ol_group',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A longer description to describe the group.',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -216,8 +278,9 @@ function openlocal_group_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'linkit' => array(
+        'button_text' => 'Search',
         'enable' => 0,
-        'insert_plugin' => '',
+        'profile' => '',
       ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -246,7 +309,7 @@ function openlocal_group_field_default_field_instances() {
           'data' => 'full',
         ),
         'type' => 'geofield_wkt',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'featured' => array(
         'label' => 'above',
@@ -289,7 +352,7 @@ function openlocal_group_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -309,7 +372,7 @@ function openlocal_group_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
@@ -338,101 +401,7 @@ function openlocal_group_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_group-field_ol_group_category'
-  $field_instances['node-ol_group-field_ol_group_category'] = array(
-    'bundle' => 'ol_group',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 9,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_group_category',
-    'label' => 'Category',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_group-field_ol_group_coordinators'
-  $field_instances['node-ol_group-field_ol_group_coordinators'] = array(
-    'bundle' => 'ol_group',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'user_reference',
-        'settings' => array(),
-        'type' => 'user_reference_default',
-        'weight' => 4,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_group_coordinators',
-    'label' => 'Coordinators',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'user_reference',
-      'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'user_reference/autocomplete',
-        'references_dialog_add' => 0,
-        'references_dialog_edit' => 0,
-        'references_dialog_search' => 0,
-        'references_dialog_search_view' => '',
-        'size' => 60,
-      ),
-      'type' => 'user_reference_autocomplete',
-      'weight' => 5,
+      'weight' => 9,
     ),
   );
 
@@ -454,7 +423,7 @@ function openlocal_group_field_default_field_instances() {
           'field_name' => FALSE,
         ),
         'type' => 'og_group_subscribe',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -496,7 +465,7 @@ function openlocal_group_field_default_field_instances() {
         'og_hide' => TRUE,
       ),
       'type' => 'options_onoff',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -573,9 +542,13 @@ function openlocal_group_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'openlocal_node_main',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
     ),
@@ -588,6 +561,9 @@ function openlocal_group_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'focus' => 0,
+      'focus_lock_ratio' => 0,
+      'focus_min_size' => '',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -598,6 +574,18 @@ function openlocal_group_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'manualcrop_crop_info' => TRUE,
+        'manualcrop_default_crop_area' => TRUE,
+        'manualcrop_enable' => FALSE,
+        'manualcrop_inline_crop' => FALSE,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => TRUE,
+        'manualcrop_keyboard' => TRUE,
+        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => FALSE,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -610,8 +598,9 @@ function openlocal_group_field_default_field_instances() {
   $field_instances['node-ol_group_post-og_group_ref'] = array(
     'bundle' => 'ol_group_post',
     'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the group this post belongs to.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -630,13 +619,13 @@ function openlocal_group_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
     'field_name' => 'og_group_ref',
     'label' => 'Groups audience',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'behaviors' => array(
         'og_widget' => array(
@@ -647,6 +636,9 @@ function openlocal_group_field_default_field_instances() {
             'widget_type' => 'options_select',
           ),
           'status' => TRUE,
+        ),
+        'prepopulate' => array(
+          'status' => 0,
         ),
       ),
       'user_register_form' => FALSE,
@@ -664,6 +656,7 @@ function openlocal_group_field_default_field_instances() {
       ),
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
@@ -673,19 +666,23 @@ function openlocal_group_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A longer description to describe the group.');
   t('Address');
   t('Body');
   t('Campaign');
-  t('Category');
-  t('Coordinators');
+  t('Categories');
+  t('Choose the categories that best describe what your group would come under. It makes it easier for others to find your group by only showing groups that are in particular categories.');
   t('Description');
   t('Details');
   t('Determine if this is an OG group.');
   t('Geolocation');
   t('Group');
   t('Groups audience');
+  t('If the group has a physical location or a regular meetup place, add the address.');
   t('Image');
+  t('Select the group this post belongs to.');
   t('This group represents a campaign or other current priority activity.');
+  t('This will appear in lists, .e.g. the Community section.');
 
   return $field_instances;
 }

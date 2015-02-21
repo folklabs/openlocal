@@ -5,3 +5,12 @@
  */
 
 include_once 'openlocal_event.features.inc';
+
+function openlocal_event_form_alter(&$form, &$form_state, $form_id) {
+  // Check when the right form is passed
+  // dpm($form_id);
+  // dpm($form);
+  if ($form_id == 'ol_event_node_form') {
+    $form['field_ol_event_venue_ref']['und']['add_more']['#value'] = "Select a venue";
+  }
+}

@@ -1,0 +1,3 @@
+<?php
+
+include_once('openlocal_forum.features.inc');

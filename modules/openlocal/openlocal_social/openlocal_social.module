@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Social feature.
+ */
+
+include_once 'openlocal_social.features.inc';

@@ -99,6 +99,7 @@ function openlocal_news_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'profile2_private' => FALSE,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,

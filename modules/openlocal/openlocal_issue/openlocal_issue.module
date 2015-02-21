@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Issue feature.
+ */
+
+include_once 'openlocal_issue.features.inc';

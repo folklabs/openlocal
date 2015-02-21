@@ -106,7 +106,7 @@ function openlocal_news_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
@@ -118,9 +118,7 @@ function openlocal_news_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_openlocal_news_article';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_openlocal_news_article'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -39,6 +39,7 @@ function openlocal_business_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -55,9 +56,42 @@ function openlocal_business_field_default_field_bases() {
     'indexes' => array(),
     'locked' => 0,
     'module' => 'email',
-    'settings' => array(),
+    'settings' => array(
+      'profile2_private' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'email',
+  );
+
+  // Exported field_base: 'field_ol_business_facebook'
+  $field_bases['field_ol_business_facebook'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ol_business_facebook',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'profile2_private' => FALSE,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_ol_business_opening_hours'
@@ -77,6 +111,7 @@ function openlocal_business_field_default_field_bases() {
       'hoursformat' => 0,
       'limitend' => '',
       'limitstart' => '',
+      'profile2_private' => FALSE,
       'valhrs' => 0,
     ),
     'translatable' => 0,
@@ -86,7 +121,7 @@ function openlocal_business_field_default_field_bases() {
   // Exported field_base: 'field_ol_business_promotions'
   $field_bases['field_ol_business_promotions'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 2,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ol_business_promotions',
@@ -97,6 +132,7 @@ function openlocal_business_field_default_field_bases() {
     'settings' => array(
       'hide_blank_items' => 1,
       'path' => '',
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'field_collection',
@@ -131,6 +167,7 @@ function openlocal_business_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -160,6 +197,37 @@ function openlocal_business_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_ol_business_twitter'
+  $field_bases['field_ol_business_twitter'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ol_business_twitter',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -186,6 +254,7 @@ function openlocal_business_field_default_field_bases() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'profile2_private' => FALSE,
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
@@ -193,6 +262,76 @@ function openlocal_business_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_ol_promotion_description'
+  $field_bases['field_ol_promotion_description'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ol_promotion_description',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_ol_promotion_reward_scheme'
+  $field_bases['field_ol_promotion_reward_scheme'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ol_promotion_reward_scheme',
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'ol_reward_scheme' => 'ol_reward_scheme',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
   );
 
   return $field_bases;

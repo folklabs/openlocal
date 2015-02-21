@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OpenLocal Admin feature.
+ */
+
+include_once 'openlocal_admin.features.inc';
