@@ -11,7 +11,7 @@ function openlocal_news_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
-  $page->name = 'openlocal_news_articles_author';
+  $page->name = 'ol_news_articles_author';
   $page->task = 'page';
   $page->admin_title = 'Articles By Author';
   $page->admin_description = 'Page presents basic information about the author and the articles they have written.';
@@ -36,9 +36,9 @@ function openlocal_news_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_openlocal_news_articles_author_panel_context';
+  $handler->name = 'page_ol_news_articles_author_panel_context';
   $handler->task = 'page';
-  $handler->subtask = 'openlocal_news_articles_author';
+  $handler->subtask = 'ol_news_articles_author';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
@@ -178,7 +178,7 @@ function openlocal_news_default_page_manager_pages() {
     $pane->pid = 'new-e4243c2f-fe9e-42ad-847a-43efcdfb4dea';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'openlocal_news_article_archive-side_list_compressed';
+    $pane->subtype = 'ol_news_article_archive-side_list_compressed';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -201,7 +201,7 @@ function openlocal_news_default_page_manager_pages() {
     $pane->pid = 'new-7473dc7d-0e75-4b1b-9e6b-5faa0bcf1904';
     $pane->panel = 'sidebar';
     $pane->type = 'views_panes';
-    $pane->subtype = 'openlocal_news_article_by_topic-side_list_compressed';
+    $pane->subtype = 'ol_news_article_by_topic-side_list_compressed';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -226,7 +226,7 @@ function openlocal_news_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['openlocal_news_articles_author'] = $page;
+  $pages['ol_news_articles_author'] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */

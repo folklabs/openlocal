@@ -38,7 +38,7 @@ function openlocal_admin_flag_default_flags() {
       1 => 'forum',
       2 => 'ol_gallery',
       3 => 'ol_group_post',
-      4 => 'openlocal_news_article',
+      4 => 'ol_news_article',
     ),
     'flag_short' => 'Report abuse',
     'flag_long' => 'Flag this content as containing abusive content',

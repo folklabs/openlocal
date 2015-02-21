@@ -34,7 +34,7 @@ function openlocal_highlight_fe_nodequeue_export_fields() {
     'i18n' => 0,
     'subqueues' => 1,
     'types' => array(
-      0 => 'openlocal_news_article',
+      0 => 'ol_news_article',
     ),
     'roles' => array(),
     'count' => 0,

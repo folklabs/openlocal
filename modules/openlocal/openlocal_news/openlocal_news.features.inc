@@ -37,7 +37,7 @@ function openlocal_news_views_api($module = NULL, $api = NULL) {
  */
 function openlocal_news_node_info() {
   $items = array(
-    'openlocal_news_article' => array(
+    'ol_news_article' => array(
       'name' => t('News article'),
       'base' => 'node_content',
       'description' => t('An article of news to be featured and used widely on the site!'),

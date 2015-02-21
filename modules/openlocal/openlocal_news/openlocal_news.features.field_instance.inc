@@ -10,9 +10,9 @@
 function openlocal_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-openlocal_news_article-body'
-  $field_instances['node-openlocal_news_article-body'] = array(
-    'bundle' => 'openlocal_news_article',
+  // Exported field_instance: 'node-ol_news_article-body'
+  $field_instances['node-ol_news_article-body'] = array(
+    'bundle' => 'ol_news_article',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter the content of the news article.',
@@ -68,9 +68,9 @@ function openlocal_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-openlocal_news_article-field_featured_categories'
-  $field_instances['node-openlocal_news_article-field_featured_categories'] = array(
-    'bundle' => 'openlocal_news_article',
+  // Exported field_instance: 'node-ol_news_article-field_featured_categories'
+  $field_instances['node-ol_news_article-field_featured_categories'] = array(
+    'bundle' => 'ol_news_article',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Choose the categories your article fits into. E.g, news about an event would go into the "Events" category.',
@@ -111,9 +111,9 @@ function openlocal_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-openlocal_news_article-field_featured_image'
-  $field_instances['node-openlocal_news_article-field_featured_image'] = array(
-    'bundle' => 'openlocal_news_article',
+  // Exported field_instance: 'node-ol_news_article-field_featured_image'
+  $field_instances['node-ol_news_article-field_featured_image'] = array(
+    'bundle' => 'ol_news_article',
     'deleted' => 0,
     'description' => 'Please add an image to this post to promote it on our homepage and news listings. Don\'t forget to add some "alt tag" text to help those understand what your picture shows as this text is what can be read out automatically by screen readers for those with visual impairment.',
     'display' => array(
@@ -190,9 +190,9 @@ function openlocal_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-openlocal_news_article-field_ol_radioactivity'
-  $field_instances['node-openlocal_news_article-field_ol_radioactivity'] = array(
-    'bundle' => 'openlocal_news_article',
+  // Exported field_instance: 'node-ol_news_article-field_ol_radioactivity'
+  $field_instances['node-ol_news_article-field_ol_radioactivity'] = array(
+    'bundle' => 'ol_news_article',
     'default_value' => array(
       0 => array(
         'radioactivity_energy' => 0,
@@ -242,9 +242,9 @@ function openlocal_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-openlocal_news_article-field_ol_tags'
-  $field_instances['node-openlocal_news_article-field_ol_tags'] = array(
-    'bundle' => 'openlocal_news_article',
+  // Exported field_instance: 'node-ol_news_article-field_ol_tags'
+  $field_instances['node-ol_news_article-field_ol_tags'] = array(
+    'bundle' => 'ol_news_article',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Add any tags that define this content in more detail, e.g. "lido". Start typing, if the tag exists, select it. If it does not exist press return to create it. Tags are used to offer more specific searching and filtering for services.',

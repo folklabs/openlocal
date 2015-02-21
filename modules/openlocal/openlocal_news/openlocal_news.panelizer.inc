@@ -13,10 +13,10 @@ function openlocal_news_panelizer_defaults() {
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:openlocal_news_article:default';
+  $panelizer->name = 'node:ol_news_article:default';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'openlocal_news_article';
+  $panelizer->panelizer_key = 'ol_news_article';
   $panelizer->no_blocks = TRUE;
   $panelizer->css_id = 'openlocal-news';
   $panelizer->css = '';
@@ -581,15 +581,15 @@ function openlocal_news_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
-  $export['node:openlocal_news_article:default'] = $panelizer;
+  $export['node:ol_news_article:default'] = $panelizer;
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:openlocal_news_article:default:default';
+  $panelizer->name = 'node:ol_news_article:default:default';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'openlocal_news_article';
+  $panelizer->panelizer_key = 'ol_news_article';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -725,15 +725,15 @@ function openlocal_news_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-60214e67-c836-4bb2-94cb-f4a76a94afa3';
   $panelizer->display = $display;
-  $export['node:openlocal_news_article:default:default'] = $panelizer;
+  $export['node:ol_news_article:default:default'] = $panelizer;
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:openlocal_news_article:default:featured';
+  $panelizer->name = 'node:ol_news_article:default:featured';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'openlocal_news_article';
+  $panelizer->panelizer_key = 'ol_news_article';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -835,15 +835,15 @@ function openlocal_news_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
-  $export['node:openlocal_news_article:default:featured'] = $panelizer;
+  $export['node:ol_news_article:default:featured'] = $panelizer;
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:openlocal_news_article:default:teaser';
+  $panelizer->name = 'node:ol_news_article:default:teaser';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'openlocal_news_article';
+  $panelizer->panelizer_key = 'ol_news_article';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -975,7 +975,7 @@ function openlocal_news_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-ed0827e8-bc7e-4a62-9afa-6a4ce55d3002';
   $panelizer->display = $display;
-  $export['node:openlocal_news_article:default:teaser'] = $panelizer;
+  $export['node:ol_news_article:default:teaser'] = $panelizer;
 
   return $export;
 }

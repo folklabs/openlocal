@@ -26,7 +26,7 @@ dependencies[] = module_filter
 dependencies[] = date_popup_authored
 
 ; Panopoly Recommended - Other
-dependencies[] = devel
+;dependencies[] = devel
 dependencies[] = uuid
 
 ; Development
@@ -65,7 +65,6 @@ dependencies[] = openlocal_images
 dependencies[] = openlocal_issue
 dependencies[] = openlocal_layout
 dependencies[] = openlocal_news
-;dependencies[] = openlocal_resource
 dependencies[] = openlocal_search
 dependencies[] = openlocal_seo
 dependencies[] = openlocal_social
