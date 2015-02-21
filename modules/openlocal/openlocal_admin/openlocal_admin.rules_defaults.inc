@@ -29,6 +29,7 @@ function openlocal_admin_default_rules_configuration() {
   $items['rules_ol_email_admin_for_user_registration'] = entity_import('rules_config', '{ "rules_ol_email_admin_for_user_registration" : {
       "LABEL" : "Email admin for user registration",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "OWNER" : "rules",
       "TAGS" : [ "openlocal" ],
       "REQUIRES" : [ "rules" ],

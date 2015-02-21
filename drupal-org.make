@@ -70,7 +70,7 @@ projects[autocomplete_deluxe][subdir] = contrib
 projects[commentaccess][version] = 1.1
 projects[commentaccess][subdir] = contrib
 
-projects[comment_notify][version] = 3.2
+projects[comment_notify][version] = 1.2
 projects[comment_notify][subdir] = contrib
 
 projects[context][version] = 3.1
@@ -130,7 +130,7 @@ projects[honeypot][subdir] = contrib
 projects[imagefield_focus][version] = 1.0
 projects[imagefield_focus][subdir] = contrib
 
-projects[leaflet][version] = 1.1
+projects[leaflet][version] = 1.x-dev
 projects[leaflet][subdir] = contrib
 
 projects[leaflet_more_maps][version] = 1.7
@@ -178,7 +178,7 @@ projects[metatag][subdir] = contrib
 projects[mimemail][version] = 1.0-beta3
 projects[mimemail][subdir] = contrib
 
-projects[mailsystem][version] = 1.0
+projects[mailsystem][version] = 2.34
 projects[mailsystem][subdir] = contrib
 
 projects[nice_menus][version] = 2.5
@@ -275,7 +275,7 @@ libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archi
 libraries[colorbox][destination] = libraries
 
 libraries[leaflet][download][type] = get
-libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.6.4.zip
+libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.3.zip
 libraries[leaflet][destination] = libraries
 
 

@@ -174,15 +174,30 @@ function openlocal_event_default_page_manager_pages() {
     $display->content['new-77d0c5d4-70be-4b99-84a5-79d4c576db0f'] = $pane;
     $display->panels['column1'][1] = 'new-77d0c5d4-70be-4b99-84a5-79d4c576db0f';
     $pane = new stdClass();
-    $pane->pid = 'new-bdf2f473-f893-4c6d-b9c8-b6d59af531ce';
+    $pane->pid = 'new-a4f0a695-344a-4e9d-bcbb-81a4eddc393e';
     $pane->panel = 'column2';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
+      'admin_title' => 'OL Event actions',
+      'title' => '',
+      'body' => '<div class="ol-action-box">
+
+<div class="ol-action-button">
+<a href="/node/add/ol-event"><span class="ol-action-span"><i class="fa fa-plus"></i> add event</span></a>
+</div>
+<div class="ol-action-button">
+<a href="/node/add/ol-place"><span class="ol-action-span"><i class="fa fa-plus"></i> add place</span></a>
+</div>
+
+<div>
+<a href="/contextual_help/how-create-event" class="ol-action-help"><i class="fa fa-question-circle"></i> About creating events</a>
+</div>
+</div>',
+      'format' => 'panopoly_html_text',
+      'substitute' => 1,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -192,9 +207,9 @@ function openlocal_event_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'bdf2f473-f893-4c6d-b9c8-b6d59af531ce';
-    $display->content['new-bdf2f473-f893-4c6d-b9c8-b6d59af531ce'] = $pane;
-    $display->panels['column2'][0] = 'new-bdf2f473-f893-4c6d-b9c8-b6d59af531ce';
+    $pane->uuid = 'a4f0a695-344a-4e9d-bcbb-81a4eddc393e';
+    $display->content['new-a4f0a695-344a-4e9d-bcbb-81a4eddc393e'] = $pane;
+    $display->panels['column2'][0] = 'new-a4f0a695-344a-4e9d-bcbb-81a4eddc393e';
     $pane = new stdClass();
     $pane->pid = 'new-b89f948f-5713-48dc-ae5e-cface43ba061';
     $pane->panel = 'contentmain';

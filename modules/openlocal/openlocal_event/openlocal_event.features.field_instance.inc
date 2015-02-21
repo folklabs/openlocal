@@ -412,9 +412,9 @@ function openlocal_event_field_default_field_instances() {
   // Exported field_instance: 'node-ol_event-field_ol_event_date'
   $field_instances['node-ol_event-field_ol_event_date'] = array(
     'bundle' => 'ol_event',
+    'default_value' => array(),
     'deleted' => 0,
-    'description' => '<p><strong>How to set the date and time for one-off or repeating events</strong></p>
-<p>The "Start date" of your event is the day and time your event begins. <br>Please also click "Show End Date" and set the day and time your <strong>first</strong> event ends (i.e. perhaps one hour after it started).<br>To create a repeating event like a weekly meeting, please click the "Repeat" check box at the bottom of this panel.<br>Next, choose when your event repeats from the Repeats dropdown menu (Daily, Weekly, Monthly etc) and choose which day, week or month it repeats on.<br>Don\'t forget to enter the date your series finishes (otherwise it will repeat until the end of time!)<br>Please check your entry before saving it then review the "What\'s On" calendars to check where your event is listed and ensure it only repeats on the correct dates.</p>',
+    'description' => 'Tips - the "start date" is the day and time your event commences. The "To date" is when your first event or meeting ends, probably an hour or two after the start. N.B. If you want to create a repeating event (i.e. every week) then please use the "repeat" option under the advanced section. If it is an event on for every week on the same day then choose repeat "every" "week". Please also then enter the date that the series finishes otherwise it will be repeated until the end of the world as we know it... Please check your entry once you have done it. View the What\'s On calendar and see where your event is listed, then check that it is only repeated (if applicable) on all the correct days. ',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -466,7 +466,7 @@ function openlocal_event_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_popup',
+      'type' => 'date_text',
       'weight' => 4,
     ),
   );
@@ -642,8 +642,6 @@ function openlocal_event_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<p><strong>How to set the date and time for one-off or repeating events</strong></p>
-<p>The "Start date" of your event is the day and time your event begins. <br>Please also click "Show End Date" and set the day and time your <strong>first</strong> event ends (i.e. perhaps one hour after it started).<br>To create a repeating event like a weekly meeting, please click the "Repeat" check box at the bottom of this panel.<br>Next, choose when your event repeats from the Repeats dropdown menu (Daily, Weekly, Monthly etc) and choose which day, week or month it repeats on.<br>Don\'t forget to enter the date your series finishes (otherwise it will repeat until the end of time!)<br>Please check your entry before saving it then review the "What\'s On" calendars to check where your event is listed and ensure it only repeats on the correct dates.</p>');
   t('<p>Please add an image to this event. It will be shown on the event list and details pages.</p>
 <p>Don\'t forget to add some "alt tag" text to help those understand what your picture shows as this text is what can be read out automatically by screen readers for those with visual impairment.</p>');
   t('Available facilities');
@@ -662,6 +660,7 @@ function openlocal_event_field_default_field_instances() {
   t('Image');
   t('The contact number will be for people to call in relation to the event, it will be visible on the page with the event information. If there is no contact number for people to call regarding this event then please leave blank.');
   t('This will appear on list pages, e.g. Services.');
+  t('Tips - the "start date" is the day and time your event commences. The "To date" is when your first event or meeting ends, probably an hour or two after the start. N.B. If you want to create a repeating event (i.e. every week) then please use the "repeat" option under the advanced section. If it is an event on for every week on the same day then choose repeat "every" "week". Please also then enter the date that the series finishes otherwise it will be repeated until the end of the world as we know it... Please check your entry once you have done it. View the What\'s On calendar and see where your event is listed, then check that it is only repeated (if applicable) on all the correct days. ');
   t('Venue');
 
   return $field_instances;

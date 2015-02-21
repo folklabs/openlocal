@@ -11,6 +11,9 @@ function openlocal_admin_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
@@ -35,7 +38,7 @@ function openlocal_admin_flag_default_flags() {
       1 => 'forum',
       2 => 'ol_gallery',
       3 => 'ol_group_post',
-      4 => 'ol_news_article',
+      4 => 'openlocal_news_article',
     ),
     'flag_short' => 'Report abuse',
     'flag_long' => 'Flag this content as containing abusive content',

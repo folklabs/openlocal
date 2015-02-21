@@ -9,7 +9,6 @@ dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = entity
 dependencies[] = entityreference
-dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = geocoder
 dependencies[] = geofield

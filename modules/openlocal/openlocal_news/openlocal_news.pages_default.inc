@@ -361,15 +361,27 @@ function openlocal_news_default_page_manager_pages() {
     $display->content['new-3db711be-100e-4c3b-80df-ec800b9c3ebc'] = $pane;
     $display->panels['column1'][0] = 'new-3db711be-100e-4c3b-80df-ec800b9c3ebc';
     $pane = new stdClass();
-    $pane->pid = 'new-d399f3bc-df2f-4a2d-a3e2-b684de2b1b3d';
+    $pane->pid = 'new-1b769ed4-b34c-4d2f-86a7-d9b7878bcdb1';
     $pane->panel = 'column2';
-    $pane->type = 'block';
-    $pane->subtype = 'block-1';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
+      'admin_title' => 'OL News actions',
+      'title' => '',
+      'body' => '<div class="ol-action-box">
+
+<div class="ol-action-button">
+<a href="/node/add/openlocal-news-article"><span class="ol-action-span"><i class="fa fa-plus"></i> add news article</span></a>
+</div>
+
+<div>
+<a href="/contextual_help/how-create-news-article" class="ol-action-help"><i class="fa fa-question-circle"></i> About creating articles</a>
+</div>
+</div>',
+      'format' => 'panopoly_html_text',
+      'substitute' => 0,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -379,9 +391,9 @@ function openlocal_news_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'd399f3bc-df2f-4a2d-a3e2-b684de2b1b3d';
-    $display->content['new-d399f3bc-df2f-4a2d-a3e2-b684de2b1b3d'] = $pane;
-    $display->panels['column2'][0] = 'new-d399f3bc-df2f-4a2d-a3e2-b684de2b1b3d';
+    $pane->uuid = '1b769ed4-b34c-4d2f-86a7-d9b7878bcdb1';
+    $display->content['new-1b769ed4-b34c-4d2f-86a7-d9b7878bcdb1'] = $pane;
+    $display->panels['column2'][0] = 'new-1b769ed4-b34c-4d2f-86a7-d9b7878bcdb1';
     $pane = new stdClass();
     $pane->pid = 'new-aa85516f-1631-4e02-8df9-93b6b19d8bf1';
     $pane->panel = 'column2';

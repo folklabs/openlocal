@@ -31,7 +31,6 @@ features[ctools][] = page_manager:pages_default:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
-features[fe_block_boxes][] = ol_gallery_actions
 features[features_api][] = api:2
 features[field_base][] = field_ol_gallery_images
 features[field_instance][] = comment-comment_node_ol_gallery-comment_body

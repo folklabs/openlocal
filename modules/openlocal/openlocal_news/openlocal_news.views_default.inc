@@ -50,7 +50,7 @@ function openlocal_news_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'There is currently no news to display.
 
-Add some news content or enable the OpenLocal News Demo module. ';
+Please add some news content.';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
