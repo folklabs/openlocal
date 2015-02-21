@@ -84,28 +84,6 @@ function openlocal_admin_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-89b16763-cde0-418d-ac4c-f2a1b9f649a3';
-    $pane->panel = 'column1';
-    $pane->type = 'block';
-    $pane->subtype = 'block-5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Quick links',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '89b16763-cde0-418d-ac4c-f2a1b9f649a3';
-    $display->content['new-89b16763-cde0-418d-ac4c-f2a1b9f649a3'] = $pane;
-    $display->panels['column1'][0] = 'new-89b16763-cde0-418d-ac4c-f2a1b9f649a3';
-    $pane = new stdClass();
     $pane->pid = 'new-596f1b06-a76d-4e30-8b8e-5ccbbf965e3c';
     $pane->panel = 'column1';
     $pane->type = 'views_panes';
@@ -135,11 +113,11 @@ function openlocal_admin_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = '596f1b06-a76d-4e30-8b8e-5ccbbf965e3c';
     $display->content['new-596f1b06-a76d-4e30-8b8e-5ccbbf965e3c'] = $pane;
-    $display->panels['column1'][1] = 'new-596f1b06-a76d-4e30-8b8e-5ccbbf965e3c';
+    $display->panels['column1'][0] = 'new-596f1b06-a76d-4e30-8b8e-5ccbbf965e3c';
     $pane = new stdClass();
     $pane->pid = 'new-9af195c2-304f-4e19-a796-f7ff8c31343a';
     $pane->panel = 'column1';
@@ -170,11 +148,11 @@ function openlocal_admin_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '9af195c2-304f-4e19-a796-f7ff8c31343a';
     $display->content['new-9af195c2-304f-4e19-a796-f7ff8c31343a'] = $pane;
-    $display->panels['column1'][2] = 'new-9af195c2-304f-4e19-a796-f7ff8c31343a';
+    $display->panels['column1'][1] = 'new-9af195c2-304f-4e19-a796-f7ff8c31343a';
     $pane = new stdClass();
     $pane->pid = 'new-fee069eb-e64c-4ad1-a43c-d3d22bfeab34';
     $pane->panel = 'column2';

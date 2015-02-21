@@ -8,6 +8,7 @@ dependencies[] = features
 dependencies[] = globalredirect
 dependencies[] = metatag
 dependencies[] = pathauto
+dependencies[] = site_map
 dependencies[] = strongarm
 dependencies[] = xmlsitemap
 dependencies[] = xmlsitemap_menu

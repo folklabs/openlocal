@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = file
 dependencies[] = mailsystem
 dependencies[] = mass_contact
+dependencies[] = mailchimp
 dependencies[] = metatag
 dependencies[] = mimemail
 dependencies[] = node

@@ -18,9 +18,7 @@ dependencies[] = panopoly_search
 dependencies[] = panopoly_wysiwyg
 
 ; Panopoly Recommended - Admin
-;dependencies[] = navbar
 dependencies[] = backports
-;dependencies[] = simplified_menu_admin
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = save_draft
@@ -43,19 +41,15 @@ dependencies[] = honeypot
 dependencies[] = oauth_common
 dependencies[] = oauth2_common
 dependencies[] = connector
-dependencies[] = oauthconnector
+;dependencies[] = oauthconnector
 dependencies[] = http_client
 dependencies[] = http_client_oauth
 dependencies[] = privatemsg
 dependencies[] = site_map
 dependencies[] = workbench
 dependencies[] = workbench_moderation
-; For FAQ
-; TODO: replace with makefile from FAQ feature
-dependencies[] = draggableviews
-;dependencies[] = entityreference_prepopulate
 
-; OpenLocal apps
+; OpenLocal
 dependencies[] = openlocal_admin
 dependencies[] = openlocal_alert
 dependencies[] = openlocal_business

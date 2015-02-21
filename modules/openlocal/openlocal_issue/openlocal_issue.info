@@ -17,7 +17,6 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = panelizer:panelizer:1

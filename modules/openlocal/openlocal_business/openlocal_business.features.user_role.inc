@@ -13,7 +13,7 @@ function openlocal_business_user_default_roles() {
   // Exported role: trader.
   $roles['trader'] = array(
     'name' => 'trader',
-    'weight' => 102,
+    'weight' => 76,
   );
 
   return $roles;
