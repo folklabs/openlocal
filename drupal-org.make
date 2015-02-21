@@ -91,9 +91,6 @@ projects[calendar][subdir] = contrib
 projects[colorbox][version] = 2.8
 projects[colorbox][subdir] = contrib
 
-projects[draggableviews][version] = 2.0
-projects[draggableviews][subdir] = contrib
-
 projects[email][version] = 1.3
 projects[email][subdir] = contrib
 
@@ -112,9 +109,6 @@ projects[features_extra][subdir] = contrib
 projects[geofield][version] = 2.3
 projects[geofield][subdir] = contrib
 
-projects[google_analytics_reports][version] = 1.3
-projects[google_analytics_reports][subdir] = contrib
-
 projects[geocoder][version] = 1.2
 projects[geocoder][subdir] = contrib
 
@@ -130,7 +124,7 @@ projects[honeypot][subdir] = contrib
 projects[imagefield_focus][version] = 1.0
 projects[imagefield_focus][subdir] = contrib
 
-projects[leaflet][version] = 1.x-dev
+projects[leaflet][version] = 1.1
 projects[leaflet][subdir] = contrib
 
 projects[leaflet_more_maps][version] = 1.7
