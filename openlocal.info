@@ -40,7 +40,6 @@ dependencies[] = views_ui
 dependencies[] = book
 dependencies[] = contact
 dependencies[] = honeypot
-dependencies[] = mass_contact
 dependencies[] = oauth_common
 dependencies[] = oauth2_common
 dependencies[] = connector
@@ -54,28 +53,29 @@ dependencies[] = workbench_moderation
 ; For FAQ
 ; TODO: replace with makefile from FAQ feature
 dependencies[] = draggableviews
-dependencies[] = entityreference_prepopulate
-
-; Panopoly apps
-dependencies[] = panopoly_faq_page
-dependencies[] = panopoly_faq_question
-
-; Debut apps
-;dependencies[] = debut_blog
-dependencies[] = debut_forum
-dependencies[] = debut_seo
-dependencies[] = debut_social
+;dependencies[] = entityreference_prepopulate
 
 ; OpenLocal apps
+dependencies[] = openlocal_admin
 dependencies[] = openlocal_alert
 dependencies[] = openlocal_business
 dependencies[] = openlocal_contact
 dependencies[] = openlocal_core
 dependencies[] = openlocal_event
+dependencies[] = openlocal_forum
 dependencies[] = openlocal_gallery
 dependencies[] = openlocal_group
+dependencies[] = openlocal_highlight
 dependencies[] = openlocal_home
+dependencies[] = openlocal_images
+dependencies[] = openlocal_issue
+dependencies[] = openlocal_layout
 dependencies[] = openlocal_news
+;dependencies[] = openlocal_resource
+dependencies[] = openlocal_search
+dependencies[] = openlocal_seo
+dependencies[] = openlocal_social
+dependencies[] = openlocal_user
 
 ; Optional features
 ;dependencies[] = openlocal_idea
