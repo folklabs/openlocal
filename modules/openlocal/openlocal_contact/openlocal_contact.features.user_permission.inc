@@ -81,15 +81,6 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'privatemsg',
   );
 
-  // Exported permission: 'create mass_contact content'.
-  $permissions['create mass_contact content'] = array(
-    'name' => 'create mass_contact content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create ol_newsletter content'.
   $permissions['create ol_newsletter content'] = array(
     'name' => 'create ol_newsletter content',
@@ -99,29 +90,11 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any mass_contact content'.
-  $permissions['delete any mass_contact content'] = array(
-    'name' => 'delete any mass_contact content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any ol_newsletter content'.
   $permissions['delete any ol_newsletter content'] = array(
     'name' => 'delete any ol_newsletter content',
     'roles' => array(
       'editor' => 'editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own mass_contact content'.
-  $permissions['delete own mass_contact content'] = array(
-    'name' => 'delete own mass_contact content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -151,29 +124,11 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'edit any mass_contact content'.
-  $permissions['edit any mass_contact content'] = array(
-    'name' => 'edit any mass_contact content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any ol_newsletter content'.
   $permissions['edit any ol_newsletter content'] = array(
     'name' => 'edit any ol_newsletter content',
     'roles' => array(
       'editor' => 'editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own mass_contact content'.
-  $permissions['edit own mass_contact content'] = array(
-    'name' => 'edit own mass_contact content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -192,105 +147,6 @@ function openlocal_contact_user_default_permissions() {
     'name' => 'edit terms in newsletter',
     'roles' => array(),
     'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'mass contact administer'.
-  $permissions['mass contact administer'] = array(
-    'name' => 'mass contact administer',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact archive messages'.
-  $permissions['mass contact archive messages'] = array(
-    'name' => 'mass contact archive messages',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact change default sender information'.
-  $permissions['mass contact change default sender information'] = array(
-    'name' => 'mass contact change default sender information',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact include attachments'.
-  $permissions['mass contact include attachments'] = array(
-    'name' => 'mass contact include attachments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact override archiving'.
-  $permissions['mass contact override archiving'] = array(
-    'name' => 'mass contact override archiving',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact override bcc'.
-  $permissions['mass contact override bcc'] = array(
-    'name' => 'mass contact override bcc',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact override text format'.
-  $permissions['mass contact override text format'] = array(
-    'name' => 'mass contact override text format',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact send messages'.
-  $permissions['mass contact send messages'] = array(
-    'name' => 'mass contact send messages',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact send to users in the Content authors category'.
-  $permissions['mass contact send to users in the Content authors category'] = array(
-    'name' => 'mass contact send to users in the Content authors category',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact send to users in the Group managers category'.
-  $permissions['mass contact send to users in the Group managers category'] = array(
-    'name' => 'mass contact send to users in the Group managers category',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
-  );
-
-  // Exported permission: 'mass contact send to users in the Traders category'.
-  $permissions['mass contact send to users in the Traders category'] = array(
-    'name' => 'mass contact send to users in the Traders category',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mass_contact',
   );
 
   // Exported permission: 'read all private messages'.

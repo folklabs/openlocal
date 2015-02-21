@@ -18,14 +18,6 @@ function openlocal_contact_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function openlocal_contact_node_info() {
   $items = array(
-    'mass_contact' => array(
-      'name' => t('Mass Contact message'),
-      'base' => 'node_content',
-      'description' => t('Archived copies of mass email messages sent from this site.'),
-      'has_title' => '1',
-      'title_label' => t('Subject'),
-      'help' => '',
-    ),
     'ol_newsletter' => array(
       'name' => t('Newsletter'),
       'base' => 'node_content',
