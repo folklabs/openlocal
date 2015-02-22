@@ -55,6 +55,9 @@ projects[masquerade][subdir] = contrib
 
 ; OpenLocal dependencies
 
+projects[admin_menu][version] = 3.0-rc5
+projects[admin_menu][subdir] = contrib
+
 projects[advagg][version] = 2.7
 projects[advagg][subdir] = contrib
 
@@ -75,6 +78,9 @@ projects[comment_notify][subdir] = contrib
 
 projects[context][version] = 3.6
 projects[context][subdir] = contrib
+
+projects[diff][version] = 3.2
+projects[diff][subdir] = contrib
 
 projects[eck][version] = 2.0-rc7
 projects[eck][subdir] = contrib
