@@ -25,7 +25,6 @@ features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[field_base][] = field_ol_personal_address
 features[field_base][] = field_ol_personal_type_of_user
 features[field_instance][] = profile2-ol_personal_info-field_ol_personal_address
 features[field_instance][] = profile2-ol_personal_info-field_ol_personal_type_of_user
