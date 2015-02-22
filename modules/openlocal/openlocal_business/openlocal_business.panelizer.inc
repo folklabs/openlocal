@@ -339,7 +339,7 @@ function openlocal_business_panelizer_defaults() {
     $pane->pid = 'new-b4e467e0-f2dc-4b42-9d9c-2d326d1fd9f5';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_business_telephone';
+    $pane->subtype = 'node:field_ol_telephone';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -416,7 +416,7 @@ function openlocal_business_panelizer_defaults() {
     $pane->pid = 'new-2736c315-4eba-4685-b560-6a9b2dbfa5b5';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_business_email';
+    $pane->subtype = 'node:field_ol_email';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

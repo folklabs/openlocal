@@ -271,8 +271,8 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_business-field_ol_business_email'
-  $field_instances['node-ol_business-field_ol_business_email'] = array(
+  // Exported field_instance: 'node-ol_business-field_ol_email'
+  $field_instances['node-ol_business-field_ol_email'] = array(
     'bundle' => 'ol_business',
     'default_value' => NULL,
     'deleted' => 0,
@@ -299,7 +299,7 @@ function openlocal_business_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_business_email',
+    'field_name' => 'field_ol_email',
     'label' => 'Email',
     'required' => 0,
     'settings' => array(
@@ -544,8 +544,8 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_business-field_ol_business_telephone'
-  $field_instances['node-ol_business-field_ol_business_telephone'] = array(
+  // Exported field_instance: 'node-ol_business-field_ol_telephone'
+  $field_instances['node-ol_business-field_ol_telephone'] = array(
     'bundle' => 'ol_business',
     'default_value' => NULL,
     'deleted' => 0,
@@ -573,7 +573,7 @@ function openlocal_business_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'i',
-    'field_name' => 'field_ol_business_telephone',
+    'field_name' => 'field_ol_telephone',
     'label' => 'Telephone',
     'required' => 0,
     'settings' => array(

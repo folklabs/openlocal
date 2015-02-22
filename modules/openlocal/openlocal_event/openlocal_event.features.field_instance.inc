@@ -311,8 +311,8 @@ function openlocal_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_event-field_ol_event_contact'
-  $field_instances['node-ol_event-field_ol_event_contact'] = array(
+  // Exported field_instance: 'node-ol_event-field_ol_email'
+  $field_instances['node-ol_event-field_ol_email'] = array(
     'bundle' => 'ol_event',
     'default_value' => NULL,
     'deleted' => 0,
@@ -339,8 +339,8 @@ function openlocal_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_event_contact',
-    'label' => 'Contact',
+    'field_name' => 'field_ol_email',
+    'label' => 'Contact email',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -356,8 +356,8 @@ function openlocal_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_event-field_ol_event_contact_telephone'
-  $field_instances['node-ol_event-field_ol_event_contact_telephone'] = array(
+  // Exported field_instance: 'node-ol_event-field_ol_telephone'
+  $field_instances['node-ol_event-field_ol_telephone'] = array(
     'bundle' => 'ol_event',
     'default_value' => NULL,
     'deleted' => 0,
@@ -384,7 +384,7 @@ function openlocal_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_event_contact_telephone',
+    'field_name' => 'field_ol_telephone',
     'label' => 'Contact telephone',
     'required' => 0,
     'settings' => array(

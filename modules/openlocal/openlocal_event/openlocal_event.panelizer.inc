@@ -315,7 +315,7 @@ function openlocal_event_panelizer_defaults() {
     $pane->pid = 'new-40db2545-ce7a-4615-92dd-a9abe292ffde';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_event_contact';
+    $pane->subtype = 'node:field_ol_email';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -357,7 +357,7 @@ function openlocal_event_panelizer_defaults() {
     $pane->pid = 'new-4dbfdf33-f547-44e0-8f9d-803f8935692b';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_event_contact_telephone';
+    $pane->subtype = 'node:field_ol_telephone';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
