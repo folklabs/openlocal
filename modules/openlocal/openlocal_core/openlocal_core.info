@@ -73,6 +73,7 @@ features[field_base][] = field_ol_opening_hours
 features[field_base][] = field_ol_place_category
 features[field_base][] = field_ol_radioactivity
 features[field_base][] = field_ol_tags
+features[field_base][] = field_ol_twitter
 features[field_instance][] = node-ol_place-field_featured_image
 features[field_instance][] = node-ol_place-field_ol_address
 features[field_instance][] = node-ol_place-field_ol_description

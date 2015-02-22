@@ -485,7 +485,7 @@ function openlocal_business_panelizer_defaults() {
     $pane->pid = 'new-2cd59e12-abc7-4249-a295-eb79fe373ce1';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_business_twitter';
+    $pane->subtype = 'node:field_ol_twitter';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

@@ -56,7 +56,7 @@ function openlocal_business_field_group_info() {
     'children' => array(
       0 => 'field_ol_business_email',
       1 => 'field_ol_link',
-      2 => 'field_ol_business_twitter',
+      2 => 'field_ol_twitter',
       3 => 'field_ol_facebook_page',
     ),
     'format_type' => 'fieldset',

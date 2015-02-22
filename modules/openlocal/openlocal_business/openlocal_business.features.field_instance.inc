@@ -596,8 +596,8 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_business-field_ol_business_twitter'
-  $field_instances['node-ol_business-field_ol_business_twitter'] = array(
+  // Exported field_instance: 'node-ol_business-field_ol_twitter'
+  $field_instances['node-ol_business-field_ol_twitter'] = array(
     'bundle' => 'ol_business',
     'default_value' => NULL,
     'deleted' => 0,
@@ -624,7 +624,7 @@ function openlocal_business_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_business_twitter',
+    'field_name' => 'field_ol_twitter',
     'label' => 'Twitter',
     'required' => 0,
     'settings' => array(
