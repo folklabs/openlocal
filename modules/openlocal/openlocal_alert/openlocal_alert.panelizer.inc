@@ -139,7 +139,7 @@ function openlocal_alert_panelizer_defaults() {
     $pane->pid = 'new-74878f9d-37f8-48b4-b046-f8223e901dee';
     $pane->panel = 'half';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_alert_link';
+    $pane->subtype = 'node:field_ol_link';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

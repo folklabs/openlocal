@@ -316,8 +316,8 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_business-field_ol_business_facebook'
-  $field_instances['node-ol_business-field_ol_business_facebook'] = array(
+  // Exported field_instance: 'node-ol_business-field_ol_facebook_page'
+  $field_instances['node-ol_business-field_ol_facebook_page'] = array(
     'bundle' => 'ol_business',
     'default_value' => NULL,
     'deleted' => 0,
@@ -344,7 +344,7 @@ function openlocal_business_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_business_facebook',
+    'field_name' => 'field_ol_facebook_page',
     'label' => 'Facebook',
     'required' => 0,
     'settings' => array(
@@ -648,8 +648,8 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_business-field_ol_business_website'
-  $field_instances['node-ol_business-field_ol_business_website'] = array(
+  // Exported field_instance: 'node-ol_business-field_ol_link'
+  $field_instances['node-ol_business-field_ol_link'] = array(
     'bundle' => 'ol_business',
     'default_value' => NULL,
     'deleted' => 0,
@@ -676,7 +676,7 @@ function openlocal_business_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_business_website',
+    'field_name' => 'field_ol_link',
     'label' => 'Website',
     'required' => 0,
     'settings' => array(

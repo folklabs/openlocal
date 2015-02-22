@@ -159,8 +159,8 @@ function openlocal_alert_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_alert-field_ol_alert_link'
-  $field_instances['node-ol_alert-field_ol_alert_link'] = array(
+  // Exported field_instance: 'node-ol_alert-field_ol_link'
+  $field_instances['node-ol_alert-field_ol_link'] = array(
     'bundle' => 'ol_alert',
     'default_value' => NULL,
     'deleted' => 0,
@@ -187,7 +187,7 @@ function openlocal_alert_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_alert_link',
+    'field_name' => 'field_ol_link',
     'label' => 'Link',
     'required' => 0,
     'settings' => array(

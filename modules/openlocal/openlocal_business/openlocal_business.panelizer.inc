@@ -458,7 +458,7 @@ function openlocal_business_panelizer_defaults() {
     $pane->pid = 'new-61619e12-85ee-48bb-9a77-246670ee494f';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_business_website';
+    $pane->subtype = 'node:field_ol_link';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -527,7 +527,7 @@ function openlocal_business_panelizer_defaults() {
     $pane->pid = 'new-6cf20e51-be2a-4e4e-b91b-93f3a6b0e3ef';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_business_facebook';
+    $pane->subtype = 'node:field_ol_facebook_page';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
