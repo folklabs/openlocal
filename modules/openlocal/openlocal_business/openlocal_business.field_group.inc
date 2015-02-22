@@ -143,7 +143,7 @@ function openlocal_business_field_group_info() {
     'label' => 'Opening hours',
     'weight' => '6',
     'children' => array(
-      0 => 'field_ol_business_opening_hours',
+      0 => 'field_ol_opening_hours',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

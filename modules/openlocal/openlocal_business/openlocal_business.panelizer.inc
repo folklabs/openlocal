@@ -598,7 +598,7 @@ function openlocal_business_panelizer_defaults() {
     $pane->pid = 'new-0958fde4-02eb-43e2-9293-0d3a2bd2f705';
     $pane->panel = 'quarter1';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_business_opening_hours';
+    $pane->subtype = 'node:field_ol_opening_hours';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

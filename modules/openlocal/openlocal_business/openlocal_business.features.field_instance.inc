@@ -384,8 +384,8 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_business-field_ol_business_opening_hours'
-  $field_instances['node-ol_business-field_ol_business_opening_hours'] = array(
+  // Exported field_instance: 'node-ol_business-field_ol_opening_hours'
+  $field_instances['node-ol_business-field_ol_opening_hours'] = array(
     'bundle' => 'ol_business',
     'default_value' => NULL,
     'deleted' => 0,
@@ -431,7 +431,7 @@ function openlocal_business_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_business_opening_hours',
+    'field_name' => 'field_ol_opening_hours',
     'label' => 'Opening hours',
     'required' => 0,
     'settings' => array(
