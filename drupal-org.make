@@ -275,6 +275,10 @@ libraries[leaflet][download][type] = get
 libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.3.zip
 libraries[leaflet][destination] = libraries
 
+libraries[mailchimp][download][type] = get
+libraries[mailchimp][download][url] = http://apidocs.mailchimp.com/api/downloads/mailchimp-api-class.zip
+libraries[mailchimp][destination] = libraries
+
 
 
 
