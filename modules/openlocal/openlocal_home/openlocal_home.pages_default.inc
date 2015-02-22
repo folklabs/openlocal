@@ -71,49 +71,6 @@ function openlocal_home_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-5cbd9e24-074b-47af-8ce4-a6df872d1e81';
-    $pane->panel = 'column1';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'panopoly_widgets_general_content-piece_of_content';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'fields_override' => array(
-        'field_featured_image' => 1,
-        'title' => 1,
-        'created' => 0,
-        'name' => 0,
-      ),
-      'exposed' => array(
-        'title' => 'Herne Hill Card',
-        'type' => 'All',
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'view_mode' => 'featured',
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
-      'view_settings' => 'nodes',
-      'header_type' => 'none',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '5cbd9e24-074b-47af-8ce4-a6df872d1e81';
-    $display->content['new-5cbd9e24-074b-47af-8ce4-a6df872d1e81'] = $pane;
-    $display->panels['column1'][0] = 'new-5cbd9e24-074b-47af-8ce4-a6df872d1e81';
-    $pane = new stdClass();
     $pane->pid = 'new-a246a9c6-5eac-4d90-8d64-fd126415a96b';
     $pane->panel = 'column1';
     $pane->type = 'views_panes';
@@ -143,11 +100,11 @@ function openlocal_home_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'a246a9c6-5eac-4d90-8d64-fd126415a96b';
     $display->content['new-a246a9c6-5eac-4d90-8d64-fd126415a96b'] = $pane;
-    $display->panels['column1'][1] = 'new-a246a9c6-5eac-4d90-8d64-fd126415a96b';
+    $display->panels['column1'][0] = 'new-a246a9c6-5eac-4d90-8d64-fd126415a96b';
     $pane = new stdClass();
     $pane->pid = 'new-6dcc8b69-71fe-4542-b9f7-86c7e7a2b233';
     $pane->panel = 'column1';
@@ -166,11 +123,11 @@ function openlocal_home_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '6dcc8b69-71fe-4542-b9f7-86c7e7a2b233';
     $display->content['new-6dcc8b69-71fe-4542-b9f7-86c7e7a2b233'] = $pane;
-    $display->panels['column1'][2] = 'new-6dcc8b69-71fe-4542-b9f7-86c7e7a2b233';
+    $display->panels['column1'][1] = 'new-6dcc8b69-71fe-4542-b9f7-86c7e7a2b233';
     $pane = new stdClass();
     $pane->pid = 'new-9e33fb68-599d-42b6-a481-5ae6620398db';
     $pane->panel = 'column2';
@@ -400,14 +357,18 @@ function openlocal_home_default_page_manager_pages() {
     $display->content['new-cadbbc65-5c2f-4a6b-8b0a-bafcad6e5cd7'] = $pane;
     $display->panels['contentmain'][1] = 'new-cadbbc65-5c2f-4a6b-8b0a-bafcad6e5cd7';
     $pane = new stdClass();
-    $pane->pid = 'new-66d0c1f6-7254-4aa2-8cc7-cb9950a725ff';
+    $pane->pid = 'new-8af9868e-9f9b-4e56-995c-25b4ea2f9b0a';
     $pane->panel = 'contentmain';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:1';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'full',
+      'admin_title' => 'More news link',
+      'title' => '',
+      'body' => '<p><a href="/news">More news...</a></p>',
+      'format' => 'panopoly_html_text',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -417,9 +378,9 @@ function openlocal_home_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '66d0c1f6-7254-4aa2-8cc7-cb9950a725ff';
-    $display->content['new-66d0c1f6-7254-4aa2-8cc7-cb9950a725ff'] = $pane;
-    $display->panels['contentmain'][2] = 'new-66d0c1f6-7254-4aa2-8cc7-cb9950a725ff';
+    $pane->uuid = '8af9868e-9f9b-4e56-995c-25b4ea2f9b0a';
+    $display->content['new-8af9868e-9f9b-4e56-995c-25b4ea2f9b0a'] = $pane;
+    $display->panels['contentmain'][2] = 'new-8af9868e-9f9b-4e56-995c-25b4ea2f9b0a';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
