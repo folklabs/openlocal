@@ -65,6 +65,7 @@ features[field_base][] = field_ol_details
 features[field_base][] = field_ol_event_venue
 features[field_base][] = field_ol_gallery_ref
 features[field_base][] = field_ol_geolocation
+features[field_base][] = field_ol_images
 features[field_base][] = field_ol_location_properties
 features[field_base][] = field_ol_opening_hours
 features[field_base][] = field_ol_place_category

@@ -283,7 +283,7 @@ Photo albums
     $pane->pid = 'new-f0f11b94-7da5-4a01-abba-5fd0e85bd54e';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_ol_gallery_images';
+    $pane->subtype = 'node:field_ol_images';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

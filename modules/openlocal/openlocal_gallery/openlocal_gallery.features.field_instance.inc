@@ -350,8 +350,8 @@ function openlocal_gallery_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_photo_album-field_ol_gallery_images'
-  $field_instances['node-ol_photo_album-field_ol_gallery_images'] = array(
+  // Exported field_instance: 'node-ol_photo_album-field_ol_images'
+  $field_instances['node-ol_photo_album-field_ol_images'] = array(
     'bundle' => 'ol_photo_album',
     'default_value' => array(),
     'deleted' => 0,
@@ -381,7 +381,7 @@ function openlocal_gallery_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_gallery_images',
+    'field_name' => 'field_ol_images',
     'label' => 'Images',
     'required' => 1,
     'settings' => array(
