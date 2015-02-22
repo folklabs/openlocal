@@ -32,7 +32,6 @@ features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[field_base][] = field_ol_images
 features[field_instance][] = comment-comment_node_ol_gallery-comment_body
 features[field_instance][] = comment-comment_node_ol_photo_album-comment_body
 features[field_instance][] = node-ol_gallery-field_ol_description
