@@ -1,12 +1,12 @@
 OpenLocal for Drupal 7.x
 ========================
 
-Introduction
-------------
+## Introduction
+
 The OpenLocal distro of Drupal is designed to support local communities.
 
-Requirements
-------------
+## Requirements
+
 In addition to the standard Drupal requirements you will need the following to
 make use of OpenLocal:
 
@@ -15,13 +15,18 @@ make use of OpenLocal:
 - git - http://git-scm.com
 
 
-Getting started
----------------
+## Getting started
 
 
+## Known issues
 
-Maintainers
------------
+* Patch in https://www.drupal.org/node/1900574 needs applying.
+
+* https://www.drupal.org/node/2400963 is visible.
+
+
+## Maintainers
+
 - Paul Mackay
 - Chris Wells
 
