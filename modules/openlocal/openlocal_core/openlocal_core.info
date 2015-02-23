@@ -10,6 +10,7 @@ dependencies[] = autocomplete_deluxe
 dependencies[] = block
 dependencies[] = comment
 dependencies[] = comment_notify
+dependencies[] = contact
 dependencies[] = ctools
 dependencies[] = date_popup_authored
 dependencies[] = diff

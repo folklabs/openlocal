@@ -25,29 +25,8 @@ dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
 
-; Panopoly Recommended - Other
-;dependencies[] = devel
-dependencies[] = uuid
-
-; Development
-dependencies[] = field_ui
-dependencies[] = masquerade
-dependencies[] = views_ui
-
 ; Other modules
 dependencies[] = book
-dependencies[] = contact
-dependencies[] = honeypot
-dependencies[] = oauth_common
-dependencies[] = oauth2_common
-dependencies[] = connector
-;dependencies[] = oauthconnector
-dependencies[] = http_client
-dependencies[] = http_client_oauth
-dependencies[] = privatemsg
-dependencies[] = site_map
-dependencies[] = workbench
-dependencies[] = workbench_moderation
 
 ; OpenLocal
 dependencies[] = openlocal_admin

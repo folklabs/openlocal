@@ -16,6 +16,7 @@ core = 7.x
 projects[panopoly_core][version] = 1.17
 projects[panopoly_core][subdir] = panopoly
 ;projects[panopoly_core][patch][1962642] = https://drupal.org/files/1962642-defaultconfig.undefinedindex-2.patch
+https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 
 projects[panopoly_images][version] = 1.17
 projects[panopoly_images][subdir] = panopoly
@@ -132,6 +133,8 @@ projects[imagefield_focus][subdir] = contrib
 
 projects[leaflet][version] = 1.1
 projects[leaflet][subdir] = contrib
+projects[leaflet][patch][2185767] = https://www.drupal.org/files/issues/field-formatter-errors-2185767-6.patch
+https://www.drupal.org/files/issues/fix-array_walk_recursive-warning-2154157.patch
 
 projects[leaflet_more_maps][version] = 1.7
 projects[leaflet_more_maps][subdir] = contrib
@@ -211,6 +214,9 @@ projects[privatemsg][subdir] = contrib
 projects[profile2][version] = 1.3
 projects[profile2][subdir] = contrib
 
+projects[service_links][version] = 2.3-beta1
+projects[service_links][subdir] = contrib
+
 projects[simplenews][version] = 1.1
 projects[simplenews][subdir] = contrib
 
@@ -240,7 +246,7 @@ projects[workbench][subdir] = contrib
 
 projects[workbench_moderation][version] = 1.4
 projects[workbench_moderation][subdir] = contrib
-;projects[workbench_moderation][patch][1285090] = https://drupal.org/files/playnicewithpanels-1285090-22.patch
+projects[workbench_moderation][patch][1285090] = https://www.drupal.org/files/issues/playnicewithpanels-alternative-approach-1285090-29.patch
 
 projects[xmlsitemap][version] = 2.2
 projects[xmlsitemap][subdir] = contrib
