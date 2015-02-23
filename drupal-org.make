@@ -73,6 +73,7 @@ projects[autocomplete_deluxe][subdir] = contrib
 
 projects[commentaccess][version] = 1.1
 projects[commentaccess][subdir] = contrib
+projects[commentaccess][patch][1875454] = https://www.drupal.org/files/commentaccess-1875454-4-conjunction-check-on-hook_query_TAG_alter.patch
 
 projects[comment_notify][version] = 1.2
 projects[comment_notify][subdir] = contrib
@@ -250,6 +251,10 @@ projects[workbench_moderation][patch][1285090] = https://www.drupal.org/files/is
 
 projects[xmlsitemap][version] = 2.2
 projects[xmlsitemap][subdir] = contrib
+
+; Patches
+
+projects[date][patch][2186191] = https://www.drupal.org/files/issues/date-fieldset-help-texts-2186191-5_0.patch
 
 
 ; Migration
