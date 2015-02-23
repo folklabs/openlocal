@@ -17,6 +17,7 @@ projects[panopoly_core][version] = 1.17
 projects[panopoly_core][subdir] = panopoly
 ;projects[panopoly_core][patch][1962642] = https://drupal.org/files/1962642-defaultconfig.undefinedindex-2.patch
 https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
+projects[panopoly_core][patch][] = patches/panopoly_core.patch
 
 projects[panopoly_images][version] = 1.17
 projects[panopoly_images][subdir] = panopoly
@@ -254,8 +255,8 @@ projects[xmlsitemap][subdir] = contrib
 
 ; Patches
 
-projects[date][subdir] = contrib
-projects[date][patch][2186191] = https://www.drupal.org/files/issues/date-fieldset-help-texts-2186191-5_0.patch
+;projects[date][subdir] = contrib
+;projects[date][patch][2186191] = https://www.drupal.org/files/issues/date-fieldset-help-texts-2186191-5_0.patch
 
 
 ; Migration
