@@ -254,6 +254,7 @@ projects[xmlsitemap][subdir] = contrib
 
 ; Patches
 
+projects[date][subdir] = contrib
 projects[date][patch][2186191] = https://www.drupal.org/files/issues/date-fieldset-help-texts-2186191-5_0.patch
 
 
