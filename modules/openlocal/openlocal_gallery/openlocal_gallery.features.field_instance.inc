@@ -350,12 +350,68 @@ function openlocal_gallery_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ol_photo_album-field_ol_gallery_ref'
+  $field_instances['node-ol_photo_album-field_ol_gallery_ref'] = array(
+    'bundle' => 'ol_photo_album',
+    'default_value' => NULL,
+    'default_value_function' => 'entityreference_prepopulate_field_default_value',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_gallery_ref',
+    'label' => 'Gallery',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'action' => 'disable',
+          'action_on_edit' => 0,
+          'fallback' => 'none',
+          'og_context' => 0,
+          'skip_perm' => 0,
+          'status' => 1,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-ol_photo_album-field_ol_images'
   $field_instances['node-ol_photo_album-field_ol_images'] = array(
     'bundle' => 'ol_photo_album',
     'default_value' => array(),
     'deleted' => 0,
-    'description' => ' It is recommended to <b>only bulk upload 20 images or less</b> at once.',
+    'description' => 'Click Browse and you can select <b>multiple files</b> at once. It is recommended to <b>only bulk upload 20 images or less</b> at a time.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -422,67 +478,11 @@ function openlocal_gallery_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_photo_album-field_ol_gallery_ref'
-  $field_instances['node-ol_photo_album-field_ol_gallery_ref'] = array(
-    'bundle' => 'ol_photo_album',
-    'default_value' => NULL,
-    'default_value_function' => 'entityreference_prepopulate_field_default_value',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 3,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_gallery_ref',
-    'label' => 'Gallery',
-    'required' => 1,
-    'settings' => array(
-      'behaviors' => array(
-        'prepopulate' => array(
-          'action' => 'disable',
-          'action_on_edit' => 0,
-          'fallback' => 'none',
-          'og_context' => 0,
-          'skip_perm' => 0,
-          'status' => 1,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t(' It is recommended to <b>only bulk upload 20 images or less</b> at once.');
   t('A longer description shown on the gallery page.');
   t('Add any tags that define this gallery in more detail. Start typing, if the tag exists, select it. If it does not exist press return to create it. Tags are used to offer more specific searching and filtering for services.');
+  t('Click Browse and you can select <b>multiple files</b> at once. It is recommended to <b>only bulk upload 20 images or less</b> at a time.');
   t('Comment');
   t('Credit the author of the images.');
   t('Credits');

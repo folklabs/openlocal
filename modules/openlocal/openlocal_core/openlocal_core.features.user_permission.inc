@@ -421,7 +421,6 @@ function openlocal_core_user_default_permissions() {
     'name' => 'create ol_place content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );
@@ -438,9 +437,7 @@ function openlocal_core_user_default_permissions() {
   // Exported permission: 'delete own ol_place content'.
   $permissions['delete own ol_place content'] = array(
     'name' => 'delete own ol_place content',
-    'roles' => array(
-      'contributor' => 'contributor',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -466,9 +463,7 @@ function openlocal_core_user_default_permissions() {
   // Exported permission: 'edit any ol_place content'.
   $permissions['edit any ol_place content'] = array(
     'name' => 'edit any ol_place content',
-    'roles' => array(
-      'contributor' => 'contributor',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -488,7 +483,6 @@ function openlocal_core_user_default_permissions() {
     'name' => 'edit own ol_place content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );
@@ -587,7 +581,6 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
       'editor' => 'editor',
     ),
     'module' => 'save_draft',
@@ -660,7 +653,6 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
       'editor' => 'editor',
     ),
     'module' => 'filter',

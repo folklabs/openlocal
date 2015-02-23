@@ -144,6 +144,7 @@ function openlocal_core_field_default_field_instances() {
         'available_countries' => array(
           'GB' => 'GB',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',

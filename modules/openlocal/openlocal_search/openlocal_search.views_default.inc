@@ -31,7 +31,7 @@ function openlocal_search_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Indexed Node: Node ID */
+  /* Field: Indexed Content: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_openlocal_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
@@ -40,14 +40,14 @@ function openlocal_search_views_default_views() {
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nid']['separator'] = '';
   $handler->display->display_options['fields']['nid']['link_to_entity'] = 0;
-  /* Field: Indexed Node: Title */
+  /* Field: Indexed Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_openlocal_index';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
-  /* Field: Indexed Node: Primary Image */
+  /* Field: Indexed Content: Primary Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'search_api_index_openlocal_index';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -58,13 +58,13 @@ function openlocal_search_views_default_views() {
     'image_style' => 'openlocal_panel_shallow',
     'image_link' => 'content',
   );
-  /* Field: Indexed Node: Description */
+  /* Field: Indexed Content: Description */
   $handler->display->display_options['fields']['field_ol_description']['id'] = 'field_ol_description';
   $handler->display->display_options['fields']['field_ol_description']['table'] = 'search_api_index_openlocal_index';
   $handler->display->display_options['fields']['field_ol_description']['field'] = 'field_ol_description';
   $handler->display->display_options['fields']['field_ol_description']['label'] = '';
   $handler->display->display_options['fields']['field_ol_description']['element_label_colon'] = FALSE;
-  /* Filter criterion: Indexed Node: Content type */
+  /* Filter criterion: Indexed Content: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_openlocal_index';
   $handler->display->display_options['filters']['type']['field'] = 'type';

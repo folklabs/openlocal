@@ -40,7 +40,7 @@ function openlocal_core_node_info() {
       'description' => t('A local place.'),
       'has_title' => '1',
       'title_label' => t('Name'),
-      'help' => t('All events listed on the site will be at a venue or place. This screen will allow you to enter all the details about a place so that they can be used again in the future. Please check that the entry has not already been done by someone else first, they may have called it something slightly different - check on the map display of spaces to see if it already exists.
+      'help' => t('All events listed on the site will be at a business venue or place. This screen will allow you to enter all the details about a place so that they can be used again in the future. Please check that the entry has not already been done by someone else first, they may have called it something slightly different - check on the <a href="/places">map display of places</a> to see if it already exists.
 
 The more information that you can provide the easier it will be for people to find the venue, not contact you for information and improve attendance at the event.'),
     ),

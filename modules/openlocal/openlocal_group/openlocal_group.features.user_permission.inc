@@ -10,6 +10,25 @@
 function openlocal_group_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer comments on own ol_group'.
+  $permissions['administer comments on own ol_group'] = array(
+    'name' => 'administer comments on own ol_group',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
+  );
+
+  // Exported permission: 'administer comments on own ol_group_post'.
+  $permissions['administer comments on own ol_group_post'] = array(
+    'name' => 'administer comments on own ol_group_post',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'commentaccess',
+  );
+
   // Exported permission: 'administer panelizer node ol_group breadcrumbs'.
   $permissions['administer panelizer node ol_group breadcrumbs'] = array(
     'name' => 'administer panelizer node ol_group breadcrumbs',
@@ -108,6 +127,24 @@ function openlocal_group_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'approve comments on own ol_group'.
+  $permissions['approve comments on own ol_group'] = array(
+    'name' => 'approve comments on own ol_group',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
+  );
+
+  // Exported permission: 'approve comments on own ol_group_post'.
+  $permissions['approve comments on own ol_group_post'] = array(
+    'name' => 'approve comments on own ol_group_post',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
+  );
+
   // Exported permission: 'create ol_group content'.
   $permissions['create ol_group content'] = array(
     'name' => 'create ol_group content',
@@ -144,6 +181,24 @@ function openlocal_group_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete comments on own ol_group'.
+  $permissions['delete comments on own ol_group'] = array(
+    'name' => 'delete comments on own ol_group',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
+  );
+
+  // Exported permission: 'delete comments on own ol_group_post'.
+  $permissions['delete comments on own ol_group_post'] = array(
+    'name' => 'delete comments on own ol_group_post',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
+  );
+
   // Exported permission: 'delete own ol_group content'.
   $permissions['delete own ol_group content'] = array(
     'name' => 'delete own ol_group content',
@@ -160,15 +215,6 @@ function openlocal_group_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete terms in ol_issue_type'.
-  $permissions['delete terms in ol_issue_type'] = array(
-    'name' => 'delete terms in ol_issue_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit any ol_group content'.
@@ -206,15 +252,6 @@ function openlocal_group_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in ol_issue_type'.
-  $permissions['edit terms in ol_issue_type'] = array(
-    'name' => 'edit terms in ol_issue_type',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   return $permissions;

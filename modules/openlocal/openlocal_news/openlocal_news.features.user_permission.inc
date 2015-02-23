@@ -10,6 +10,16 @@
 function openlocal_news_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer comments on own ol_news_article'.
+  $permissions['administer comments on own ol_news_article'] = array(
+    'name' => 'administer comments on own ol_news_article',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'commentaccess',
+  );
+
   // Exported permission: 'administer panelizer node ol_news_article breadcrumbs'.
   $permissions['administer panelizer node ol_news_article breadcrumbs'] = array(
     'name' => 'administer panelizer node ol_news_article breadcrumbs',
@@ -59,12 +69,20 @@ function openlocal_news_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'approve comments on own ol_news_article'.
+  $permissions['approve comments on own ol_news_article'] = array(
+    'name' => 'approve comments on own ol_news_article',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
+  );
+
   // Exported permission: 'create ol_news_article content'.
   $permissions['create ol_news_article content'] = array(
     'name' => 'create ol_news_article content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );
@@ -76,6 +94,15 @@ function openlocal_news_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete comments on own ol_news_article'.
+  $permissions['delete comments on own ol_news_article'] = array(
+    'name' => 'delete comments on own ol_news_article',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'commentaccess',
   );
 
   // Exported permission: 'delete own ol_news_article content'.
@@ -101,7 +128,6 @@ function openlocal_news_user_default_permissions() {
     'name' => 'edit own ol_news_article content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );

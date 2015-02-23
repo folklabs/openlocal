@@ -47,7 +47,4 @@ features_exclude[dependencies][ctools] = ctools
 features_exclude[field_base][field_ol_description] = field_ol_description
 features_exclude[field_base][field_featured_image] = field_featured_image
 features_exclude[field_base][field_ol_details] = field_ol_details
-features_exclude[field][node-ol_idea-field_ol_description] = node-ol_idea-field_ol_description
-features_exclude[field][node-ol_idea-field_featured_image] = node-ol_idea-field_featured_image
-features_exclude[field][node-ol_idea-field_ol_details] = node-ol_idea-field_ol_details
 project path = profiles/openlocal/modules/openlocal

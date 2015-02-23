@@ -356,59 +356,6 @@ function openlocal_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_event-field_ol_telephone'
-  $field_instances['node-ol_event-field_ol_telephone'] = array(
-    'bundle' => 'ol_event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'The contact number will be for people to call in relation to the event, it will be visible on the page with the event information. If there is no contact number for people to call regarding this event then please leave blank.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 12,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_telephone',
-    'label' => 'Contact telephone',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-ol_event-field_ol_event_date'
   $field_instances['node-ol_event-field_ol_event_date'] = array(
     'bundle' => 'ol_event',
@@ -575,6 +522,59 @@ function openlocal_event_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ol_event-field_ol_telephone'
+  $field_instances['node-ol_event-field_ol_telephone'] = array(
+    'bundle' => 'ol_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The contact number will be for people to call in relation to the event, it will be visible on the page with the event information. If there is no contact number for people to call regarding this event then please leave blank.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_telephone',
+    'label' => 'Contact telephone',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-ol_event-og_group_ref'
   $field_instances['node-ol_event-og_group_ref'] = array(
     'bundle' => 'ol_event',
@@ -647,7 +647,7 @@ function openlocal_event_field_default_field_instances() {
   t('Available facilities');
   t('Categories');
   t('Comment');
-  t('Contact');
+  t('Contact email');
   t('Contact telephone');
   t('Date');
   t('Describe all the details that people need to know about the event.');

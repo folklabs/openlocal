@@ -388,6 +388,13 @@ function openlocal_business_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_ol_business_pattern';
+  $strongarm->value = 'services/[node:title]';
+  $export['pathauto_node_ol_business_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_ol_reward_scheme_pattern';
   $strongarm->value = 'reward-schemes/[node:title]';
   $export['pathauto_node_ol_reward_scheme_pattern'] = $strongarm;

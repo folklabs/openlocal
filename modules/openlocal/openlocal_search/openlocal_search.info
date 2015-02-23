@@ -23,5 +23,4 @@ features[facetapi][] = search_api@openlocal_index:block:type
 features[features_api][] = api:2
 features[search_api_index][] = openlocal_index
 features[views_view][] = openlocal_business_facet_search
-mtime = 1396009905
 project path = profiles/openlocal/modules/openlocal

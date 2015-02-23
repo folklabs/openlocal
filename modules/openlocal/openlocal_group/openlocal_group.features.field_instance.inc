@@ -128,17 +128,7 @@ function openlocal_group_field_default_field_instances() {
   // Exported field_instance: 'node-ol_group-field_ol_address'
   $field_instances['node-ol_group-field_ol_address'] = array(
     'bundle' => 'ol_group',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|ol_group|field_ol_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'GB',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'If the group has a physical location or a regular meetup place, add the address.',
     'display' => array(
@@ -181,9 +171,13 @@ function openlocal_group_field_default_field_instances() {
         'available_countries' => array(
           'GB' => 'GB',
         ),
+        'default_country' => 'GB',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
+          'address-optional' => 'address-optional',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
           'organisation' => 0,
           'name-full' => 0,
           'name-oneline' => 0,

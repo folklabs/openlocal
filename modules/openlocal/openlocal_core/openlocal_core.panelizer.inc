@@ -229,7 +229,15 @@ function openlocal_core_panelizer_defaults() {
         'data' => 'full',
         'leaflet_map' => 'OSM Mapnik',
         'height' => '200',
-        'popup' => 0,
+        'popup' => array(
+          'show' => 0,
+          'text' => '',
+        ),
+        'zoom' => array(
+          'initialZoom' => '15',
+          'minZoom' => '12',
+          'maxZoom' => '17',
+        ),
       ),
       'context' => 'panelizer',
       'override_title' => 0,

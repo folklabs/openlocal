@@ -35,15 +35,15 @@ function openlocal_search_default_search_api_index() {
       "index_directly" : 1,
       "cron_limit" : "50",
       "fields" : {
-        "nid" : { "type" : "integer" },
-        "type" : { "type" : "string" },
-        "title" : { "type" : "text" },
         "field_featured_categories" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_ol_description" : { "type" : "text" },
-        "field_ol_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_ol_business_category" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_ol_business_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "search_api_language" : { "type" : "string" }
+        "field_ol_description" : { "type" : "text" },
+        "field_ol_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "nid" : { "type" : "integer" },
+        "search_api_language" : { "type" : "string" },
+        "title" : { "type" : "text" },
+        "type" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {

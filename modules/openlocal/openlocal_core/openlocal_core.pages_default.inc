@@ -16,7 +16,10 @@ function openlocal_core_default_page_manager_pages() {
   $page->admin_title = 'Places';
   $page->admin_description = 'A list of local places.';
   $page->path = 'places';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Places',

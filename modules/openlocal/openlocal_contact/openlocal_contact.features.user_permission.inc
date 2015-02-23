@@ -49,13 +49,6 @@ function openlocal_contact_user_default_permissions() {
     'module' => 'simplenews',
   );
 
-  // Exported permission: 'administer panelizer node mass_contact defaults'.
-  $permissions['administer panelizer node mass_contact defaults'] = array(
-    'name' => 'administer panelizer node mass_contact defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node ol_newsletter defaults'.
   $permissions['administer panelizer node ol_newsletter defaults'] = array(
     'name' => 'administer panelizer node ol_newsletter defaults',

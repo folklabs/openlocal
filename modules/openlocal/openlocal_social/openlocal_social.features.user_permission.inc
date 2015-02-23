@@ -10,6 +10,17 @@
 function openlocal_social_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access service links'.
+  $permissions['access service links'] = array(
+    'name' => 'access service links',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'service_links',
+  );
+
   // Exported permission: 'add authenticated twitter accounts'.
   $permissions['add authenticated twitter accounts'] = array(
     'name' => 'add authenticated twitter accounts',
@@ -42,7 +53,6 @@ function openlocal_social_user_default_permissions() {
     'name' => 'post to twitter',
     'roles' => array(
       'administrator' => 'administrator',
-      'contributor' => 'contributor',
     ),
     'module' => 'twitter_post',
   );

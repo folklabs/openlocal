@@ -64,7 +64,6 @@ function openlocal_event_user_default_permissions() {
     'name' => 'create ol_event content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );
@@ -101,7 +100,6 @@ function openlocal_event_user_default_permissions() {
     'name' => 'edit own ol_event content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'node',
   );
@@ -113,7 +111,6 @@ function openlocal_event_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
     ),
     'module' => 'date_repeat_field',
   );

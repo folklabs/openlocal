@@ -10,55 +10,6 @@
 function openlocal_issue_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node ol_issue breadcrumbs'.
-  $permissions['administer panelizer node ol_issue breadcrumbs'] = array(
-    'name' => 'administer panelizer node ol_issue breadcrumbs',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_issue content'.
-  $permissions['administer panelizer node ol_issue content'] = array(
-    'name' => 'administer panelizer node ol_issue content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_issue context'.
-  $permissions['administer panelizer node ol_issue context'] = array(
-    'name' => 'administer panelizer node ol_issue context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_issue defaults'.
-  $permissions['administer panelizer node ol_issue defaults'] = array(
-    'name' => 'administer panelizer node ol_issue defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_issue layout'.
-  $permissions['administer panelizer node ol_issue layout'] = array(
-    'name' => 'administer panelizer node ol_issue layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_issue overview'.
-  $permissions['administer panelizer node ol_issue overview'] = array(
-    'name' => 'administer panelizer node ol_issue overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_issue settings'.
-  $permissions['administer panelizer node ol_issue settings'] = array(
-    'name' => 'administer panelizer node ol_issue settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create ol_issue content'.
   $permissions['create ol_issue content'] = array(
     'name' => 'create ol_issue content',

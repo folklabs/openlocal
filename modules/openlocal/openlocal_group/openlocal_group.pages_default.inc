@@ -197,7 +197,10 @@ Events',
   $page->admin_title = 'Groups';
   $page->admin_description = '';
   $page->path = 'groups/list/!term';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'default tab',
     'title' => 'List',
@@ -347,7 +350,7 @@ Events',
       'body' => '<div class="ol-action-box">
 
 <div class="ol-action-button">
-<a href="/node/add/ol-group"><span class="ol-action-span"><i class="fa fa-plus"></i> add group</span></a>
+<a href="/node/add/ol-issue"><span class="ol-action-span"><i class="fa fa-plus"></i> request group</span></a>
 </div>
 
 <div>

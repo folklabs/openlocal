@@ -641,15 +641,27 @@ function openlocal_business_panelizer_defaults() {
     $display->content['new-0958fde4-02eb-43e2-9293-0d3a2bd2f705'] = $pane;
     $display->panels['quarter1'][10] = 'new-0958fde4-02eb-43e2-9293-0d3a2bd2f705';
     $pane = new stdClass();
-    $pane->pid = 'new-dc0fb144-690b-4599-b08f-e302d2d5b3eb';
+    $pane->pid = 'new-b348837e-042a-4b80-a30a-6db4e4f281ae';
     $pane->panel = 'quarter2';
-    $pane->type = 'block';
-    $pane->subtype = 'block-2';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
+      'admin_title' => 'OL Business actions',
+      'title' => '',
+      'body' => '<div class="ol-action-box">
+
+<div class="ol-action-button">
+<a href="/node/add/ol-issue"><span class="ol-action-span"><i class="fa fa-plus"></i> request business listing</span></a>
+</div>
+
+<div>
+<a href="/contextual_help/how-add-business" class="ol-action-help"><i class="fa fa-question-circle"></i> About business listings</a>
+</div>
+</div>',
+      'format' => 'panopoly_html_text',
+      'substitute' => 1,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -659,9 +671,9 @@ function openlocal_business_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'dc0fb144-690b-4599-b08f-e302d2d5b3eb';
-    $display->content['new-dc0fb144-690b-4599-b08f-e302d2d5b3eb'] = $pane;
-    $display->panels['quarter2'][0] = 'new-dc0fb144-690b-4599-b08f-e302d2d5b3eb';
+    $pane->uuid = 'b348837e-042a-4b80-a30a-6db4e4f281ae';
+    $display->content['new-b348837e-042a-4b80-a30a-6db4e4f281ae'] = $pane;
+    $display->panels['quarter2'][0] = 'new-b348837e-042a-4b80-a30a-6db4e4f281ae';
     $pane = new stdClass();
     $pane->pid = 'new-293e6719-4f29-441c-a100-f59cc656853c';
     $pane->panel = 'quarter2';

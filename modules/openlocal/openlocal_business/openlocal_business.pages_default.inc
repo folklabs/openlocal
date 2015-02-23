@@ -16,7 +16,10 @@ function openlocal_business_default_page_manager_pages() {
   $page->admin_title = 'Services';
   $page->admin_description = '';
   $page->path = 'services/list/!term';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'default tab',
     'title' => 'List',
@@ -197,7 +200,7 @@ function openlocal_business_default_page_manager_pages() {
       'body' => '<div class="ol-action-box">
 
 <div class="ol-action-button">
-<a href="/node/add/ol-business"><span class="ol-action-span"><i class="fa fa-plus"></i> add business listing</span></a>
+<a href="/node/add/ol-issue"><span class="ol-action-span"><i class="fa fa-plus"></i> request business listing</span></a>
 </div>
 
 <div>
@@ -560,6 +563,99 @@ function openlocal_business_default_page_manager_pages() {
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['services'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'services_map';
+  $page->task = 'page';
+  $page->admin_title = 'Services map';
+  $page->admin_description = '';
+  $page->path = 'services/map';
+  $page->access = array();
+  $page->menu = array(
+    'type' => 'tab',
+    'title' => 'Map',
+    'name' => 'main-menu',
+    'weight' => '10',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_services_map__services_map';
+  $handler->task = 'page';
+  $handler->subtask = 'services_map';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Services map',
+    'no_blocks' => 1,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => 'services_map',
+  );
+  $display = new panels_display();
+  $display->layout = 'radix_boxton';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'contentmain' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = 'Services map';
+  $display->uuid = 'b4ce4eb7-6281-4d53-8e19-8a9a0765121d';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-790e36da-51c9-4fa3-84ba-448fd01f52ff';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'openlocal_business-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => '',
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+      'view_mode' => 'teaser',
+      'widget_title' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '790e36da-51c9-4fa3-84ba-448fd01f52ff';
+    $display->content['new-790e36da-51c9-4fa3-84ba-448fd01f52ff'] = $pane;
+    $display->panels['contentmain'][0] = 'new-790e36da-51c9-4fa3-84ba-448fd01f52ff';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-790e36da-51c9-4fa3-84ba-448fd01f52ff';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['services_map'] = $page;
 
   return $pages;
 

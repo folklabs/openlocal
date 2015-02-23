@@ -162,17 +162,7 @@ function openlocal_business_field_default_field_instances() {
   // Exported field_instance: 'node-ol_business-field_ol_address'
   $field_instances['node-ol_business-field_ol_address'] = array(
     'bundle' => 'ol_business',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'node|ol_business|field_ol_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => '',
-        'postal_code' => '',
-        'country' => 'GB',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter your business address if you have a fixed location.',
     'display' => array(
@@ -215,9 +205,13 @@ function openlocal_business_field_default_field_instances() {
         'available_countries' => array(
           'GB' => 'GB',
         ),
+        'default_country' => 'GB',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
+          'address-optional' => 'address-optional',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
           'organisation' => 0,
           'name-full' => 0,
           'name-oneline' => 0,
@@ -268,181 +262,6 @@ function openlocal_business_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_business-field_ol_email'
-  $field_instances['node-ol_business-field_ol_email'] = array(
-    'bundle' => 'ol_business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter your business contact email address.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'email',
-        'settings' => array(),
-        'type' => 'email_default',
-        'weight' => 6,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_email',
-    'label' => 'Email',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'email',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'email_textfield',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_business-field_ol_facebook_page'
-  $field_instances['node-ol_business-field_ol_facebook_page'] = array(
-    'bundle' => 'ol_business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter a link to your Facebook page, if you have one.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 18,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_facebook_page',
-    'label' => 'Facebook',
-    'required' => 0,
-    'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_class' => 0,
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 0,
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'rel_remove' => 'default',
-      'title' => 'value',
-      'title_label_use_field_label' => 0,
-      'title_maxlength' => 128,
-      'title_value' => 'Facebook page',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_business-field_ol_opening_hours'
-  $field_instances['node-ol_business-field_ol_opening_hours'] = array(
-    'bundle' => 'ol_business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter your hours of trading, if you have a retail premises that accepts customers.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'office_hours',
-        'settings' => array(
-          'closedformat' => 'Closed',
-          'compress' => FALSE,
-          'current_status' => array(
-            'closed_text' => 'Currently closed',
-            'open_text' => 'Currently open!',
-            'position' => 'hide',
-          ),
-          'date_first_day' => 0,
-          'daysformat' => 'long',
-          'grouped' => FALSE,
-          'hoursformat' => 0,
-          'separator_day_hours' => ': ',
-          'separator_days' => '<br />',
-          'separator_grouped_days' => ' - ',
-          'separator_hours_hours' => '-',
-          'separator_more_hours' => ', ',
-          'showclosed' => 'all',
-          'timezone_field' => '',
-        ),
-        'type' => 'office_hours',
-        'weight' => 10,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_opening_hours',
-    'label' => 'Opening hours',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'office_hours',
-      'settings' => array(),
-      'type' => 'office_hours',
-      'weight' => 8,
     ),
   );
 
@@ -540,177 +359,6 @@ function openlocal_business_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'autocomplete_deluxe_taxonomy',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_business-field_ol_telephone'
-  $field_instances['node-ol_business-field_ol_telephone'] = array(
-    'bundle' => 'ol_business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter your business telephone number.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'i',
-    'field_name' => 'field_ol_telephone',
-    'label' => 'Telephone',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 12,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_business-field_ol_twitter'
-  $field_instances['node-ol_business-field_ol_twitter'] = array(
-    'bundle' => 'ol_business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter your business Twitter account, if you have one.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_twitter',
-    'label' => 'Twitter',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'twitterfield',
-      'settings' => array(
-        'allowed_types' => array(
-          'hashtag' => 0,
-          'list' => 0,
-          'search' => 0,
-          'username' => 'username',
-        ),
-        'size' => 60,
-      ),
-      'type' => 'twitterfield',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_business-field_ol_link'
-  $field_instances['node-ol_business-field_ol_link'] = array(
-    'bundle' => 'ol_business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter your business website address if you have one.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_link',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'rel_remove' => 'default',
-      'title' => 'none',
-      'title_label_use_field_label' => FALSE,
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
       'weight' => 7,
     ),
   );
@@ -817,6 +465,51 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ol_business-field_ol_email'
+  $field_instances['node-ol_business-field_ol_email'] = array(
+    'bundle' => 'ol_business',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter your business contact email address.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 6,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-ol_business-field_ol_event_venue'
   $field_instances['node-ol_business-field_ol_event_venue'] = array(
     'bundle' => 'ol_business',
@@ -862,6 +555,74 @@ function openlocal_business_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_business-field_ol_facebook_page'
+  $field_instances['node-ol_business-field_ol_facebook_page'] = array(
+    'bundle' => 'ol_business',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter a link to your Facebook page, if you have one.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 18,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_facebook_page',
+    'label' => 'Facebook',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => 'Facebook page',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 9,
     ),
   );
@@ -966,6 +727,73 @@ function openlocal_business_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ol_business-field_ol_link'
+  $field_instances['node-ol_business-field_ol_link'] = array(
+    'bundle' => 'ol_business',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter your business website address if you have one.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_link',
+    'label' => 'Website',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => FALSE,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-ol_business-field_ol_location_properties'
   $field_instances['node-ol_business-field_ol_location_properties'] = array(
     'bundle' => 'ol_business',
@@ -1008,6 +836,172 @@ function openlocal_business_field_default_field_instances() {
       ),
       'type' => 'options_buttons',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_business-field_ol_opening_hours'
+  $field_instances['node-ol_business-field_ol_opening_hours'] = array(
+    'bundle' => 'ol_business',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter your hours of trading, if you have a retail premises that accepts customers.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'office_hours',
+        'settings' => array(
+          'closedformat' => 'Closed',
+          'compress' => FALSE,
+          'current_status' => array(
+            'closed_text' => 'Currently closed',
+            'open_text' => 'Currently open!',
+            'position' => 'hide',
+          ),
+          'date_first_day' => 0,
+          'daysformat' => 'long',
+          'grouped' => FALSE,
+          'hoursformat' => 0,
+          'separator_day_hours' => ': ',
+          'separator_days' => '<br />',
+          'separator_grouped_days' => ' - ',
+          'separator_hours_hours' => '-',
+          'separator_more_hours' => ', ',
+          'showclosed' => 'all',
+          'timezone_field' => '',
+        ),
+        'type' => 'office_hours',
+        'weight' => 10,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_opening_hours',
+    'label' => 'Opening hours',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'office_hours',
+      'settings' => array(),
+      'type' => 'office_hours',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_business-field_ol_telephone'
+  $field_instances['node-ol_business-field_ol_telephone'] = array(
+    'bundle' => 'ol_business',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter your business telephone number.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'i',
+    'field_name' => 'field_ol_telephone',
+    'label' => 'Telephone',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 12,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_business-field_ol_twitter'
+  $field_instances['node-ol_business-field_ol_twitter'] = array(
+    'bundle' => 'ol_business',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter your business Twitter account, if you have one.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_twitter',
+    'label' => 'Twitter',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'twitterfield',
+      'settings' => array(
+        'allowed_types' => array(
+          'hashtag' => 0,
+          'list' => 0,
+          'search' => 0,
+          'username' => 'username',
+        ),
+        'size' => 60,
+      ),
+      'type' => 'twitterfield',
+      'weight' => 8,
     ),
   );
 

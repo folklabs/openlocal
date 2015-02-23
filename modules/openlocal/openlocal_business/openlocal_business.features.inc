@@ -34,12 +34,12 @@ function openlocal_business_views_api($module = NULL, $api = NULL) {
  */
 function openlocal_business_eck_bundle_info() {
   $items = array(
-  'ol_promotion_ol_promotion' => array(
-  'machine_name' => 'ol_promotion_ol_promotion',
-  'entity_type' => 'ol_promotion',
-  'name' => 'ol_promotion',
-  'label' => 'Promotion',
-),
+    'ol_promotion_ol_promotion' => array(
+      'machine_name' => 'ol_promotion_ol_promotion',
+      'entity_type' => 'ol_promotion',
+      'name' => 'ol_promotion',
+      'label' => 'Promotion',
+    ),
   );
   return $items;
 }
@@ -48,23 +48,23 @@ function openlocal_business_eck_bundle_info() {
  * Implements hook_eck_entity_type_info().
  */
 function openlocal_business_eck_entity_type_info() {
-$items = array(
-       'ol_promotion' => array(
-  'name' => 'ol_promotion',
-  'label' => 'Promotion',
-  'properties' => array(
-    'uid' => array(
-      'label' => 'Author',
-      'type' => 'integer',
-      'behavior' => 'author',
+  $items = array(
+    'ol_promotion' => array(
+      'name' => 'ol_promotion',
+      'label' => 'Promotion',
+      'properties' => array(
+        'uid' => array(
+          'label' => 'Author',
+          'type' => 'integer',
+          'behavior' => 'author',
+        ),
+        'created' => array(
+          'label' => 'Created',
+          'type' => 'integer',
+          'behavior' => 'created',
+        ),
+      ),
     ),
-    'created' => array(
-      'label' => 'Created',
-      'type' => 'integer',
-      'behavior' => 'created',
-    ),
-  ),
-),
   );
   return $items;
 }

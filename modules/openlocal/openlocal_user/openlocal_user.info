@@ -45,7 +45,5 @@ features[variable][] = user_pictures
 features[variable][] = user_register
 features[views_view][] = openlocal_user
 features[views_view][] = openlocal_user_content
-features_exclude[field][profile2-ol_personal_info-field_ol_personal_type_of_user] = profile2-ol_personal_info-field_ol_personal_type_of_user
-features_exclude[field][profile2-ol_personal_info-field_ol_personal_address] = profile2-ol_personal_info-field_ol_personal_address
 mtime = 1422469619
 project path = profiles/openlocal/modules/openlocal
