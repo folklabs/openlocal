@@ -13,41 +13,40 @@ core = 7.x
 
 ; The Panopoly Foundation
 
-projects[panopoly_core][version] = 1.17
+projects[panopoly_core][version] = 1.18
 projects[panopoly_core][subdir] = panopoly
 projects[panopoly_core][patch][] = https://raw.githubusercontent.com/pmackay/openlocal/master/patches/panopoly_core.patch
-;projects[panopoly_core][patch][1962642] = https://drupal.org/files/1962642-defaultconfig.undefinedindex-2.patch
-;https://www.drupal.org/files/issues/1900574.defaultconfig.undefinedindex_13.patch
 
-
-projects[panopoly_images][version] = 1.17
+projects[panopoly_images][version] = 1.18
 projects[panopoly_images][subdir] = panopoly
 
-projects[panopoly_theme][version] = 1.17
+projects[panopoly_theme][version] = 1.18
 projects[panopoly_theme][subdir] = panopoly
 
-projects[panopoly_magic][version] = 1.17
+projects[panopoly_magic][version] = 1.18
 projects[panopoly_magic][subdir] = panopoly
 
-projects[panopoly_widgets][version] = 1.17
+projects[panopoly_widgets][version] = 1.18
 projects[panopoly_widgets][subdir] = panopoly
 
-projects[panopoly_admin][version] = 1.17
+projects[panopoly_admin][version] = 1.18
 projects[panopoly_admin][subdir] = panopoly
 projects[panopoly_admin][patch][2152111] = https://www.drupal.org/files/issues/hide-featured-img-description-css-2152111-11_0.patch
+; See https://www.drupal.org/node/2152111
 
-projects[panopoly_users][version] = 1.17
+projects[panopoly_users][version] = 1.18
 projects[panopoly_users][subdir] = panopoly
+
 
 ; The Panopoly Toolset
 
-projects[panopoly_pages][version] = 1.17
+projects[panopoly_pages][version] = 1.18
 projects[panopoly_pages][subdir] = panopoly
 
-projects[panopoly_wysiwyg][version] = 1.17
+projects[panopoly_wysiwyg][version] = 1.18
 projects[panopoly_wysiwyg][subdir] = panopoly
 
-projects[panopoly_search][version] = 1.17
+projects[panopoly_search][version] = 1.18
 projects[panopoly_search][subdir] = panopoly
 
 
@@ -129,7 +128,7 @@ projects[geo_filter][subdir] = contrib
 projects[geophp][version] = 1.7
 projects[geophp][subdir] = contrib
 
-projects[honeypot][version] = 1.17
+projects[honeypot][version] = 1.18
 projects[honeypot][subdir] = contrib
 
 projects[imagefield_focus][version] = 1.0
@@ -255,11 +254,6 @@ projects[workbench_moderation][patch][1285090] = https://www.drupal.org/files/is
 projects[xmlsitemap][version] = 2.2
 projects[xmlsitemap][subdir] = contrib
 
-; Patches
-
-;projects[date][subdir] = contrib
-;projects[date][patch][2186191] = https://www.drupal.org/files/issues/date-fieldset-help-texts-2186191-5_0.patch
-
 
 ; Migration
 
@@ -295,8 +289,7 @@ libraries[mailchimp][download][url] = http://apidocs.mailchimp.com/api/downloads
 libraries[mailchimp][destination] = libraries
 
 
-
-
 ; Themes
 
 ;projects[adaptivetheme][version] = 3.1
+
