@@ -76,6 +76,9 @@ function openlocal_issue_strongarm() {
         'path' => array(
           'weight' => '4',
         ),
+        'xmlsitemap' => array(
+          'weight' => '6',
+        ),
       ),
       'display' => array(),
     ),

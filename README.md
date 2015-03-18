@@ -17,10 +17,15 @@ make use of OpenLocal:
 
 ## Getting started
 
+* Enable `administrator` role on admin user.
+* Enable the Panopoly node edit page.
+
 
 ## Known issues
 
 * Patch in https://www.drupal.org/node/1900574 needs applying.
+
+* https://www.drupal.org/node/2360249 patch needs applying.
 
 * https://www.drupal.org/node/2400963 is visible.
 

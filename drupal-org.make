@@ -202,9 +202,6 @@ projects[entityreference_prepopulate][subdir] = contrib
 projects[radioactivity][version] = 2.9
 projects[radioactivity][subdir] = contrib
 
-projects[references][version] =	2.1
-projects[references][subdir] = contrib
-
 projects[registration][version] =	1.2
 projects[registration][subdir] = contrib
 

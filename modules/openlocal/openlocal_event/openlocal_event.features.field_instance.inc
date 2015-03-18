@@ -84,7 +84,7 @@ function openlocal_event_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -156,7 +156,7 @@ function openlocal_event_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -205,7 +205,7 @@ function openlocal_event_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -307,7 +307,7 @@ function openlocal_event_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 8,
     ),
   );
 
@@ -352,7 +352,7 @@ function openlocal_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -393,7 +393,7 @@ function openlocal_event_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_ol_event_date',
     'label' => 'Date',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'strtotime',
@@ -413,8 +413,8 @@ function openlocal_event_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_text',
-      'weight' => 4,
+      'type' => 'date_popup',
+      'weight' => 3,
     ),
   );
 
@@ -424,7 +424,7 @@ function openlocal_event_field_default_field_instances() {
     'default_value' => array(),
     'default_value_function' => '',
     'deleted' => 0,
-    'description' => 'If your event takes place in a physical space, please select it from our list of Herne Hill venues. Click "Select a venue" to show a list of all possible venues. Choose a suitable venue and click "Submit". You can browse the <b><a href="/venues" target="_blank">list of available venues</a></b> to see what is available.',
+    'description' => 'If your event takes place in a physical location, make sure it\'s already in our <a href="/venues" target="_blank">list of available venues</a>. Select "Add item (venue)" to choose your venue from our listings and click "Submit". If we don\'t already have it, save this page (click Save as draft) then <a href="/node/add/ol-place" target="_blank">Add a new place</a> to create a new venue before returning here to finish.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -473,7 +473,7 @@ function openlocal_event_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 9,
+      'weight' => 7,
     ),
   );
 
@@ -518,7 +518,7 @@ function openlocal_event_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_buttons',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -571,7 +571,7 @@ function openlocal_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -636,7 +636,7 @@ function openlocal_event_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -656,7 +656,7 @@ function openlocal_event_field_default_field_instances() {
   t('Enter the email address of a contact for this event.');
   t('Feature content');
   t('Groups audience');
-  t('If your event takes place in a physical space, please select it from our list of Herne Hill venues. Click "Select a venue" to show a list of all possible venues. Choose a suitable venue and click "Submit". You can browse the <b><a href="/venues" target="_blank">list of available venues</a></b> to see what is available.');
+  t('If your event takes place in a physical location, make sure it\'s already in our <a href="/venues" target="_blank">list of available venues</a>. Select "Add item (venue)" to choose your venue from our listings and click "Submit". If we don\'t already have it, save this page (click Save as draft) then <a href="/node/add/ol-place" target="_blank">Add a new place</a> to create a new venue before returning here to finish.');
   t('Image');
   t('The contact number will be for people to call in relation to the event, it will be visible on the page with the event information. If there is no contact number for people to call regarding this event then please leave blank.');
   t('This will appear on list pages, e.g. Services.');

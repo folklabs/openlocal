@@ -16,7 +16,10 @@ function openlocal_home_default_page_manager_pages() {
   $page->admin_title = 'Home';
   $page->admin_description = 'The site homepage.';
   $page->path = 'frontpage';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Home',
@@ -201,41 +204,6 @@ function openlocal_home_default_page_manager_pages() {
     $display->content['new-babda0a1-f1f1-4469-9563-abc41194c0a0'] = $pane;
     $display->panels['column2'][1] = 'new-babda0a1-f1f1-4469-9563-abc41194c0a0';
     $pane = new stdClass();
-    $pane->pid = 'new-81d7edfc-f6e5-4ae6-8522-42c6a6d929f3';
-    $pane->panel = 'column2';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ol_forum_recent_comments-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'teaser',
-      'widget_title' => NULL,
-      'items_per_page' => NULL,
-      'exposed' => array(
-        'sort_by' => NULL,
-        'sort_order' => NULL,
-      ),
-      'use_pager' => NULL,
-      'pager_id' => NULL,
-      'offset' => NULL,
-      'link_to_view' => NULL,
-      'more_link' => NULL,
-      'path' => NULL,
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = '81d7edfc-f6e5-4ae6-8522-42c6a6d929f3';
-    $display->content['new-81d7edfc-f6e5-4ae6-8522-42c6a6d929f3'] = $pane;
-    $display->panels['column2'][2] = 'new-81d7edfc-f6e5-4ae6-8522-42c6a6d929f3';
-    $pane = new stdClass();
     $pane->pid = 'new-69f5f27e-76fc-4abc-964d-fc9575b52e11';
     $pane->panel = 'column2';
     $pane->type = 'custom';
@@ -255,13 +223,6 @@ function openlocal_home_default_page_manager_pages() {
 <a href="/contextual_help/how-create-news-article" class="ol-action-help"><i class="fa fa-question-circle"></i> About creating articles</a>
 </div>
 
-<div class="ol-action-button">
-<a href="/node/add/ol-alert"><span class="ol-action-span"><i class="fa fa-plus"></i> create alert</span></a>
-</div>
-
-<div>
-<a href="/contextual_help/how-create-alert" class="ol-action-help"><i class="fa fa-question-circle"></i> About creating alerts</a>
-</div>
 </div>',
       'format' => 'panopoly_html_text',
       'substitute' => TRUE,
@@ -272,11 +233,11 @@ function openlocal_home_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '69f5f27e-76fc-4abc-964d-fc9575b52e11';
     $display->content['new-69f5f27e-76fc-4abc-964d-fc9575b52e11'] = $pane;
-    $display->panels['column2'][3] = 'new-69f5f27e-76fc-4abc-964d-fc9575b52e11';
+    $display->panels['column2'][2] = 'new-69f5f27e-76fc-4abc-964d-fc9575b52e11';
     $pane = new stdClass();
     $pane->pid = 'new-b6884e53-690d-448f-9d43-b2f970d3d357';
     $pane->panel = 'contentmain';
@@ -381,6 +342,41 @@ function openlocal_home_default_page_manager_pages() {
     $pane->uuid = '8af9868e-9f9b-4e56-995c-25b4ea2f9b0a';
     $display->content['new-8af9868e-9f9b-4e56-995c-25b4ea2f9b0a'] = $pane;
     $display->panels['contentmain'][2] = 'new-8af9868e-9f9b-4e56-995c-25b4ea2f9b0a';
+    $pane = new stdClass();
+    $pane->pid = 'new-81d7edfc-f6e5-4ae6-8522-42c6a6d929f3';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ol_forum_recent_comments-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '81d7edfc-f6e5-4ae6-8522-42c6a6d929f3';
+    $display->content['new-81d7edfc-f6e5-4ae6-8522-42c6a6d929f3'] = $pane;
+    $display->panels['contentmain'][3] = 'new-81d7edfc-f6e5-4ae6-8522-42c6a6d929f3';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

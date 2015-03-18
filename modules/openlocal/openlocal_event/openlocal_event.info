@@ -55,7 +55,6 @@ features[page_manager_pages][] = events_map
 features[page_manager_pages][] = ol_event_venues
 features[page_manager_pages][] = ol_event_venues_map
 features[panelizer_defaults][] = node:ol_event:default
-features[taxonomy][] = ol_events
 features[user_permission][] = administer panelizer node ol_event content
 features[user_permission][] = administer panelizer node ol_event context
 features[user_permission][] = administer panelizer node ol_event defaults

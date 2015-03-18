@@ -32,7 +32,6 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = user_reference
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = page_manager:pages_default:1

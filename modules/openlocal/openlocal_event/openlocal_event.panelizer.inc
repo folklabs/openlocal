@@ -511,28 +511,6 @@ function openlocal_event_panelizer_defaults() {
     $pane->uuid = '7a142de8-fd9d-4cfe-9d87-e229907a924b';
     $display->content['new-7a142de8-fd9d-4cfe-9d87-e229907a924b'] = $pane;
     $display->panels['quarter1'][6] = 'new-7a142de8-fd9d-4cfe-9d87-e229907a924b';
-    $pane = new stdClass();
-    $pane->pid = 'new-f6d2c926-9bdc-4d8b-a992-e60f96d012eb';
-    $pane->panel = 'quarter2';
-    $pane->type = 'block';
-    $pane->subtype = 'block-4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'f6d2c926-9bdc-4d8b-a992-e60f96d012eb';
-    $display->content['new-f6d2c926-9bdc-4d8b-a992-e60f96d012eb'] = $pane;
-    $display->panels['quarter2'][0] = 'new-f6d2c926-9bdc-4d8b-a992-e60f96d012eb';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;

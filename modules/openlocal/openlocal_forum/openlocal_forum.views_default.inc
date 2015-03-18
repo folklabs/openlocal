@@ -28,7 +28,9 @@ function openlocal_forum_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Relationship: Comment: Content */
@@ -36,6 +38,11 @@ function openlocal_forum_views_default_views() {
   $handler->display->display_options['relationships']['nid']['table'] = 'comment';
   $handler->display->display_options['relationships']['nid']['field'] = 'nid';
   $handler->display->display_options['relationships']['nid']['required'] = TRUE;
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['relationship'] = 'nid';
   /* Field: Comment: Title */
   $handler->display->display_options['fields']['subject']['id'] = 'subject';
   $handler->display->display_options['fields']['subject']['table'] = 'comment';
@@ -49,12 +56,13 @@ function openlocal_forum_views_default_views() {
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = 'Posted on';
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Field: Comment: Author */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'comment';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['label'] = 'by';
-  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
+  $handler->display->display_options['fields']['name_1']['table'] = 'users';
+  $handler->display->display_options['fields']['name_1']['field'] = 'name';
+  $handler->display->display_options['fields']['name_1']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['name_1']['label'] = 'by';
+  $handler->display->display_options['fields']['name_1']['element_label_colon'] = FALSE;
   /* Sort criterion: Comment: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'comment';

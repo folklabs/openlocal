@@ -370,7 +370,7 @@ function openlocal_news_panelizer_defaults() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'inline',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_link',
       'delta_limit' => '0',
       'delta_offset' => '0',
@@ -392,6 +392,7 @@ function openlocal_news_panelizer_defaults() {
       'link_to_view' => NULL,
       'more_link' => NULL,
       'path' => NULL,
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(

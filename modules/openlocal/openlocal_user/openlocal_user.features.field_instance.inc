@@ -10,8 +10,8 @@
 function openlocal_user_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'profile2-ol_personal_info-field_ol_personal_address'
-  $field_instances['profile2-ol_personal_info-field_ol_personal_address'] = array(
+  // Exported field_instance: 'profile2-ol_personal_info-field_ol_address'
+  $field_instances['profile2-ol_personal_info-field_ol_address'] = array(
     'bundle' => 'ol_personal_info',
     'default_value' => array(
       0 => array(
@@ -54,6 +54,7 @@ function openlocal_user_field_default_field_instances() {
         'available_countries' => array(
           'GB' => 'GB',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',

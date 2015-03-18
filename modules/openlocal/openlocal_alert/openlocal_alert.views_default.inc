@@ -42,10 +42,17 @@ function openlocal_alert_views_default_views() {
   $handler->display->display_options['empty']['area']['label'] = 'No current alerts';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = '<p>No Missing Moggies or other reported problems. Phew.</p>
-<p><a href="/node/add/ol-alert">Submit an alert</a></p>
+
+<div class="ol-action-button">
+<a href="/node/add/ol-alert"><span class="ol-action-span"><i class="fa fa-plus"></i> create alert</span></a>
+</div>
+
+<div>
+<a href="/contextual_help/how-create-alert" class="ol-action-help"><i class="fa fa-question-circle"></i> About creating alerts</a>
+</div>
 ';
   $handler->display->display_options['empty']['area']['format'] = 'panopoly_html_text';
-  /* Field: Content: Link */
+  /* Field: Content: Website */
   $handler->display->display_options['fields']['field_ol_link']['id'] = 'field_ol_link';
   $handler->display->display_options['fields']['field_ol_link']['table'] = 'field_data_field_ol_link';
   $handler->display->display_options['fields']['field_ol_link']['field'] = 'field_ol_link';
@@ -104,7 +111,7 @@ function openlocal_alert_views_default_views() {
   /* Display: Sidebar */
   $handler = $view->new_display('panel_pane', 'Sidebar', 'panel_pane_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Link */
+  /* Field: Content: Website */
   $handler->display->display_options['fields']['field_ol_link']['id'] = 'field_ol_link';
   $handler->display->display_options['fields']['field_ol_link']['table'] = 'field_data_field_ol_link';
   $handler->display->display_options['fields']['field_ol_link']['field'] = 'field_ol_link';

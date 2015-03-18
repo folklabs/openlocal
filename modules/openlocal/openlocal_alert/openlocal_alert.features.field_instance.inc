@@ -159,73 +159,6 @@ function openlocal_alert_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_alert-field_ol_link'
-  $field_instances['node-ol_alert-field_ol_link'] = array(
-    'bundle' => 'ol_alert',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'A link to a forum post or other web page that gives more information.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 2,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_link',
-    'label' => 'Link',
-    'required' => 0,
-    'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'rel_remove' => 'default',
-      'title' => 'none',
-      'title_label_use_field_label' => FALSE,
-      'title_maxlength' => 128,
-      'title_value' => 'More details',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-ol_alert-field_ol_alert_resolved'
   $field_instances['node-ol_alert-field_ol_alert_resolved'] = array(
     'bundle' => 'ol_alert',
@@ -321,6 +254,73 @@ function openlocal_alert_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_alert-field_ol_link'
+  $field_instances['node-ol_alert-field_ol_link'] = array(
+    'bundle' => 'ol_alert',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A link to a forum post or other web page that gives more information.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 2,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_link',
+    'label' => 'Link',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => FALSE,
+      'title_maxlength' => 128,
+      'title_value' => 'More details',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 4,
     ),
   );
 

@@ -57,7 +57,7 @@ function openlocal_issue_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -147,7 +147,7 @@ function openlocal_issue_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 

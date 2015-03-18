@@ -39,7 +39,6 @@ features[field_instance][] = node-ol_news_article-field_featured_image
 features[field_instance][] = node-ol_news_article-field_ol_radioactivity
 features[field_instance][] = node-ol_news_article-field_ol_tags
 features[node][] = ol_news_article
-features[page_manager_pages][] = ol_news_articles_author
 features[page_manager_pages][] = openlocal_news_home_page
 features[panelizer_defaults][] = node:ol_news_article:default
 features[panelizer_defaults][] = node:ol_news_article:default:default

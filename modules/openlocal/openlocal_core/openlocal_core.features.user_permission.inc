@@ -33,7 +33,9 @@ function openlocal_core_user_default_permissions() {
   // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'views',
   );
 
@@ -353,7 +355,9 @@ function openlocal_core_user_default_permissions() {
   // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'views',
   );
 
@@ -383,9 +387,7 @@ function openlocal_core_user_default_permissions() {
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -727,7 +729,6 @@ function openlocal_core_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
       'editor' => 'editor',
     ),
     'module' => 'node',

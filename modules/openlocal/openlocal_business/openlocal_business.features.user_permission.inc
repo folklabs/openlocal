@@ -270,6 +270,7 @@ function openlocal_business_user_default_permissions() {
   $permissions['edit own ol_business content'] = array(
     'name' => 'edit own ol_business content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
       'editor' => 'editor',
       'trader' => 'trader',
     ),

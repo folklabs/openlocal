@@ -84,7 +84,7 @@ function openlocal_user_views_default_views() {
     'draft' => 'draft',
     'needs_review' => 'needs_review',
   );
-  /* Filter criterion: Workbench Moderation: Current */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['current']['id'] = 'current';
   $handler->display->display_options['filters']['current']['table'] = 'workbench_moderation_node_history';
   $handler->display->display_options['filters']['current']['field'] = 'current';
@@ -132,7 +132,7 @@ function openlocal_user_views_default_views() {
   $handler->display->display_options['filters']['state']['value'] = array(
     'published' => 'published',
   );
-  /* Filter criterion: Workbench Moderation: Current */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['current']['id'] = 'current';
   $handler->display->display_options['filters']['current']['table'] = 'workbench_moderation_node_history';
   $handler->display->display_options['filters']['current']['field'] = 'current';
@@ -292,19 +292,30 @@ function openlocal_user_views_default_views() {
   $handler->display->display_options['filters']['state']['value'] = array(
     'published' => 'published',
   );
-  /* Filter criterion: Workbench Moderation: Current */
-  $handler->display->display_options['filters']['current']['id'] = 'current';
-  $handler->display->display_options['filters']['current']['table'] = 'workbench_moderation_node_history';
-  $handler->display->display_options['filters']['current']['field'] = 'current';
-  $handler->display->display_options['filters']['current']['value'] = '1';
 
   /* Display: Published */
   $handler = $view->new_display('panel_pane', 'Published', 'panel_pane_1');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'No content published yet. Why not write something?';
+  $handler->display->display_options['empty']['area']['format'] = 'panopoly_wysiwyg_text';
 
   /* Display: Draft */
   $handler = $view->new_display('panel_pane', 'Draft', 'panel_pane_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Draft content';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'No content in draft state.';
+  $handler->display->display_options['empty']['area']['format'] = 'panopoly_wysiwyg_text';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -323,11 +334,6 @@ function openlocal_user_views_default_views() {
   $handler->display->display_options['filters']['state']['value'] = array(
     'published' => 'published',
   );
-  /* Filter criterion: Workbench Moderation: Current */
-  $handler->display->display_options['filters']['current']['id'] = 'current';
-  $handler->display->display_options['filters']['current']['table'] = 'workbench_moderation_node_history';
-  $handler->display->display_options['filters']['current']['field'] = 'current';
-  $handler->display->display_options['filters']['current']['value'] = '1';
   $export['openlocal_user_content'] = $view;
 
   return $export;

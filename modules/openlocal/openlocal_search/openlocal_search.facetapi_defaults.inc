@@ -48,6 +48,7 @@ function openlocal_search_facetapi_default_facet_settings() {
     'dependencies' => array(
       'bundle' => 'none',
       'bundle_selected' => array(),
+      'roles' => array(),
     ),
     'facet_mincount' => '1',
     'facet_missing' => '0',
@@ -55,6 +56,9 @@ function openlocal_search_facetapi_default_facet_settings() {
     'query_type' => 'term',
     'default_true' => TRUE,
     'facet_search_ids' => array(),
+    'individual_parent' => '0',
+    'limit_active_items' => 0,
+    'exclude' => 0,
   );
   $export['search_api@openlocal_index::field_ol_business_tags'] = $facet;
 
@@ -148,15 +152,15 @@ function openlocal_search_facetapi_default_facet_settings() {
     'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
-      'count' => 'count',
       'display' => 'display',
+      'count' => 'count',
       'indexed' => 0,
     ),
     'sort_weight' => array(
       'active' => '-50',
-      'count' => '-49',
-      'display' => '-48',
-      'indexed' => '0',
+      'count' => '-48',
+      'display' => '-49',
+      'indexed' => '-47',
     ),
     'sort_order' => array(
       'active' => '3',
@@ -173,6 +177,8 @@ function openlocal_search_facetapi_default_facet_settings() {
       'format' => 'panopoly_wysiwyg_text',
     ),
     'submit_realm' => 'Save and go back to realm settings',
+    'facet_more_text' => 'Show more',
+    'facet_fewer_text' => 'Show fewer',
   );
   $export['search_api@openlocal_index:block:field_ol_business_tags'] = $facet;
 
