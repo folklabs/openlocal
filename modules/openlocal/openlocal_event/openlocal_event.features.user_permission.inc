@@ -52,13 +52,6 @@ function openlocal_event_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer taxonomy_term ol_events defaults'.
-  $permissions['administer panelizer taxonomy_term ol_events defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term ol_events defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create ol_event content'.
   $permissions['create ol_event content'] = array(
     'name' => 'create ol_event content',

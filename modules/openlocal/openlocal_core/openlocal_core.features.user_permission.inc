@@ -190,15 +190,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'mailsystem',
   );
 
-  // Exported permission: 'administer masquerade'.
-  $permissions['administer masquerade'] = array(
-    'name' => 'administer masquerade',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'masquerade',
-  );
-
   // Exported permission: 'administer media browser'.
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
@@ -506,24 +497,6 @@ function openlocal_core_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'geocoder',
-  );
-
-  // Exported permission: 'masquerade as admin'.
-  $permissions['masquerade as admin'] = array(
-    'name' => 'masquerade as admin',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'masquerade',
-  );
-
-  // Exported permission: 'masquerade as user'.
-  $permissions['masquerade as user'] = array(
-    'name' => 'masquerade as user',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'masquerade',
   );
 
   // Exported permission: 'moderate content from draft to needs_review'.
