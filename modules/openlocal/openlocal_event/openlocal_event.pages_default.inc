@@ -84,7 +84,7 @@ function openlocal_event_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'harris';
+  $display->layout = 'radix_harris';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -293,7 +293,7 @@ function openlocal_event_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -396,7 +396,7 @@ function openlocal_event_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -720,7 +720,7 @@ function openlocal_event_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(

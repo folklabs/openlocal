@@ -617,7 +617,7 @@ function openlocal_news_panelizer_defaults() {
     'panels_breadcrumbs_home' => 0,
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(

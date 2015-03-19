@@ -69,7 +69,7 @@ function openlocal_admin_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'phelan';
+  $display->layout = 'radix_phelan';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
