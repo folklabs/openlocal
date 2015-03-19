@@ -116,6 +116,9 @@ projects[flag][subdir] = contrib
 projects[features_extra][version] = 1.0-beta1
 projects[features_extra][subdir] = contrib
 
+projects[forward][version] = 2.0
+projects[forward][subdir] = contrib
+
 projects[geofield][version] = 2.3
 projects[geofield][subdir] = contrib
 
