@@ -131,7 +131,7 @@ projects[geo_filter][subdir] = contrib
 projects[geophp][version] = 1.7
 projects[geophp][subdir] = contrib
 
-projects[honeypot][version] = 1.18
+projects[honeypot][version] = 1.17
 projects[honeypot][subdir] = contrib
 
 projects[imagefield_focus][version] = 1.0
