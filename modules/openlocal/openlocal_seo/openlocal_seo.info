@@ -5,6 +5,7 @@ version = 7.x-1.0-alpha1
 project = openlocal_seo
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = forward
 dependencies[] = globalredirect
 dependencies[] = metatag
 dependencies[] = pathauto
