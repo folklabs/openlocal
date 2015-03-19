@@ -19,6 +19,7 @@ dependencies[] = panopoly_pages
 dependencies[] = pm_email_notify
 dependencies[] = privatemsg
 dependencies[] = simplenews
+dependencies[] = smtp
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
