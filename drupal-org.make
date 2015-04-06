@@ -50,12 +50,6 @@ projects[panopoly_search][version] = 1.20
 projects[panopoly_search][subdir] = panopoly
 
 
-; Development / maintenance
-
-projects[masquerade][version] = 1.0-rc7
-projects[masquerade][subdir] = contrib
-
-
 ; OpenLocal dependencies
 
 projects[admin_menu][version] = 3.0-rc5
@@ -233,6 +227,9 @@ projects[site_map][subdir] = contrib
 projects[smtp][version] = 1.2
 projects[smtp][subdir] = contrib
 
+projects[super_login][version] = 1.0-beta6
+projects[super_login][subdir] = contrib
+
 projects[twitter][version] = 5.8
 projects[twitter][subdir] = contrib
 
@@ -262,25 +259,6 @@ projects[xmlsitemap][version] = 2.2
 projects[xmlsitemap][subdir] = contrib
 
 
-; Migration
-
-;projects[migrate][version] = 2.5
-;projects[migrate][subdir] = contrib
-
-;projects[migrate_d2d][version] = 2.0
-;projects[migrate_d2d][subdir] = contrib
-
-;projects[migrate_extras][version] = 2.5
-;projects[migrate_extras][subdir] = contrib
-
-;projects[migrate_rpforum][version] = 1.0
-;projects[migrate_rpforum][subdir] = contrib
-;projects[migrate_rpforum][type] = module
-;projects[migrate_rpforum][download][type] = git
-;projects[migrate_rpforum][download][url] = https://github.com/pmackay/migrate_rpforum.git
-;projects[migrate_rpforum][download][revision] = 8c18fbb
-
-
 ; Libraries
 
 libraries[colorbox][download][type] = get
@@ -298,5 +276,5 @@ libraries[mailchimp][destination] = libraries
 
 ; Themes
 
-;projects[adaptivetheme][version] = 3.1
+projects[zurb_foundation][version] = 5.0-rc6
 
