@@ -261,7 +261,6 @@ projects[eu_cookie_compliance][subdir] = contrib
 ;projects[webform][subdir] = contrib
 
 
-
 ; Libraries
 
 libraries[colorbox][download][type] = get
@@ -280,4 +279,6 @@ libraries[mailchimp][destination] = libraries
 ; Themes
 
 projects[zurb_foundation][version] = 5.0-rc6
+projects[zurb_foundation][destination] = themes
+
 
