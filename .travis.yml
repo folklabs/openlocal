@@ -1,0 +1,56 @@
+language: php
+
+php:
+  - 5.4
+
+mysql:
+  database: drupal
+  username: root
+  encoding: utf8
+
+install:
+
+  # Create MySQL Database
+  - mysql -e 'create database drupal;'
+
+  # Install Drush
+  - pear channel-discover pear.drush.org
+  - pear install drush/drush-5.4.0
+  - phpenv rehash
+
+  # Run composer
+  - cd ./tests/behat
+  - composer install
+  - cd ../../
+
+before_script:
+
+  # Install OpenLocal
+  - cd ../
+  - mkdir profiles
+  - mv openlocal profiles/
+  - mkdir drupal
+  - mv profiles drupal/
+  - cd drupal
+  - drush make --prepare-install profiles/openlocal/build-openlocal.make --yes
+  - sudo chmod -R 777 sites/all/modules
+  - drush si openlocal --sites-subdir=default --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="OpenLocal" --yes
+  - drush cc all --yes
+  - cd ../
+
+  # Setup display for selenium
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+  - sudo drush --root=$PWD/drupal runserver --server=builtin 80 &
+  - sleep 3
+
+  - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.25.0.jar
+  - java -jar selenium-server-standalone-2.25.0.jar -p 4444 &
+  - sleep 5
+
+script:
+  - cd drupal/profiles/openlocal/tests/behat
+  # behat.yml includes behat.local.yml so it must exist
+  - touch behat.local.yml
+  - ./bin/behat
