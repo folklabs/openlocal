@@ -20,13 +20,12 @@ dependencies[] = panopoly_wysiwyg
 ; Panopoly Recommended - Admin
 dependencies[] = backports
 dependencies[] = admin_menu
-dependencies[] = admin_menu_toolbar
 dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
 
-; Other modules
-dependencies[] = book
+; Other recommended modules
+dependencies[] = adminimal_admin_menu
 
 ; OpenLocal
 dependencies[] = openlocal_admin
@@ -36,12 +35,10 @@ dependencies[] = openlocal_contact
 dependencies[] = openlocal_core
 dependencies[] = openlocal_event
 dependencies[] = openlocal_forum
-dependencies[] = openlocal_gallery
 dependencies[] = openlocal_group
 dependencies[] = openlocal_highlight
 dependencies[] = openlocal_home
 dependencies[] = openlocal_images
-dependencies[] = openlocal_issue
 dependencies[] = openlocal_layout
 dependencies[] = openlocal_news
 dependencies[] = openlocal_search
@@ -50,6 +47,11 @@ dependencies[] = openlocal_social
 dependencies[] = openlocal_user
 
 ; Optional features
+dependencies[] = openlocal_issue
+dependencies[] = openlocal_gallery
+
+
+; In development
 ;dependencies[] = openlocal_idea
 ;dependencies[] = openlocal_poll
 ;dependencies[] = openlocal_survey

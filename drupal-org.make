@@ -52,9 +52,6 @@ projects[panopoly_search][subdir] = panopoly
 
 ; OpenLocal dependencies
 
-projects[admin_menu][version] = 3.0-rc5
-projects[admin_menu][subdir] = contrib
-
 projects[adminimal_admin_menu][version] = 1.x-dev
 projects[adminimal_admin_menu][subdir] = contrib
 projects[adminimal_admin_menu][patch][2137901] = https://www.drupal.org/files/issues/adminimal_admin_menu-top-margin-front-end-2137901-5.patch
@@ -89,9 +86,6 @@ projects[eck][subdir] = contrib
 
 projects[entityreference_view_widget][version] = 2.0-rc6
 projects[entityreference_view_widget][subdir] = contrib
-
-projects[eu_cookie_compliance][version] = 1.14
-projects[eu_cookie_compliance][subdir] = contrib
 
 projects[calendar][version] = 3.5
 projects[calendar][subdir] = contrib
@@ -197,9 +191,6 @@ projects[office_hours][subdir] = contrib
 projects[entityreference_prepopulate][version] = 1.3
 projects[entityreference_prepopulate][subdir] = contrib
 
-;projects[responsive_menus][version] =
-;projects[responsive_menus][subdir] = contrib
-
 projects[radioactivity][version] = 2.9
 projects[radioactivity][subdir] = contrib
 
@@ -242,12 +233,6 @@ projects[views_slideshow][subdir] = contrib
 projects[views_responsive_grid][version] = 1.3
 projects[views_responsive_grid][subdir] = contrib
 
-projects[votingapi][version] = 2.11
-projects[votingapi][subdir] = contrib
-
-projects[webform][version] = 3.19
-projects[webform][subdir] = contrib
-
 projects[workbench][version] = 1.2
 projects[workbench][subdir] = contrib
 
@@ -257,6 +242,22 @@ projects[workbench_moderation][patch][1285090] = https://www.drupal.org/files/is
 
 projects[xmlsitemap][version] = 2.2
 projects[xmlsitemap][subdir] = contrib
+
+
+; Recommended modules
+
+projects[eu_cookie_compliance][version] = 1.14
+projects[eu_cookie_compliance][subdir] = contrib
+
+
+; For development modules
+
+;projects[votingapi][version] = 2.11
+;projects[votingapi][subdir] = contrib
+
+;projects[webform][version] = 3.19
+;projects[webform][subdir] = contrib
+
 
 
 ; Libraries

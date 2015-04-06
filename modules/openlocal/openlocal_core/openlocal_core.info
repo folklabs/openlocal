@@ -17,7 +17,6 @@ dependencies[] = diff
 dependencies[] = email
 dependencies[] = entity
 dependencies[] = entityreference
-dependencies[] = eu_cookie_compliance
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = geo_filter
