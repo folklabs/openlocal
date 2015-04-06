@@ -89,6 +89,8 @@ projects[entityreference_view_widget][subdir] = contrib
 
 projects[calendar][version] = 3.5
 projects[calendar][subdir] = contrib
+projects[calendar][patch][2160183] = https://www.drupal.org/files/issues/calendar-groupby-times-2160183-1.patch
+; See https://www.drupal.org/node/2160183
 
 projects[colorbox][version] = 2.8
 projects[colorbox][subdir] = contrib
