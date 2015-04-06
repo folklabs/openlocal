@@ -55,7 +55,7 @@ projects[panopoly_search][subdir] = panopoly
 projects[admin_menu][version] = 3.0-rc5
 projects[admin_menu][subdir] = contrib
 
-projects[adminimal_admin_menu][version] = 1.5
+projects[adminimal_admin_menu][version] = 1.x-dev
 projects[adminimal_admin_menu][subdir] = contrib
 projects[adminimal_admin_menu][patch][2137901] = https://www.drupal.org/files/issues/adminimal_admin_menu-top-margin-front-end-2137901-5.patch
 

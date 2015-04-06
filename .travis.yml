@@ -15,8 +15,13 @@ install:
   - mysql -e 'create database drupal;'
 
   # Install Drush
-  - pear channel-discover pear.drush.org
-  - pear install drush/drush-5.4.0
+  # - pear channel-discover pear.drush.org
+  # - pear install drush/drush-5.4.0
+
+  # Install Drupal.org drush.
+  - drush dl -y drupalorg_drush-7.x-1.x-dev --destination=$HOME/.drush
+  - drush cc drush
+
   - phpenv rehash
 
   # Run composer
