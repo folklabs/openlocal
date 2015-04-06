@@ -1,0 +1,12 @@
+// Non-modular or client styles for .l-footer region.
+
+$footer-background-color: #4d3d44;
+
+.l-footer {
+  background-color: $footer-background-color;
+  color: $col-content-lighter;
+
+  a {
+    color: $col-content-lightest;
+  }
+}

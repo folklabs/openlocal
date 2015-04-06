@@ -1,0 +1,57 @@
+
+$list-row-divider: 1px $col-content-lightest solid;
+
+%ol-categories {
+  margin-bottom: 2em;
+
+  h2 {
+    @extend %ol-panel-title;
+  }
+
+  a.active {
+    background-color: $col-links-lightest;
+    color: $col-links-darker;
+  }
+  a {
+    min-height: 2.5em;
+    display: block;
+
+    padding: 3.5% 5% 1.5% 5%;
+
+    &:hover {
+      background-color: $col-links-lightest;
+      color: $col-links-darkest;
+    }
+    &:active {
+      background-color: $col-links;
+      color: white;
+    }
+  }
+
+  // The "View all" option
+  .view-header {
+    border-bottom: 1px solid $col-content-lighter;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// The normal menu items
+%ol-category {
+  border-bottom: $list-row-divider;
+}
+
+
+
+
+.ol-2nd-nav-menu {
+  @extend %ol-categories;
+
+  .views-row {
+    @extend %ol-category;
+  }
+}
+
+

@@ -1,0 +1,95 @@
+
+%ol-teaser {
+  border-bottom: $list-row-divider;
+  padding: 10px 0 20px;
+
+  color: $secondary-color;
+}
+
+%ol-teaser-title {
+  font-family: $font-family-serif;
+  font-size: 1.2em;
+}
+
+%ol-news-teaser-featured-image {
+  display: inline-block;
+  float: left;
+
+  height: auto;
+  max-width: 280px;
+  margin-right: 20px;
+  width: 50%;
+}
+
+%ol-news-metadata {
+  padding: 0.5em 0;
+
+  font-size: 0.85em;
+}
+
+%ol-event-teaser-date {
+  color: $secondary-color;
+  font-weight: 900;
+  text-align: center;
+}
+
+
+//-----------------------------------------------------------------------------
+// Drupal integration
+
+.view-display-id-list_news_articles {
+  .views-row {
+    @extend %ol-teaser;
+  }
+
+  .views-field-title {
+    @extend %ol-teaser-title;
+  }
+
+  .views-field-field-featured-image {
+    @extend %ol-news-teaser-featured-image;
+  }
+
+  .views-field-created,
+  .views-field-comment-count {
+    @extend %ol-news-metadata;
+  }
+
+  .views-field-name {
+    font-family: $font-family-serif;
+    font-weight: 600;
+  }
+}
+
+.pane-openlocal-event-panel-pane-2 {
+  h2 {
+    @extend %ol-panel-title;
+  }
+  table {
+    background-color: transparent;
+    border: none;
+  }
+  tr.odd,
+  tr.even {
+    background-color: transparent;
+  }
+  td {
+    background-color: transparent;
+    color: $secondary-color;
+  }
+
+  // TODO: The 'span' is a hack because event title is mixed with other
+  // fields in table cell. Should probably not use tables.
+  .views-field-title span {
+    @extend %ol-teaser-title;
+  }
+
+  .views-field-field-ol-event-date-1 {
+    @extend %ol-event-teaser-date;
+  }
+
+  .views-field-field-featured-image {
+    padding: 0.5em 0;
+    width: 130px;
+  }
+}

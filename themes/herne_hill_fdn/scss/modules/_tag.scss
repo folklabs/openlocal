@@ -1,0 +1,54 @@
+
+
+
+//TODO: does this need a word like panel, block, etc?
+//TODO: need to change field so it is not inline, rather than hack in theme
+%ol-tags {
+  // @extend .ol-panel;
+  border-top: $col-content-lighter solid 1px;
+}
+
+%ol-tag {
+  display: inline-block;
+  margin: 0.5em 10px 0.5em 0;
+  a {
+    &:link,
+    &:visited {
+      padding: 0.25em 10px;
+      background-color: $col-links-lightest;
+      border: solid 1px $col-links-lighter;
+      border-radius: 9999px;
+      color: $col-links;
+    }
+    &:hover {
+      @include glow-inner($col-links-lighter, 10);
+      color: $col-links-darker;
+      border: solid 1px $col-links;
+    }
+    &:active {
+      // @include glow-inner($col-links-darker, 10);
+      border: solid 1px $col-links-lighter;
+      background-color: $col-links;
+      color: $body-bg;
+    }
+  }
+}
+
+
+//-----------------------------------------------------------------------------
+// Drupal integration
+
+.pane-node-field-ol-business-tags,
+.field-name-field-ol-tags {
+  @extend %ol-tags;
+
+  .field-label {
+    @extend %ol-field-label;
+  }
+  .links {
+    display: block;
+  }
+  li {
+    @extend %ol-tag;
+  }
+}

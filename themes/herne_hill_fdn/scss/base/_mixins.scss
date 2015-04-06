@@ -1,0 +1,24 @@
+// @file
+// Place your mixins here. Feel free to roll your own mixins.
+
+// Adds a glow coloured using $col-glow, with a size of $glow-size
+@mixin glow-inner($col-glow, $glow-size) {
+  -moz-box-shadow:    inset 0 0 $glow-size * 1px $col-glow;
+  -webkit-box-shadow: inset 0 0 $glow-size * 1px $col-glow;
+  box-shadow:         inset 0 0 $glow-size * 1px $col-glow;
+}
+
+// ----------------------------------------------------------------------------
+// Gradients
+
+// Blends two colours from $col-top at the top, thru to $col-bottom at the bottom
+// Simple really
+
+@mixin gradient-vertical($col-top, $col-bottom) {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, $col-top), color-stop(1, $col-bottom));
+  background-image: -o-linear-gradient(top, $col-top 0%, $col-bottom 100%);
+  background-image: -moz-linear-gradient(top, $col-top 0%, $col-bottom 100%);
+  background-image: -webkit-linear-gradient(top, $col-top 0%, $col-bottom 100%);
+  background-image: -ms-linear-gradient(top, $col-top 0%, $col-bottom 100%);
+  background-image: linear-gradient(to top, $col-top 0%, $col-bottom 100%);
+}

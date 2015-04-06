@@ -1,0 +1,96 @@
+
+$panel-title-divider: $col-content-lighter solid 1px !default;
+$panel-row-divider: $body-bg solid 1px !default;
+
+%ol-field-label {
+  // TODO: why left padding?
+  padding: 0.75em 5px 0.05em 5px;
+
+  color: $col-content;
+  font-family: $font-family-sans-serif;
+  font-weight: 900;
+  font-size: $base-font-size;
+  line-height: $base-font-size;
+}
+
+// TODO: could this be pane title?
+%ol-panel-title {
+  @extend %ol-field-label;
+  border-bottom: $panel-title-divider;
+}
+
+%ol-pane-h3 {
+  color: $secondary-color;
+  font-family: $font-family-sans-serif;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: $base-font-size;
+}
+
+%ol-panel {
+  @include panel();
+
+  padding-top: 0.5em;
+  margin-bottom: 1em;
+
+  h2 {
+    @extend %ol-panel-title;
+  }
+  h3 {
+    @extend %ol-pane-h3;
+  }
+
+  .views-row {
+    border-bottom: $panel-row-divider;
+
+    line-height: 1.25em;
+  }
+}
+
+%ol-panel-list {
+  @extend %ol-panel;
+  @include panel();
+
+  .views-field-title {
+    font-family: $font-family-serif;
+  }
+  .views-field {
+    padding: 0.5em 5px;
+  }
+  .views-field-field-featured-image {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+//-----------------------------------------------------------------------------
+// Drupal integration
+
+.pane-openlocal-group-panel-pane-3,
+.pane-ol-forum-recent-comments-panel-pane-1 {
+  h2 {
+    @extend %ol-panel-title;
+  }
+}
+
+.pane-openlocal-alert-panel-pane-1 {
+  @extend %ol-panel;
+
+  //TODO: make variable
+  background-color: #e2e3d7;
+
+  .pane-content {
+    padding: 5px;
+  }
+}
+
+.pane-openlocal-news-articles-by-author,
+.pane-openlocal-news-article-archive,
+.pane-openlocal-event-panel-pane-1,
+.pane-openlocal-what-s-hot-panel-pane-1,
+.pane-openlocal-news-related-news-articles {
+  @extend %ol-panel-list;
+}
+
+

@@ -1,0 +1,67 @@
+// Non-modular or client styles for .l-header region.
+
+.header {
+  padding: 0 10px;
+}
+
+.logo {
+  float: left;
+  // vertical-align: bottom;
+
+  // margin-top: 8px;
+  margin: 8px 1em 0.5em 10px;
+}
+
+.site-slogan {
+  // vertical-align: bottom;
+
+  margin-top: rem-calc(40);
+  // margin-left: 30px; //rem-calc(30);
+
+  font-family: $font-family-sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: $col-links-darker;
+  line-height: 1.4em;
+}
+
+.socialmedia {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+
+  .fa {
+    margin-left: 5px;
+  }
+}
+
+#secondary-menu {
+  display: block;
+  // font-family: $lato;
+  font-weight: 400;
+  list-style-type: none;
+  li {
+    padding: 0 0.5em 0 0;
+    display: inline-block;
+
+    a {
+      background-color: transparent;
+      color: $col-links;
+      border-radius: 0.1 * $base-font-size;
+      padding: 0.25em 4px 0.25em 4px;
+      &:hover {
+        background-color: $col-links;
+        color: $primary-color;
+      }
+      &:active {
+        background-color: $col-links-darker;
+        color: white;
+      }
+    }
+  }
+}
+
+#secondary-menu li.last a {
+  background-color: $col-links;
+  color: $col-content-lightest;
+}

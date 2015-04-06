@@ -1,0 +1,47 @@
+
+%ol-action-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  a {
+    // height: 2em
+    padding: 0.5em 10px;
+    display: block;
+    border-radius: 0.25em;
+    // font-family: $lato;
+    font-weight: 400;
+    font-size: 1.25 * $base-font-size;
+    text-align: center;
+    &:link,
+    &:visited {
+      color: $col-content-darker;
+      border: solid 1px $col-content;
+      @include gradient-vertical($col-content-lightest, $body-bg);
+    }
+    &:hover {
+      @include gradient-vertical($body-bg, white);
+      border: solid 1px $col-content;
+      color: $col-content;
+    }
+    &:active {
+      @include glow-inner($col-content-lighter, 10);
+      @include gradient-vertical($body-bg, $col-content-lightest);
+      border: solid 1px white;
+      color: $col-content-darkest;
+    }
+    /* edit: added z-index */
+    z-index: 1;
+  }
+}
+
+.ol-action-box {
+  background-color: $col-content-lightest;
+  padding: 0.5em 10px;
+  margin-bottom: 1em;
+}
+
+.ol-action-button {
+  @extend %ol-action-button;
+}

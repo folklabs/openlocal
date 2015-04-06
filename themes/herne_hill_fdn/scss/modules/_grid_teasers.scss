@@ -1,0 +1,115 @@
+
+%ol-grid-teaser {
+  margin-bottom: 1em;
+  vertical-align: top;
+  height: 18em;
+
+  background-color: $col-content-lightest;
+  color: $secondary-color;
+}
+
+%ol-grid-teaser-field {
+  padding: 0.5em 5px;
+}
+
+%ol-grid-teaser-title {
+  @extend %ol-grid-teaser-field;
+
+  font-family: $font-family-serif;
+  // font-size: 1.2em;
+}
+
+
+
+//-----------------------------------------------------------------------------
+// Drupal integration
+
+.view-id-openlocal_group.view-display-id-panel_pane_1,
+.view-display-id-panel_pane_3,
+.view-id-openlocal_business_facet_search {
+  .views-row {
+    @extend %ol-grid-teaser;
+  }
+
+  .views-row-odd {
+    margin-right: 10px;
+  }
+
+  .views-field-title {
+    @extend %ol-grid-teaser-title;
+  }
+
+  .views-field-field-ol-description {
+    @extend %ol-grid-teaser-field;
+  }
+}
+
+.page-services {
+  .pane-block {
+    h2 {
+      @extend %ol-panel-title;
+    }
+  }
+}
+
+
+
+// TODO: remove below
+
+.views-field-field-featured-categories {
+  // @include typography-grid-list-heading;
+  // padding: 0.75em 5px 0.25em 5px
+  padding-left: 5px;
+  height: 1.5em;
+  a {
+    background-color: transparent;
+    &:link,
+    &:visited {
+      color: $col-links;
+    }
+    &:hover {
+      color: $col-links-darker;
+    }
+    &:active {
+      color: $col-links-lighter;
+    }
+  }
+}
+
+
+
+// @mixin grid-list {
+//   .views-row {
+//     background-color: $col-content-lightest;
+//     margin-bottom: 1em;
+//     vertical-align: top;
+//     // Grid list item title text
+//     .views-field-title {
+//       @include list-item-title;
+//       padding: 0.5em 5px;
+//     }
+//     // // Grid list item body text
+//     // .views-field-body
+//     //   .field-content
+//     .views-field-comment-count {
+//       @include typography-grid-list-date;
+//     }
+//     // Grid list date field
+//     .views-field-created {
+//       .field-content {
+//         @include typography-grid-list-date;
+//         padding: 0.5em 0;
+//       }
+//     }
+//   }
+// }
+
+.ol-item-grid {
+  .views-row {
+    display: inline-block;
+    // padding: 5px
+    width: 48.5%;
+    // max-width: 278px
+
+  }
+}
