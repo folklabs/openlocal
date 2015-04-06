@@ -9,6 +9,7 @@ mysql:
   encoding: utf8
 
 install:
+  - composer self-update
 
   # Create MySQL Database
   - mysql -e 'create database drupal;'
