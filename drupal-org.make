@@ -61,6 +61,10 @@ projects[masquerade][subdir] = contrib
 projects[admin_menu][version] = 3.0-rc5
 projects[admin_menu][subdir] = contrib
 
+projects[adminimal_admin_menu][version] = 1.5
+projects[adminimal_admin_menu][subdir] = contrib
+projects[adminimal_admin_menu][patch][2137901] = https://www.drupal.org/files/issues/adminimal_admin_menu-top-margin-front-end-2137901-5.patch
+
 projects[advagg][version] = 2.7
 projects[advagg][subdir] = contrib
 
@@ -237,6 +241,9 @@ projects[twitterfield][subdir] = contrib
 
 projects[views_slideshow][version] = 3.1
 projects[views_slideshow][subdir] = contrib
+
+projects[views_responsive_grid][version] = 1.3
+projects[views_responsive_grid][subdir] = contrib
 
 projects[votingapi][version] = 2.11
 projects[votingapi][subdir] = contrib
