@@ -30,6 +30,7 @@ features[field_instance][] = node-ol_issue-field_ol_issue_status
 features[field_instance][] = node-ol_issue-field_ol_issue_type
 features[node][] = ol_issue
 features[panelizer_defaults][] = node:ol_issue:default
+features[rules_config][] = rules_ol_issue_notify_new_item
 features[rules_config][] = rules_ol_issue_update_notify
 features[user_permission][] = create ol_issue content
 features[user_permission][] = delete any ol_issue content
