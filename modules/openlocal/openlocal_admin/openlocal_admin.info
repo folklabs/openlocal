@@ -4,7 +4,6 @@ core = 7.x
 package = OpenLocal
 version = 7.x-1.0-alpha1
 project = openlocal_admin
-dependencies[] = admin_menu_toolbar
 dependencies[] = backports
 dependencies[] = ctools
 dependencies[] = entity

@@ -98,6 +98,9 @@ projects[colorbox][subdir] = contrib
 projects[email][version] = 1.3
 projects[email][subdir] = contrib
 
+projects[entityreference_prepopulate][version] = 1.3
+projects[entityreference_prepopulate][subdir] = contrib
+
 projects[globalredirect][version] = 1.5
 projects[globalredirect][subdir] = contrib
 
@@ -157,12 +160,6 @@ projects[multiupload_filefield_widget][subdir] = contrib
 projects[multiupload_imagefield_widget][version] = 1.3
 projects[multiupload_imagefield_widget][subdir] = contrib
 
-projects[og][version] = 2.7
-projects[og][subdir] = contrib
-
-projects[og_extras][version] = 1.1
-projects[og_extras][subdir] = contrib
-
 projects[connector][version] = 1.0-beta2
 projects[connector][subdir] = contrib
 
@@ -190,8 +187,11 @@ projects[oauth][subdir] = contrib
 projects[office_hours][version] = 1.4
 projects[office_hours][subdir] = contrib
 
-projects[entityreference_prepopulate][version] = 1.3
-projects[entityreference_prepopulate][subdir] = contrib
+projects[og][version] = 2.7
+projects[og][subdir] = contrib
+
+projects[og_extras][version] = 1.2
+projects[og_extras][subdir] = contrib
 
 projects[radioactivity][version] = 2.9
 projects[radioactivity][subdir] = contrib

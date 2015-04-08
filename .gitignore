@@ -1,5 +1,5 @@
 libraries
 modules/contrib
-modules/debut
 modules/panopoly
-
+themes/responsive_bartik
+themes/zurb_foundation

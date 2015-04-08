@@ -19,6 +19,7 @@ dependencies[] = options
 dependencies[] = page_manager
 dependencies[] = profile2
 dependencies[] = rules
+dependencies[] = super_login
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_content
