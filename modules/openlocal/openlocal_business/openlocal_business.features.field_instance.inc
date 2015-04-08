@@ -476,7 +476,7 @@ function openlocal_business_field_default_field_instances() {
         'label' => 'above',
         'module' => 'email',
         'settings' => array(),
-        'type' => 'email_default',
+        'type' => 'email_contact',
         'weight' => 6,
       ),
       'featured' => array(
