@@ -91,7 +91,7 @@ function openlocal_news_user_default_permissions() {
   $permissions['delete any ol_news_article content'] = array(
     'name' => 'delete any ol_news_article content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -109,7 +109,7 @@ function openlocal_news_user_default_permissions() {
   $permissions['delete own ol_news_article content'] = array(
     'name' => 'delete own ol_news_article content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -118,7 +118,7 @@ function openlocal_news_user_default_permissions() {
   $permissions['edit any ol_news_article content'] = array(
     'name' => 'edit any ol_news_article content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );

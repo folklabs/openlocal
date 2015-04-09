@@ -149,7 +149,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['create ol_group content'] = array(
     'name' => 'create ol_group content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -167,7 +167,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['delete any ol_group content'] = array(
     'name' => 'delete any ol_group content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -176,7 +176,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['delete any ol_group_post content'] = array(
     'name' => 'delete any ol_group_post content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -203,7 +203,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['delete own ol_group content'] = array(
     'name' => 'delete own ol_group content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -212,7 +212,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['delete own ol_group_post content'] = array(
     'name' => 'delete own ol_group_post content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -221,7 +221,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['edit any ol_group content'] = array(
     'name' => 'edit any ol_group content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -230,7 +230,7 @@ function openlocal_group_user_default_permissions() {
   $permissions['edit any ol_group_post content'] = array(
     'name' => 'edit any ol_group_post content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -240,7 +240,7 @@ function openlocal_group_user_default_permissions() {
     'name' => 'edit own ol_group content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );

@@ -72,7 +72,7 @@ function openlocal_alert_user_default_permissions() {
   $permissions['delete any ol_alert content'] = array(
     'name' => 'delete any ol_alert content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -81,7 +81,7 @@ function openlocal_alert_user_default_permissions() {
   $permissions['delete own ol_alert content'] = array(
     'name' => 'delete own ol_alert content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -90,7 +90,7 @@ function openlocal_alert_user_default_permissions() {
   $permissions['edit any ol_alert content'] = array(
     'name' => 'edit any ol_alert content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );

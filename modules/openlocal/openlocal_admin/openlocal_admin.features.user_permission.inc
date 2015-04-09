@@ -23,7 +23,7 @@ function openlocal_admin_user_default_permissions() {
   $permissions['unflag ol_report_abuse'] = array(
     'name' => 'unflag ol_report_abuse',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'flag',
   );

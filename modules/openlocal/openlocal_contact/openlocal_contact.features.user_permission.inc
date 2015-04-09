@@ -78,7 +78,7 @@ function openlocal_contact_user_default_permissions() {
   $permissions['create ol_newsletter content'] = array(
     'name' => 'create ol_newsletter content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -87,7 +87,7 @@ function openlocal_contact_user_default_permissions() {
   $permissions['delete any ol_newsletter content'] = array(
     'name' => 'delete any ol_newsletter content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -96,7 +96,7 @@ function openlocal_contact_user_default_permissions() {
   $permissions['delete own ol_newsletter content'] = array(
     'name' => 'delete own ol_newsletter content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -121,7 +121,7 @@ function openlocal_contact_user_default_permissions() {
   $permissions['edit any ol_newsletter content'] = array(
     'name' => 'edit any ol_newsletter content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -130,7 +130,7 @@ function openlocal_contact_user_default_permissions() {
   $permissions['edit own ol_newsletter content'] = array(
     'name' => 'edit own ol_newsletter content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -184,7 +184,7 @@ function openlocal_contact_user_default_permissions() {
     'name' => 'send newsletter',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'simplenews',
   );
@@ -194,7 +194,7 @@ function openlocal_contact_user_default_permissions() {
     'name' => 'subscribe to newsletters',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'simplenews',
   );

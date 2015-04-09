@@ -15,7 +15,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'admin_menu',
   );
@@ -25,7 +25,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'system',
   );
@@ -46,7 +46,7 @@ function openlocal_core_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'comment',
   );
@@ -67,7 +67,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -106,7 +106,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench',
   );
@@ -117,7 +117,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'media_internet',
   );
@@ -150,7 +150,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'administer comments',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'comment',
   );
@@ -202,7 +202,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'menu',
   );
@@ -439,7 +439,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -466,7 +466,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'comment',
   );
@@ -505,7 +505,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -515,7 +515,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'moderate content from needs_review to draft',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -525,7 +525,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'moderate content from needs_review to published',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -545,7 +545,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -556,7 +556,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'save_draft',
   );
@@ -587,7 +587,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'comment',
   );
@@ -617,7 +617,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'use text format panopoly_html_text',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'filter',
   );
@@ -628,7 +628,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'filter',
   );
@@ -639,7 +639,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -650,7 +650,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -660,7 +660,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'view all unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -671,7 +671,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -681,7 +681,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'view moderation messages',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'workbench_moderation',
   );
@@ -692,7 +692,7 @@ function openlocal_core_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -702,7 +702,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -712,7 +712,7 @@ function openlocal_core_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'system',
   );

@@ -15,7 +15,7 @@ function openlocal_forum_user_default_permissions() {
     'name' => 'administer advanced forum',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'advanced_forum',
   );
@@ -25,7 +25,7 @@ function openlocal_forum_user_default_permissions() {
     'name' => 'administer forums',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'forum',
   );
@@ -44,7 +44,7 @@ function openlocal_forum_user_default_permissions() {
     'name' => 'delete any forum content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -61,7 +61,7 @@ function openlocal_forum_user_default_permissions() {
     'name' => 'edit any forum content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -80,7 +80,7 @@ function openlocal_forum_user_default_permissions() {
     'name' => 'view forum statistics',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'advanced_forum',
   );
@@ -90,7 +90,7 @@ function openlocal_forum_user_default_permissions() {
     'name' => 'view last edited notice',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'advanced_forum',
   );

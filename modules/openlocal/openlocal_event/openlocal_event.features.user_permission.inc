@@ -65,7 +65,7 @@ function openlocal_event_user_default_permissions() {
   $permissions['delete any ol_event content'] = array(
     'name' => 'delete any ol_event content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -74,7 +74,7 @@ function openlocal_event_user_default_permissions() {
   $permissions['delete own ol_event content'] = array(
     'name' => 'delete own ol_event content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -83,7 +83,7 @@ function openlocal_event_user_default_permissions() {
   $permissions['edit any ol_event content'] = array(
     'name' => 'edit any ol_event content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );

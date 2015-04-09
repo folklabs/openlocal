@@ -112,7 +112,7 @@ function openlocal_business_user_default_permissions() {
   $permissions['create ol_business content'] = array(
     'name' => 'create ol_business content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -130,7 +130,7 @@ function openlocal_business_user_default_permissions() {
   $permissions['delete any ol_business content'] = array(
     'name' => 'delete any ol_business content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -148,7 +148,7 @@ function openlocal_business_user_default_permissions() {
   $permissions['delete own ol_business content'] = array(
     'name' => 'delete own ol_business content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -252,7 +252,7 @@ function openlocal_business_user_default_permissions() {
   $permissions['edit any ol_business content'] = array(
     'name' => 'edit any ol_business content',
     'roles' => array(
-      'editor' => 'editor',
+      'site manager' => 'site manager',
     ),
     'module' => 'node',
   );
@@ -271,7 +271,7 @@ function openlocal_business_user_default_permissions() {
     'name' => 'edit own ol_business content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'editor' => 'editor',
+      'site manager' => 'site manager',
       'trader' => 'trader',
     ),
     'module' => 'node',
