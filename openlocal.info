@@ -24,9 +24,6 @@ dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
 
-; Other recommended modules
-dependencies[] = adminimal_admin_menu
-
 ; OpenLocal
 dependencies[] = openlocal_admin
 dependencies[] = openlocal_alert
@@ -50,6 +47,9 @@ dependencies[] = openlocal_user
 dependencies[] = openlocal_issue
 dependencies[] = openlocal_gallery
 
+; Other OpenLocal recommended modules
+dependencies[] = adminimal_admin_menu
+dependencies[] = honeypot
 
 ; In development
 ;dependencies[] = openlocal_idea

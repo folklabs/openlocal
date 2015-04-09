@@ -22,7 +22,6 @@ dependencies[] = filter
 dependencies[] = geo_filter
 dependencies[] = geocoder
 dependencies[] = geofield
-dependencies[] = honeypot
 dependencies[] = image
 dependencies[] = leaflet
 dependencies[] = leaflet_views
