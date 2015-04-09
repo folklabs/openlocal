@@ -50,7 +50,6 @@ features[field_instance][] = node-ol_event-field_ol_telephone
 features[field_instance][] = node-ol_event-og_group_ref
 features[node][] = ol_event
 features[page_manager_pages][] = events
-features[page_manager_pages][] = events_calendar
 features[page_manager_pages][] = events_map
 features[page_manager_pages][] = ol_event_venues
 features[page_manager_pages][] = ol_event_venues_map
