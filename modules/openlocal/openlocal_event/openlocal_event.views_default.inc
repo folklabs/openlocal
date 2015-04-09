@@ -980,7 +980,6 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['style_options']['view_mode'] = 'teaser';
   $handler->display->display_options['style_options']['map'] = 'OSM Mapnik';
   $handler->display->display_options['style_options']['height'] = '600';
-  $handler->display->display_options['style_options']['hide_empty'] = 0;
   $handler->display->display_options['style_options']['zoom']['initialZoom'] = '13';
   $handler->display->display_options['style_options']['zoom']['minZoom'] = '10';
   $handler->display->display_options['style_options']['zoom']['maxZoom'] = '17';
