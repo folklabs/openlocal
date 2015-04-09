@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * An installation file for OpenLocal Core.
+ */
+
+/**
+ * Implementation of hook_install()
+ */
+function openlocal_core_install() {
+  variable_set('image_resize_filter_threshold', 1000);
+}
