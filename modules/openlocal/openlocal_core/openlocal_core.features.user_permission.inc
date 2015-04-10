@@ -550,17 +550,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'save draft'.
-  $permissions['save draft'] = array(
-    'name' => 'save draft',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'save_draft',
-  );
-
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',

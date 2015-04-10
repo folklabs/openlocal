@@ -1,0 +1,9 @@
+name = OpenLocal Workflow
+core = 7.x
+package = OpenLocal
+version = 7.x-1.0-alpha1
+project = openlocal_workflow
+dependencies[] = save_draft
+features[features_api][] = api:2
+features[user_permission][] = save draft
+project path = profiles/openlocal/modules/openlocal
