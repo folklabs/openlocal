@@ -618,10 +618,11 @@ function openlocal_group_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'og_group_ref',
     'label' => 'Groups audience',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'behaviors' => array(
         'og_widget' => array(
+          'access_override' => 0,
           'admin' => array(
             'widget_type' => 'entityreference_autocomplete',
           ),
@@ -629,9 +630,6 @@ function openlocal_group_field_default_field_instances() {
             'widget_type' => 'options_select',
           ),
           'status' => TRUE,
-        ),
-        'prepopulate' => array(
-          'status' => 0,
         ),
       ),
       'user_register_form' => FALSE,
