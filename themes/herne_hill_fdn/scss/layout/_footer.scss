@@ -3,10 +3,21 @@
 $footer-background-color: #4d3d44;
 
 .l-footer {
-  background-color: $footer-background-color;
-  color: $col-content-lighter;
+  margin-bottom: 0;
 
-  a {
-    color: $col-content-lightest;
+  .row {
+    padding-bottom: 40px;
+
+    background-color: $footer-background-color;
+    color: $col-content-lighter;
+
+    a {
+      color: $col-content-lightest;
+    }
   }
 }
+
+.l-footer.panel {
+    background-color: transparent;
+  }
+

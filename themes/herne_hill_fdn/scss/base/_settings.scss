@@ -137,9 +137,12 @@ $col-content-strong: #8c4965;
 $col-content-lighter: #b19fa7;
 $col-content-lightest: #e3dcd1;
 
+// Custom setting to define colour for central page (header/main/footer), not
+// whole body background.
+$main-bg: #f4eee0;
 
 // We use these to control various global styles
-$body-bg: #f4eee0;
+$body-bg: #FDFCF9;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -408,7 +411,7 @@ $anchor-font-color: #20806a;
 $crumb-bg: $col-content-lightest;
 
 // We use these to set the padding around the breadcrumbs.
-// $crumb-padding: rem-calc(9 14 9);
+$crumb-padding: rem-calc(6 8 6);
 $crumb-side-padding: rem-calc(10);
 
 // We use these to control border styles.
@@ -419,7 +422,7 @@ $crumb-border-style: none;
 $crumb-radius: 0;
 
 // We use these to set various text styles for breadcrumbs.
-$crumb-font-size: rem-calc(17);
+$crumb-font-size: rem-calc(14);
 // $crumb-font-color: $primary-color;
 // $crumb-font-color-current: $oil;
 // $crumb-font-color-unavailable: $aluminum;
@@ -1380,6 +1383,7 @@ $panel-header-adjust: false;
 
 // Background color for the top bar
 $topbar-bg-color: #0D332A;
+// $topbar-bg-color: transparent;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin

@@ -1,7 +1,9 @@
 // Non-modular or client styles for .l-header region.
 
-.header {
-  padding: 0 10px;
+.l-header {
+  .row {
+    background-color: $main-bg;
+  }
 }
 
 .logo {
@@ -33,6 +35,10 @@
   .fa {
     margin-left: 5px;
   }
+}
+
+.l-header .contain-to-grid {
+  background-color: transparent;
 }
 
 #secondary-menu {
