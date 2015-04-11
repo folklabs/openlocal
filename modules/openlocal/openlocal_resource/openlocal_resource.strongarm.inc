@@ -135,7 +135,7 @@ function openlocal_resource_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_ol_resource';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_ol_resource'] = $strongarm;
 
   $strongarm = new stdClass();
