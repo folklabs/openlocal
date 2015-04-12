@@ -275,22 +275,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer search'.
-  $permissions['administer search'] = array(
-    'name' => 'administer search',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'search',
-  );
-
-  // Exported permission: 'administer search_api'.
-  $permissions['administer search_api'] = array(
-    'name' => 'administer search_api',
-    'roles' => array(),
-    'module' => 'search_api',
-  );
-
   // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -485,17 +469,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'search content'.
-  $permissions['search content'] = array(
-    'name' => 'search content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search',
-  );
-
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -524,16 +497,6 @@ function openlocal_core_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment_notify',
-  );
-
-  // Exported permission: 'use advanced search'.
-  $permissions['use advanced search'] = array(
-    'name' => 'use advanced search',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search',
   );
 
   // Exported permission: 'use text format panopoly_html_text'.
