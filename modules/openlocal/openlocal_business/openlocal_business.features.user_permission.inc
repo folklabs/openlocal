@@ -59,69 +59,11 @@ function openlocal_business_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node ol_reward_scheme breadcrumbs'.
-  $permissions['administer panelizer node ol_reward_scheme breadcrumbs'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme breadcrumbs',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_reward_scheme content'.
-  $permissions['administer panelizer node ol_reward_scheme content'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_reward_scheme context'.
-  $permissions['administer panelizer node ol_reward_scheme context'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_reward_scheme defaults'.
-  $permissions['administer panelizer node ol_reward_scheme defaults'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_reward_scheme layout'.
-  $permissions['administer panelizer node ol_reward_scheme layout'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_reward_scheme overview'.
-  $permissions['administer panelizer node ol_reward_scheme overview'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_reward_scheme settings'.
-  $permissions['administer panelizer node ol_reward_scheme settings'] = array(
-    'name' => 'administer panelizer node ol_reward_scheme settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create ol_business content'.
   $permissions['create ol_business content'] = array(
     'name' => 'create ol_business content',
     'roles' => array(
       'site manager' => 'site manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create ol_reward_scheme content'.
-  $permissions['create ol_reward_scheme content'] = array(
-    'name' => 'create ol_reward_scheme content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -135,29 +77,11 @@ function openlocal_business_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any ol_reward_scheme content'.
-  $permissions['delete any ol_reward_scheme content'] = array(
-    'name' => 'delete any ol_reward_scheme content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own ol_business content'.
   $permissions['delete own ol_business content'] = array(
     'name' => 'delete own ol_business content',
     'roles' => array(
       'site manager' => 'site manager',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own ol_reward_scheme content'.
-  $permissions['delete own ol_reward_scheme content'] = array(
-    'name' => 'delete own ol_reward_scheme content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -257,15 +181,6 @@ function openlocal_business_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any ol_reward_scheme content'.
-  $permissions['edit any ol_reward_scheme content'] = array(
-    'name' => 'edit any ol_reward_scheme content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own ol_business content'.
   $permissions['edit own ol_business content'] = array(
     'name' => 'edit own ol_business content',
@@ -273,15 +188,6 @@ function openlocal_business_user_default_permissions() {
       'authenticated user' => 'authenticated user',
       'site manager' => 'site manager',
       'trader' => 'trader',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own ol_reward_scheme content'.
-  $permissions['edit own ol_reward_scheme content'] = array(
-    'name' => 'edit own ol_reward_scheme content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );

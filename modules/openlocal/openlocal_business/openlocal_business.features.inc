@@ -82,14 +82,6 @@ function openlocal_business_node_info() {
       'title_label' => t('Name'),
       'help' => '',
     ),
-    'ol_reward_scheme' => array(
-      'name' => t('Reward scheme'),
-      'base' => 'node_content',
-      'description' => t('A scheme such as a loyalty card or local currency designed to encourage local shopping.'),
-      'has_title' => '1',
-      'title_label' => t('Name'),
-      'help' => '',
-    ),
   );
   drupal_alter('node_info', $items);
   return $items;

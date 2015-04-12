@@ -557,7 +557,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'filter',
   );
 
-
   // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
