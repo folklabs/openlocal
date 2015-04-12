@@ -14,7 +14,7 @@ function openlocal_reward_scheme_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_ol_reward_scheme';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-date-popup-authored';
   $export['additional_settings__active_tab_ol_reward_scheme'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -70,7 +70,7 @@ function openlocal_reward_scheme_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_popup_authored_format_ol_reward_scheme';
-  $strongarm->value = 'm/d/Y - H:i';
+  $strongarm->value = 'j M Y - g:ia';
   $export['date_popup_authored_format_ol_reward_scheme'] = $strongarm;
 
   $strongarm = new stdClass();

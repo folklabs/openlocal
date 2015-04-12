@@ -14,7 +14,7 @@ function openlocal_gallery_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_ol_photo_album';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-date-popup-authored';
   $export['additional_settings__active_tab_ol_photo_album'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -118,6 +118,13 @@ function openlocal_gallery_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_enabled_ol_gallery';
+  $strongarm->value = 1;
+  $export['date_popup_authored_enabled_ol_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_popup_authored_enabled_ol_photo_album';
   $strongarm->value = 1;
   $export['date_popup_authored_enabled_ol_photo_album'] = $strongarm;
@@ -125,9 +132,23 @@ function openlocal_gallery_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_format_ol_gallery';
+  $strongarm->value = 'j M Y - g:ia';
+  $export['date_popup_authored_format_ol_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_popup_authored_format_ol_photo_album';
-  $strongarm->value = 'm/d/Y - H:i';
+  $strongarm->value = 'j M Y - g:ia';
   $export['date_popup_authored_format_ol_photo_album'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_authored_year_range_ol_gallery';
+  $strongarm->value = '3';
+  $export['date_popup_authored_year_range_ol_gallery'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
