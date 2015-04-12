@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * openlocal_core.features.user_permission.inc
+ * openlocal_workflow.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function openlocal_core_user_default_permissions() {
+function openlocal_workflow_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access workbench'.
