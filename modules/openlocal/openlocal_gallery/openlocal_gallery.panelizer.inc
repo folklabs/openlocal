@@ -319,22 +319,27 @@ Photo albums
   $display->content['new-f0f11b94-7da5-4a01-abba-5fd0e85bd54e'] = $pane;
   $display->panels['center'][1] = 'new-f0f11b94-7da5-4a01-abba-5fd0e85bd54e';
   $pane = new stdClass();
-  $pane->pid = 'new-0a35ae91-23aa-4e02-bbdf-38ff0ff98221';
+  $pane->pid = 'new-c406ab0a-6b99-4f60-8227-57d0aa11744d';
   $pane->panel = 'center';
-  $pane->type = 'custom';
-  $pane->subtype = 'custom';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_ol_gallery_ref';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'admin_title' => 'Gallery link',
-    'title' => '',
-    'body' => '<div class="field field-name-field-ol-credits field-type-text field-label-inline clearfix">
-<div class="field-label">Gallery:&nbsp;</div>
-<div class="field-items"><div class="field-item even"><a href="/galleries/%node:field-ol-gallery-ref">%node:field-ol-gallery-ref</a></div>
-</div>
-</div>',
-    'format' => 'panopoly_html_text',
-    'substitute' => 1,
+    'label' => 'inline',
+    'formatter' => 'entityreference_label',
+    'delta_limit' => 0,
+    'delta_offset' => '0',
+    'delta_reversed' => FALSE,
+    'formatter_settings' => array(
+      'link' => 1,
+      'view_mode' => 'teaser',
+      'links' => 0,
+    ),
+    'context' => array(),
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -344,9 +349,9 @@ Photo albums
   $pane->extras = array();
   $pane->position = 2;
   $pane->locks = array();
-  $pane->uuid = '0a35ae91-23aa-4e02-bbdf-38ff0ff98221';
-  $display->content['new-0a35ae91-23aa-4e02-bbdf-38ff0ff98221'] = $pane;
-  $display->panels['center'][2] = 'new-0a35ae91-23aa-4e02-bbdf-38ff0ff98221';
+  $pane->uuid = 'c406ab0a-6b99-4f60-8227-57d0aa11744d';
+  $display->content['new-c406ab0a-6b99-4f60-8227-57d0aa11744d'] = $pane;
+  $display->panels['center'][2] = 'new-c406ab0a-6b99-4f60-8227-57d0aa11744d';
   $pane = new stdClass();
   $pane->pid = 'new-8b57ee87-b476-4790-830b-8e9d70b1f5f4';
   $pane->panel = 'center';
