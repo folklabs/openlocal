@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * openlocal_core.rules_defaults.inc
+ * openlocal_workflow.rules_defaults.inc
  */
 
 /**
  * Implements hook_default_rules_configuration().
  */
-function openlocal_core_default_rules_configuration() {
+function openlocal_workflow_default_rules_configuration() {
   $items = array();
-  $items['rules_ol_core_item_needs_moderation'] = entity_import('rules_config', '{ "rules_ol_core_item_needs_moderation" : {
-      "LABEL" : "OL Core: Item needs moderation",
+  $items['rules_ol_workflow_item_needs_moderation'] = entity_import('rules_config', '{ "rules_ol_workflow_item_needs_moderation" : {
+      "LABEL" : "OL Workflow: Item needs moderation",
       "PLUGIN" : "reaction rule",
       "ACTIVE" : false,
       "OWNER" : "rules",
