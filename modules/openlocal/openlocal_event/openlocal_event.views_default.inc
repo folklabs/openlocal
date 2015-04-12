@@ -161,7 +161,7 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['style_options']['mini'] = '0';
   $handler->display->display_options['style_options']['with_weekno'] = '0';
   $handler->display->display_options['style_options']['multiday_theme'] = '1';
-  $handler->display->display_options['style_options']['theme_style'] = '1';
+  $handler->display->display_options['style_options']['theme_style'] = '0';
   $handler->display->display_options['style_options']['max_items'] = '0';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -201,7 +201,7 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['style_options']['mini'] = '0';
   $handler->display->display_options['style_options']['with_weekno'] = '0';
   $handler->display->display_options['style_options']['multiday_theme'] = '1';
-  $handler->display->display_options['style_options']['theme_style'] = '1';
+  $handler->display->display_options['style_options']['theme_style'] = '0';
   $handler->display->display_options['style_options']['max_items'] = '0';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
