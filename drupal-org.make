@@ -262,6 +262,46 @@ projects[eu_cookie_compliance][subdir] = contrib
 ;projects[webform][subdir] = contrib
 
 
+; Harmony modules
+
+projects[better_formats][version] = 1.0-beta1
+projects[better_formats][subdir] = contrib
+
+projects[entityreference_prepopulate][version] = 1.3
+projects[entityreference_prepopulate][subdir] = contrib
+
+projects[entity_quote][version] = 1.x-dev
+projects[entity_quote][subdir] = contrib
+
+projects[elements][version] = 1.4
+projects[elements][subdir] = contrib
+
+projects[harmony_core][version] = 1.0-alpha2
+projects[harmony_core][subdir] = contrib
+
+projects[inline_entity_form][version] = 1.5
+projects[inline_entity_form][subdir] = contrib
+
+projects[machine_name][version] = 1.0
+projects[machine_name][subdir] = contrib
+
+projects[placeholder][version] = 1.1
+projects[placeholder][subdir] = contrib
+
+projects[short_scale_formatter][version] = 1.1
+projects[short_scale_formatter][subdir] = contrib
+
+projects[taxonomy_display][version] = 1.1
+projects[taxonomy_display][subdir] = contrib
+
+projects[views_load_more][version] = 1.5
+projects[views_load_more][subdir] = contrib
+
+projects[viewfield][version] = 2.0
+projects[viewfield][subdir] = contrib
+
+
+
 ; Libraries
 
 libraries[colorbox][download][type] = get
