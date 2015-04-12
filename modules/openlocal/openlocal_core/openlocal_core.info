@@ -41,7 +41,6 @@ dependencies[] = panelizer
 dependencies[] = panopoly_core
 dependencies[] = radioactivity
 dependencies[] = rules
-dependencies[] = save_draft
 dependencies[] = search
 dependencies[] = search_api
 dependencies[] = strongarm
