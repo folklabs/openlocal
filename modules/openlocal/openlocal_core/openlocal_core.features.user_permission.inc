@@ -100,17 +100,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'access workbench'.
-  $permissions['access workbench'] = array(
-    'name' => 'access workbench',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench',
-  );
-
   // Exported permission: 'add media from remote sources'.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
@@ -352,20 +341,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: 'administer workbench'.
-  $permissions['administer workbench'] = array(
-    'name' => 'administer workbench',
-    'roles' => array(),
-    'module' => 'workbench',
-  );
-
-  // Exported permission: 'administer workbench moderation'.
-  $permissions['administer workbench moderation'] = array(
-    'name' => 'administer workbench moderation',
-    'roles' => array(),
-    'module' => 'workbench_moderation',
-  );
-
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -380,15 +355,6 @@ function openlocal_core_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(),
     'module' => 'node',
-  );
-
-  // Exported permission: 'bypass workbench moderation'.
-  $permissions['bypass workbench moderation'] = array(
-    'name' => 'bypass workbench moderation',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'workbench_moderation',
   );
 
   // Exported permission: 'cancel account'.
@@ -499,37 +465,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'geocoder',
   );
 
-  // Exported permission: 'moderate content from draft to needs_review'.
-  $permissions['moderate content from draft to needs_review'] = array(
-    'name' => 'moderate content from draft to needs_review',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'moderate content from needs_review to draft'.
-  $permissions['moderate content from needs_review to draft'] = array(
-    'name' => 'moderate content from needs_review to draft',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'moderate content from needs_review to published'.
-  $permissions['moderate content from needs_review to published'] = array(
-    'name' => 'moderate content from needs_review to published',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
   // Exported permission: 'post comments'.
   $permissions['post comments'] = array(
     'name' => 'post comments',
@@ -548,17 +483,6 @@ function openlocal_core_user_default_permissions() {
       'site manager' => 'site manager',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'save draft'.
-  $permissions['save draft'] = array(
-    'name' => 'save draft',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'save_draft',
   );
 
   // Exported permission: 'search content'.
@@ -633,58 +557,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'use workbench_moderation my drafts tab'.
-  $permissions['use workbench_moderation my drafts tab'] = array(
-    'name' => 'use workbench_moderation my drafts tab',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'use workbench_moderation needs review tab'.
-  $permissions['use workbench_moderation needs review tab'] = array(
-    'name' => 'use workbench_moderation needs review tab',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'view all unpublished content'.
-  $permissions['view all unpublished content'] = array(
-    'name' => 'view all unpublished content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'view moderation history'.
-  $permissions['view moderation history'] = array(
-    'name' => 'view moderation history',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'view moderation messages'.
-  $permissions['view moderation messages'] = array(
-    'name' => 'view moderation messages',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site manager' => 'site manager',
-    ),
-    'module' => 'workbench_moderation',
-  );
 
   // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(

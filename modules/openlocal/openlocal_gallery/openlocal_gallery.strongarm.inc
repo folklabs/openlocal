@@ -335,14 +335,14 @@ function openlocal_gallery_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_ol_gallery';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_ol_gallery'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_ol_photo_album';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_ol_photo_album'] = $strongarm;
 
   $strongarm = new stdClass();

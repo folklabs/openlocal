@@ -26,26 +26,27 @@ dependencies[] = date_popup_authored
 
 ; OpenLocal
 dependencies[] = openlocal_admin
-dependencies[] = openlocal_alert
-dependencies[] = openlocal_business
 dependencies[] = openlocal_contact
 dependencies[] = openlocal_core
-dependencies[] = openlocal_event
-dependencies[] = openlocal_forum
-dependencies[] = openlocal_group
-dependencies[] = openlocal_highlight
-dependencies[] = openlocal_home
 dependencies[] = openlocal_images
 dependencies[] = openlocal_layout
-dependencies[] = openlocal_news
 dependencies[] = openlocal_search
 dependencies[] = openlocal_seo
 dependencies[] = openlocal_social
 dependencies[] = openlocal_user
+dependencies[] = openlocal_workflow
 
 ; Optional features
+dependencies[] = openlocal_alert
+dependencies[] = openlocal_business
+dependencies[] = openlocal_event
+dependencies[] = openlocal_forum
+dependencies[] = openlocal_highlight
+dependencies[] = openlocal_home
 dependencies[] = openlocal_issue
 dependencies[] = openlocal_gallery
+dependencies[] = openlocal_group
+dependencies[] = openlocal_news
 
 ; Other OpenLocal recommended modules
 dependencies[] = adminimal_admin_menu

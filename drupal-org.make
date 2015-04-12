@@ -33,6 +33,7 @@ projects[panopoly_admin][version] = 1.20
 projects[panopoly_admin][subdir] = panopoly
 ;projects[panopoly_admin][patch][2152111] = https://www.drupal.org/files/issues/hide-featured-img-description-css-2152111-11_0.patch
 ; See https://www.drupal.org/node/2152111
+projects[panopoly_admin][patch][] = https://raw.githubusercontent.com/pmackay/openlocal/master/patches/panopoly_admin-save-draft-per-content-type-1409000.patch
 
 projects[panopoly_users][version] = 1.20
 projects[panopoly_users][subdir] = panopoly
