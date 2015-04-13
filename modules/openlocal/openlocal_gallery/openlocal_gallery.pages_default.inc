@@ -143,6 +143,29 @@ function openlocal_gallery_default_page_manager_pages() {
   $pane->uuid = 'a2f83789-95cf-422c-8ba9-82afae4f5288';
   $display->content['new-a2f83789-95cf-422c-8ba9-82afae4f5288'] = $pane;
   $display->panels['sidebar'][0] = 'new-a2f83789-95cf-422c-8ba9-82afae4f5288';
+  $pane = new stdClass();
+  $pane->pid = 'new-f770cb56-fb59-479b-9d30-d5cd1813962d';
+  $pane->panel = 'sidebar';
+  $pane->type = 'block';
+  $pane->subtype = 'menu-menu-ol-gallery-buttons';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_title' => 1,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = 'f770cb56-fb59-479b-9d30-d5cd1813962d';
+  $display->content['new-f770cb56-fb59-479b-9d30-d5cd1813962d'] = $pane;
+  $display->panels['sidebar'][1] = 'new-f770cb56-fb59-479b-9d30-d5cd1813962d';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-ba735952-fa79-4d9d-85a9-429e8eccdf4b';
   $handler->conf['display'] = $display;
