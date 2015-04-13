@@ -98,7 +98,7 @@ plugins[panels][layouts] = layouts
 
 ; Top Bar.
 settings[zurb_foundation_top_bar_enable] = 1
-settings[zurb_foundation_top_bar_grid] = 0
+settings[zurb_foundation_top_bar_grid] = 1
 settings[zurb_foundation_top_bar_sticky] = 0
 settings[zurb_foundation_top_bar_menu_text] = 'Menu'
 settings[zurb_foundation_top_bar_custom_back_text] = 1
@@ -108,7 +108,7 @@ settings[zurb_foundation_top_bar_scrolltop] = 1
 settings[zurb_foundation_top_bar_mobile_show_parent_link] = 1
 
 ; Tooltips.
-settings[zurb_foundation_tooltip_enable] = 1
+settings[zurb_foundation_tooltip_enable] = 0
 settings[zurb_foundation_tooltip_position] = 'top'
 settings[zurb_foundation_tooltip_mode] = 'text'
 settings[zurb_foundation_tooltip_text] = 'More information?'
