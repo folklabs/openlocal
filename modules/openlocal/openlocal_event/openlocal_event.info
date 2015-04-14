@@ -26,6 +26,7 @@ dependencies[] = page_manager
 dependencies[] = panelizer
 dependencies[] = strongarm
 dependencies[] = taxonomy
+dependencies[] = telephone
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content

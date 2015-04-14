@@ -40,6 +40,7 @@ dependencies[] = panopoly_core
 dependencies[] = strongarm
 dependencies[] = system
 dependencies[] = taxonomy
+dependencies[] = telephone
 dependencies[] = text
 dependencies[] = user
 dependencies[] = uuid
