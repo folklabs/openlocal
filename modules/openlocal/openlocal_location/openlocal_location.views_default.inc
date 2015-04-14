@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * openlocal_core.views_default.inc
+ * openlocal_location.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function openlocal_core_views_default_views() {
+function openlocal_location_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'openlocal_place';
-  $view->description = 'Local places.';
+  $view->name = 'openlocal_location';
+  $view->description = 'Locations.';
   $view->tag = 'openlocal';
   $view->base_table = 'node';
-  $view->human_name = 'OpenLocal Place';
+  $view->human_name = 'OpenLocal Location';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -70,7 +70,7 @@ function openlocal_core_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'ol_place' => 'ol_place',
+    'ol_location' => 'ol_location',
   );
 
   /* Display: List */
@@ -87,7 +87,7 @@ function openlocal_core_views_default_views() {
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $export['openlocal_place'] = $view;
+  $export['openlocal_location'] = $view;
 
   return $export;
 }

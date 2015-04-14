@@ -46,7 +46,9 @@ dependencies[] = openlocal_home
 dependencies[] = openlocal_issue
 dependencies[] = openlocal_gallery
 dependencies[] = openlocal_group
+dependencies[] = openlocal_location
 dependencies[] = openlocal_news
+dependencies[] = openlocal_organisation
 
 ; Other OpenLocal recommended modules
 dependencies[] = adminimal_admin_menu

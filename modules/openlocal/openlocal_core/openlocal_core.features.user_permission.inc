@@ -219,55 +219,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'administer panelizer node ol_place breadcrumbs'.
-  $permissions['administer panelizer node ol_place breadcrumbs'] = array(
-    'name' => 'administer panelizer node ol_place breadcrumbs',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_place content'.
-  $permissions['administer panelizer node ol_place content'] = array(
-    'name' => 'administer panelizer node ol_place content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_place context'.
-  $permissions['administer panelizer node ol_place context'] = array(
-    'name' => 'administer panelizer node ol_place context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_place defaults'.
-  $permissions['administer panelizer node ol_place defaults'] = array(
-    'name' => 'administer panelizer node ol_place defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_place layout'.
-  $permissions['administer panelizer node ol_place layout'] = array(
-    'name' => 'administer panelizer node ol_place layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_place overview'.
-  $permissions['administer panelizer node ol_place overview'] = array(
-    'name' => 'administer panelizer node ol_place overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node ol_place settings'.
-  $permissions['administer panelizer node ol_place settings'] = array(
-    'name' => 'administer panelizer node ol_place settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
@@ -359,31 +310,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'create ol_place content'.
-  $permissions['create ol_place content'] = array(
-    'name' => 'create ol_place content',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any ol_place content'.
-  $permissions['delete any ol_place content'] = array(
-    'name' => 'delete any ol_place content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own ol_place content'.
-  $permissions['delete own ol_place content'] = array(
-    'name' => 'delete own ol_place content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -403,13 +329,6 @@ function openlocal_core_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: 'edit any ol_place content'.
-  $permissions['edit any ol_place content'] = array(
-    'name' => 'edit any ol_place content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own comments'.
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
@@ -419,15 +338,6 @@ function openlocal_core_user_default_permissions() {
       'site manager' => 'site manager',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: 'edit own ol_place content'.
-  $permissions['edit own ol_place content'] = array(
-    'name' => 'edit own ol_place content',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'flush caches'.

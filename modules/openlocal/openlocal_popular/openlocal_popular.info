@@ -6,6 +6,7 @@ project = openlocal_popular
 dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = radioactivity
+features[ctools][] = radioactivity:radioactivity_decay_profile:1
 features[defaultconfig][] = user_default_permissions:administer radioactivity
 features[defaultconfig][] = user_default_permissions:edit radioactivity
 features[features_api][] = api:2

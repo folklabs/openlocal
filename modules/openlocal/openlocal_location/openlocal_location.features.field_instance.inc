@@ -1,93 +1,21 @@
 <?php
 /**
  * @file
- * openlocal_core.features.field_instance.inc
+ * openlocal_location.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function openlocal_core_field_default_field_instances() {
+function openlocal_location_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ol_place-field_featured_image'
-  $field_instances['node-ol_place-field_featured_image'] = array(
-    'bundle' => 'ol_place',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 2,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 9,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_featured_image',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'focus' => 0,
-      'focus_lock_ratio' => 0,
-      'focus_min_size' => '',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'manualcrop_crop_info' => TRUE,
-        'manualcrop_default_crop_area' => TRUE,
-        'manualcrop_enable' => FALSE,
-        'manualcrop_inline_crop' => FALSE,
-        'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => TRUE,
-        'manualcrop_keyboard' => TRUE,
-        'manualcrop_maximize_default_crop_area' => FALSE,
-        'manualcrop_require_cropping' => array(),
-        'manualcrop_styles_list' => array(),
-        'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => FALSE,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_place-field_ol_address'
-  $field_instances['node-ol_place-field_ol_address'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_address'
+  $field_instances['node-ol_location-field_ol_address'] = array(
+    'bundle' => 'ol_location',
     'default_value' => array(
       0 => array(
-        'element_key' => 'node|ol_place|field_ol_address|und|0',
+        'element_key' => 'node|ol_location|field_ol_address|und|0',
         'thoroughfare' => '',
         'premise' => '',
         'locality' => '',
@@ -154,13 +82,58 @@ function openlocal_core_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_description'
-  $field_instances['node-ol_place-field_ol_description'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_alternate_name'
+  $field_instances['node-ol_location-field_ol_alternate_name'] = array(
+    'bundle' => 'ol_location',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Alternative or commonly used name for an this location.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_alternate_name',
+    'label' => 'Alternate name',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_location-field_ol_description'
+  $field_instances['node-ol_location-field_ol_description'] = array(
+    'bundle' => 'ol_location',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'This will appear in lists, .e.g. the list of venues.',
@@ -205,13 +178,13 @@ function openlocal_core_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 1,
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_details'
-  $field_instances['node-ol_place-field_ol_details'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_details'
+  $field_instances['node-ol_location-field_ol_details'] = array(
+    'bundle' => 'ol_location',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Give any additional info about this place.',
@@ -260,67 +233,65 @@ function openlocal_core_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_event_venue'
-  $field_instances['node-ol_place-field_ol_event_venue'] = array(
-    'bundle' => 'ol_place',
-    'default_value' => array(
-      0 => array(
-        'value' => 1,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Please choose this if this location can be used as an event venue. ',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_event_venue',
-    'label' => 'Event venue',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-ol_place-field_ol_geolocation'
-  $field_instances['node-ol_place-field_ol_geolocation'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_geolocation'
+  $field_instances['node-ol_location-field_ol_geolocation'] = array(
+    'bundle' => 'ol_location',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'geofield',
+        'module' => 'leaflet',
         'settings' => array(
-          'data' => 'full',
+          'height' => 400,
+          'icon' => array(
+            'html' => '',
+            'htmlClass' => '',
+            'iconAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconImageStyle' => '',
+            'iconSize' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconType' => 'marker',
+            'iconUrl' => '',
+            'popupAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowUrl' => '',
+          ),
+          'leaflet_map' => 'OSM Mapnik',
+          'popup' => array(
+            'show' => 0,
+            'text' => '',
+          ),
+          'vector_display' => array(
+            'clickable' => 0,
+            'color' => '',
+            'dashArray' => '',
+            'fill' => 0,
+            'fillColor' => '',
+            'fillOpacity' => '',
+            'opacity' => '',
+            'stroke' => 0,
+            'stroke_override' => 0,
+            'weight' => '',
+          ),
+          'zoom' => array(
+            'initialZoom' => -1,
+            'maxZoom' => -1,
+            'minZoom' => 1,
+          ),
         ),
-        'type' => 'geofield_wkt',
+        'type' => 'geofield_leaflet',
         'weight' => 4,
       ),
       'featured' => array(
@@ -406,13 +377,13 @@ function openlocal_core_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 7,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_location_properties'
-  $field_instances['node-ol_place-field_ol_location_properties'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_location_properties'
+  $field_instances['node-ol_location-field_ol_location_properties'] = array(
+    'bundle' => 'ol_location',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Please select which facilities are available at this location.',
@@ -451,29 +422,42 @@ function openlocal_core_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_place_category'
-  $field_instances['node-ol_place-field_ol_place_category'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_opening_hours'
+  $field_instances['node-ol_location-field_ol_opening_hours'] = array(
+    'bundle' => 'ol_location',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'office_hours',
+        'settings' => array(
+          'closedformat' => 'Closed',
+          'compress' => FALSE,
+          'current_status' => array(
+            'closed_text' => 'Currently closed',
+            'open_text' => 'Currently open!',
+            'position' => 'hide',
+          ),
+          'date_first_day' => 0,
+          'daysformat' => 'long',
+          'grouped' => FALSE,
+          'hoursformat' => 0,
+          'separator_day_hours' => ': ',
+          'separator_days' => '<br />',
+          'separator_grouped_days' => ' - ',
+          'separator_hours_hours' => '-',
+          'separator_more_hours' => ', ',
+          'showclosed' => 'all',
+          'timezone_field' => '',
+        ),
+        'type' => 'office_hours',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -483,24 +467,24 @@ function openlocal_core_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_place_category',
-    'label' => 'Category',
+    'field_name' => 'field_ol_opening_hours',
+    'label' => 'Opening hours',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'options',
+      'active' => 0,
+      'module' => 'office_hours',
       'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 13,
+      'type' => 'office_hours',
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-ol_place-field_ol_tags'
-  $field_instances['node-ol_place-field_ol_tags'] = array(
-    'bundle' => 'ol_place',
+  // Exported field_instance: 'node-ol_location-field_ol_tags'
+  $field_instances['node-ol_location-field_ol_tags'] = array(
+    'bundle' => 'ol_location',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Add any tags that define this content in more detail, e.g. "school". Start typing, if the tag exists, select it. If it does not exist press return to create it. Tags are used to offer more specific searching and filtering.',
@@ -543,27 +527,73 @@ function openlocal_core_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'autocomplete_deluxe_taxonomy',
-      'weight' => 14,
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_location-field_ol_transportation'
+  $field_instances['node-ol_location-field_ol_transportation'] = array(
+    'bundle' => 'ol_location',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Access to public or private transportation to and from the location.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_transportation',
+    'label' => 'Transportation',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 8,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Access to public or private transportation to and from the location.');
   t('Add any tags that define this content in more detail, e.g. "school". Start typing, if the tag exists, select it. If it does not exist press return to create it. Tags are used to offer more specific searching and filtering.');
   t('Address');
+  t('Alternate name');
+  t('Alternative or commonly used name for an this location.');
   t('Available facilities');
-  t('Category');
   t('Description');
   t('Details');
   t('Enter the address of this location.');
-  t('Event venue');
   t('Geolocation');
   t('Give any additional info about this place.');
-  t('Image');
-  t('Please choose this if this location can be used as an event venue. ');
+  t('Opening hours');
   t('Please select which facilities are available at this location.');
   t('Tags');
   t('This will appear in lists, .e.g. the list of venues.');
+  t('Transportation');
 
   return $field_instances;
 }

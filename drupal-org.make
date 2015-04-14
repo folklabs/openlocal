@@ -224,6 +224,9 @@ projects[smtp][subdir] = contrib
 projects[super_login][version] = 1.0-beta6
 projects[super_login][subdir] = contrib
 
+projects[telephone][version] = 1.0-alpha1
+projects[telephone][subdir] = contrib
+
 projects[twitter][version] = 5.8
 projects[twitter][subdir] = contrib
 
