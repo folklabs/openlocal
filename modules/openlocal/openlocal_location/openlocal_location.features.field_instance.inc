@@ -86,51 +86,6 @@ function openlocal_location_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_location-field_ol_alternate_name'
-  $field_instances['node-ol_location-field_ol_alternate_name'] = array(
-    'bundle' => 'ol_location',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Alternative or commonly used name for an this location.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_alternate_name',
-    'label' => 'Alternate name',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-ol_location-field_ol_description'
   $field_instances['node-ol_location-field_ol_description'] = array(
     'bundle' => 'ol_location',
@@ -459,6 +414,12 @@ function openlocal_location_field_default_field_instances() {
         'type' => 'office_hours',
         'weight' => 8,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -531,58 +492,10 @@ function openlocal_location_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_location-field_ol_transportation'
-  $field_instances['node-ol_location-field_ol_transportation'] = array(
-    'bundle' => 'ol_location',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Access to public or private transportation to and from the location.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_transportation',
-    'label' => 'Transportation',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 8,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Access to public or private transportation to and from the location.');
   t('Add any tags that define this content in more detail, e.g. "school". Start typing, if the tag exists, select it. If it does not exist press return to create it. Tags are used to offer more specific searching and filtering.');
   t('Address');
-  t('Alternate name');
-  t('Alternative or commonly used name for an this location.');
   t('Available facilities');
   t('Description');
   t('Details');
@@ -593,7 +506,6 @@ function openlocal_location_field_default_field_instances() {
   t('Please select which facilities are available at this location.');
   t('Tags');
   t('This will appear in lists, .e.g. the list of venues.');
-  t('Transportation');
 
   return $field_instances;
 }
