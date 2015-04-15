@@ -19,7 +19,21 @@
   // font-size: 1.2em;
 }
 
+.ol-grid-teaser {
+  @extend %ol-grid-teaser;
+}
 
+.ol-grid-teaser-title {
+  @extend %ol-grid-teaser-title;
+}
+
+.ol-grid-teaser-categories {
+  position: absolute;
+  bottom: 0px;
+  left: 1.2375rem;
+
+  padding: 0;
+}
 
 //-----------------------------------------------------------------------------
 // Drupal integration
@@ -27,20 +41,32 @@
 .view-id-openlocal_group.view-display-id-panel_pane_1,
 .view-display-id-panel_pane_3,
 .view-id-openlocal_business_facet_search {
-  .views-row {
+  .views-row,
+  .columns {
     @extend %ol-grid-teaser;
   }
-
-  .views-row-odd {
-    margin-right: 10px;
+  .columns {
+    background-color: transparent;
   }
+
+  .views-field {
+    // background-color: $col-content-lightest;
+  }
+
+  // .views-row-odd {
+  //   margin-right: 10px;
+  // }
 
   .views-field-title {
     @extend %ol-grid-teaser-title;
   }
 
-  .views-field-field-ol-description {
+  .views-field {
     @extend %ol-grid-teaser-field;
+  }
+
+  .views-field-field-featured-image {
+    padding: 0;
   }
 }
 
