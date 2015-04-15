@@ -9,6 +9,7 @@
       <section class="row">
 
         <div class="top-right">
+          <div>
           <div class="socialmedia">
             <a href="https://www.facebook.com/pages/Herne-Hill-Forum/455633790432"><i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="http://www.twitter.com/hernehillforum"><i class="fa fa-twitter-square fa-2x"></i></a>
@@ -16,6 +17,12 @@
           <?php if ($top_bar_secondary_menu) : ?>
             <?php print $top_bar_secondary_menu; ?>
           <?php endif; ?>
+          </div>
+          <div class="pull-right">
+          <?php if ($search_form): ?>
+            <?php print $search_form; ?>
+          <?php endif; ?>
+      </div>
         </div>
 
         <?php if ($linked_logo): print $linked_logo; endif; ?>
