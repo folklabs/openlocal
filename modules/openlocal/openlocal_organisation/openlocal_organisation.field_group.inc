@@ -27,7 +27,6 @@ function openlocal_organisation_field_group_info() {
       1 => 'field_ol_details',
       2 => 'field_ol_organisation_type',
       3 => 'field_ol_telephone',
-      4 => 'field_ol_alternate_name',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -84,7 +83,7 @@ function openlocal_organisation_field_group_info() {
     'label' => 'Locations',
     'weight' => '5',
     'children' => array(
-      0 => 'field_ol_locations',
+      0 => 'field_ol_locations_ref',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

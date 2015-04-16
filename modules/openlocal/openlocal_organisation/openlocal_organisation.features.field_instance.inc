@@ -10,51 +10,6 @@
 function openlocal_organisation_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ol_organisation-field_ol_alternate_name'
-  $field_instances['node-ol_organisation-field_ol_alternate_name'] = array(
-    'bundle' => 'ol_organisation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 22,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_alternate_name',
-    'label' => 'Alternate name',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 105,
-    ),
-  );
-
   // Exported field_instance: 'node-ol_organisation-field_ol_description'
   $field_instances['node-ol_organisation-field_ol_description'] = array(
     'bundle' => 'ol_organisation',
@@ -337,10 +292,10 @@ function openlocal_organisation_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_organisation-field_ol_locations'
-  $field_instances['node-ol_organisation-field_ol_locations'] = array(
+  // Exported field_instance: 'node-ol_organisation-field_ol_locations_ref'
+  $field_instances['node-ol_organisation-field_ol_locations_ref'] = array(
     'bundle' => 'ol_organisation',
-    'default_value' => array(),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -348,10 +303,16 @@ function openlocal_organisation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => 1,
+          'link' => FALSE,
         ),
         'type' => 'entityreference_label',
         'weight' => 21,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -361,7 +322,7 @@ function openlocal_organisation_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_ol_locations',
+    'field_name' => 'field_ol_locations_ref',
     'label' => 'Locations',
     'required' => 0,
     'settings' => array(
@@ -371,22 +332,12 @@ function openlocal_organisation_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'allow_duplicates' => FALSE,
-        'close_modal' => '',
         'match_operator' => 'CONTAINS',
-        'pass_arguments' => '',
         'path' => '',
-        'references_dialog_add' => 1,
-        'references_dialog_edit' => 1,
-        'references_dialog_search' => 1,
-        'references_dialog_search_view' => '',
-        'rendered_entity' => FALSE,
         'size' => 60,
-        'view' => '',
-        'view_mode' => FALSE,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 3,
+      'weight' => 105,
     ),
   );
 
@@ -403,6 +354,12 @@ function openlocal_organisation_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 19,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -441,6 +398,12 @@ function openlocal_organisation_field_default_field_instances() {
         'type' => 'text_plain',
         'weight' => 20,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -453,6 +416,7 @@ function openlocal_organisation_field_default_field_instances() {
     'label' => 'Telephone',
     'required' => 0,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -468,7 +432,6 @@ function openlocal_organisation_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Alternate name');
   t('Description');
   t('Details');
   t('Email');

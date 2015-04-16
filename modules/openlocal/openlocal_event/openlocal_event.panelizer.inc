@@ -218,18 +218,18 @@ function openlocal_event_panelizer_defaults() {
   $display->content['new-75d83da0-6711-4492-8f9e-1541f0e3312b'] = $pane;
   $display->panels['half'][4] = 'new-75d83da0-6711-4492-8f9e-1541f0e3312b';
   $pane = new stdClass();
-  $pane->pid = 'new-0740d8ac-8149-45d5-85d4-a3001eac3f78';
+  $pane->pid = 'new-40b6f184-17a6-49f4-9bd8-c5076d18e8f8';
   $pane->panel = 'quarter1';
   $pane->type = 'entity_field';
-  $pane->subtype = 'node:field_ol_event_venue_ref';
+  $pane->subtype = 'node:field_ol_locations_ref';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
     'label' => 'hidden',
     'formatter' => 'entityreference_entity_view',
-    'delta_limit' => 0,
+    'delta_limit' => '0',
     'delta_offset' => '0',
-    'delta_reversed' => FALSE,
+    'delta_reversed' => 0,
     'formatter_settings' => array(
       'view_mode' => 'teaser',
       'links' => 0,
@@ -237,19 +237,7 @@ function openlocal_event_panelizer_defaults() {
     'context' => array(),
     'override_title' => 0,
     'override_title_text' => '',
-    'view_mode' => NULL,
-    'widget_title' => NULL,
-    'items_per_page' => NULL,
-    'exposed' => array(
-      'sort_by' => NULL,
-      'sort_order' => NULL,
-    ),
-    'use_pager' => NULL,
-    'pager_id' => NULL,
-    'offset' => NULL,
-    'link_to_view' => NULL,
-    'more_link' => NULL,
-    'path' => NULL,
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -259,9 +247,9 @@ function openlocal_event_panelizer_defaults() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = '0740d8ac-8149-45d5-85d4-a3001eac3f78';
-  $display->content['new-0740d8ac-8149-45d5-85d4-a3001eac3f78'] = $pane;
-  $display->panels['quarter1'][0] = 'new-0740d8ac-8149-45d5-85d4-a3001eac3f78';
+  $pane->uuid = '40b6f184-17a6-49f4-9bd8-c5076d18e8f8';
+  $display->content['new-40b6f184-17a6-49f4-9bd8-c5076d18e8f8'] = $pane;
+  $display->panels['quarter1'][0] = 'new-40b6f184-17a6-49f4-9bd8-c5076d18e8f8';
   $pane = new stdClass();
   $pane->pid = 'new-8cf90e7a-7f2e-4391-9586-e009b9e834cf';
   $pane->panel = 'quarter1';

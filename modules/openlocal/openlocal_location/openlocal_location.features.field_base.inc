@@ -10,39 +10,48 @@
 function openlocal_location_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ol_location_properties'
-  $field_bases['field_ol_location_properties'] = array(
+  // Exported field_base: 'field_ol_locations_ref'
+  $field_bases['field_ol_locations_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ol_location_properties',
+    'field_name' => 'field_ol_locations_ref',
     'foreign keys' => array(
-      'tid' => array(
+      'node' => array(
         'columns' => array(
-          'tid' => 'tid',
+          'target_id' => 'nid',
         ),
-        'table' => 'taxonomy_term_data',
+        'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'entityreference',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'ol_location_properties',
-          'parent' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'ol_location' => 'ol_location',
         ),
       ),
       'profile2_private' => FALSE,
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'entityreference',
   );
 
   return $field_bases;

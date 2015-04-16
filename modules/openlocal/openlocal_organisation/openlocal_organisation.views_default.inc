@@ -89,7 +89,7 @@ function openlocal_organisation_views_default_views() {
   $handler->display->display_options['fields']['field_ol_organisation_category']['field'] = 'field_ol_organisation_category';
   $handler->display->display_options['fields']['field_ol_organisation_category']['label'] = '';
   $handler->display->display_options['fields']['field_ol_organisation_category']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -291,13 +291,13 @@ function openlocal_organisation_views_default_views() {
   $handler->display->display_options['fields']['field_ol_organisation_category']['table'] = 'field_data_field_ol_organisation_category';
   $handler->display->display_options['fields']['field_ol_organisation_category']['field'] = 'field_ol_organisation_category';
   $handler->display->display_options['fields']['field_ol_organisation_category']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Field: Description */
   $handler->display->display_options['fields']['field_ol_promotion_description']['id'] = 'field_ol_promotion_description';
   $handler->display->display_options['fields']['field_ol_promotion_description']['table'] = 'field_data_field_ol_promotion_description';
   $handler->display->display_options['fields']['field_ol_promotion_description']['field'] = 'field_ol_promotion_description';
   $handler->display->display_options['fields']['field_ol_promotion_description']['relationship'] = 'field_ol_organisation_promotions_value';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Broken/missing handler */
+  /* Contextual filter: Field: Reward scheme (field_ol_promotion_reward_scheme) */
   $handler->display->display_options['arguments']['field_ol_promotion_reward_scheme_target_id']['id'] = 'field_ol_promotion_reward_scheme_target_id';
   $handler->display->display_options['arguments']['field_ol_promotion_reward_scheme_target_id']['table'] = 'field_data_field_ol_promotion_reward_scheme';
   $handler->display->display_options['arguments']['field_ol_promotion_reward_scheme_target_id']['field'] = 'field_ol_promotion_reward_scheme_target_id';
@@ -329,7 +329,7 @@ function openlocal_organisation_views_default_views() {
   $handler->display->display_options['fields']['field_ol_organisation_category']['field'] = 'field_ol_organisation_category';
   $handler->display->display_options['fields']['field_ol_organisation_category']['label'] = '';
   $handler->display->display_options['fields']['field_ol_organisation_category']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';

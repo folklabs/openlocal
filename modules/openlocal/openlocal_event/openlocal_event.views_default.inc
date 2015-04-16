@@ -412,7 +412,6 @@ function openlocal_event_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Upcoming events';
-  $handler->display->display_options['css_class'] = 'view-ol-event-upcoming-sidebar';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'time';
@@ -551,10 +550,10 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['id'] = 'field_ol_event_venue_ref_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['table'] = 'field_data_field_ol_event_venue_ref';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['field'] = 'field_ol_event_venue_ref_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['label'] = 'Venue ref';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['id'] = 'field_ol_locations_ref_target_id';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['table'] = 'field_data_field_ol_locations_ref';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['field'] = 'field_ol_locations_ref_target_id';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['label'] = 'Location';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_ol_event_date_1']['id'] = 'field_ol_event_date_1';
@@ -605,7 +604,7 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_ol_event_venue_ref_target_id';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_ol_locations_ref_target_id';
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_type'] = 'div';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
@@ -711,10 +710,10 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['id'] = 'field_ol_event_venue_ref_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['table'] = 'field_data_field_ol_event_venue_ref';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['field'] = 'field_ol_event_venue_ref_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['label'] = 'ol_event_venue_ref';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['id'] = 'field_ol_locations_ref_target_id';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['table'] = 'field_data_field_ol_locations_ref';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['field'] = 'field_ol_locations_ref_target_id';
+  $handler->display->display_options['relationships']['field_ol_locations_ref_target_id']['label'] = 'Location';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_ol_event_date']['id'] = 'field_ol_event_date';
@@ -746,7 +745,7 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_ol_event_venue_ref_target_id';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_ol_locations_ref_target_id';
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
@@ -972,6 +971,9 @@ function openlocal_event_views_default_views() {
 
   /* Display: Map */
   $handler = $view->new_display('panel_pane', 'Map', 'panel_pane_4');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'leaflet';
   $handler->display->display_options['style_options']['data_source'] = 'field_ol_geolocation';
@@ -990,11 +992,6 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['id'] = 'field_ol_event_venue_ref_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['table'] = 'field_data_field_ol_event_venue_ref';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['field'] = 'field_ol_event_venue_ref_target_id';
-  $handler->display->display_options['relationships']['field_ol_event_venue_ref_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */

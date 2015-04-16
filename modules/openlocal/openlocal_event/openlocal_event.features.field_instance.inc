@@ -352,7 +352,7 @@ function openlocal_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -418,65 +418,6 @@ function openlocal_event_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ol_event-field_ol_event_venue_ref'
-  $field_instances['node-ol_event-field_ol_event_venue_ref'] = array(
-    'bundle' => 'ol_event',
-    'default_value' => array(),
-    'default_value_function' => '',
-    'deleted' => 0,
-    'description' => 'If your event takes place in a physical location, make sure it\'s already in our <a href="/venues" target="_blank">list of available venues</a>. Select "Add item (venue)" to choose your venue from our listings and click "Submit". If we don\'t already have it, save this page (click Save as draft) then <a href="/node/add/ol-place" target="_blank">Add a new place</a> to create a new venue before returning here to finish.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 9,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ol_event_venue_ref',
-    'label' => 'Venue',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'prepopulate' => array(
-          'status' => 0,
-        ),
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference_view_widget',
-      'settings' => array(
-        'allow_duplicates' => 0,
-        'close_modal' => 1,
-        'pass_argument' => 0,
-        'pass_arguments' => '',
-        'rendered_entity' => 0,
-        'view' => 'openlocal_event_venues|entityreference_view_widget_1',
-        'view_mode' => 'full',
-      ),
-      'type' => 'entityreference_view_widget',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-ol_event-field_ol_location_properties'
   $field_instances['node-ol_event-field_ol_location_properties'] = array(
     'bundle' => 'ol_event',
@@ -519,6 +460,55 @@ function openlocal_event_field_default_field_instances() {
       ),
       'type' => 'options_buttons',
       'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-ol_event-field_ol_locations_ref'
+  $field_instances['node-ol_event-field_ol_locations_ref'] = array(
+    'bundle' => 'ol_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If your event takes place in a physical location, make sure it\'s already in our list of locations. Search for a location by entering part of its name. If we don\'t already have it, save this page (click Work in progress) then <a href="/node/add/ol-location">add a new location</a> before returning here to finish.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ol_locations_ref',
+    'label' => 'Locations',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 5,
     ),
   );
 
@@ -571,7 +561,7 @@ function openlocal_event_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -656,12 +646,12 @@ function openlocal_event_field_default_field_instances() {
   t('Enter the email address of a contact for this event.');
   t('Feature content');
   t('Groups audience');
-  t('If your event takes place in a physical location, make sure it\'s already in our <a href="/venues" target="_blank">list of available venues</a>. Select "Add item (venue)" to choose your venue from our listings and click "Submit". If we don\'t already have it, save this page (click Save as draft) then <a href="/node/add/ol-place" target="_blank">Add a new place</a> to create a new venue before returning here to finish.');
+  t('If your event takes place in a physical location, make sure it\'s already in our list of locations. Search for a location by entering part of its name. If we don\'t already have it, save this page (click Work in progress) then <a href="/node/add/ol-location">add a new location</a> before returning here to finish.');
   t('Image');
+  t('Locations');
   t('The contact number will be for people to call in relation to the event, it will be visible on the page with the event information. If there is no contact number for people to call regarding this event then please leave blank.');
   t('This will appear on list pages, e.g. Services.');
   t('Tips - the "start date" is the day and time your event commences. The "To date" is when your first event or meeting ends, probably an hour or two after the start. N.B. If you want to create a repeating event (i.e. every week) then please use the "repeat" option under the advanced section. If it is an event on for every week on the same day then choose repeat "every" "week". Please also then enter the date that the series finishes otherwise it will be repeated until the end of the world as we know it... Please check your entry once you have done it. View the What\'s On calendar and see where your event is listed, then check that it is only repeated (if applicable) on all the correct days. ');
-  t('Venue');
 
   return $field_instances;
 }
