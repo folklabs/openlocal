@@ -1,0 +1,42 @@
+
+#search-form {
+  float: right;
+
+  margin-bottom: 0;
+
+  .form-type-textfield {
+    float: left;
+    vertical-align: top;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $col-content-darker;
+
+    #edit-keys {
+      vertical-align: top;
+      height: 2.2 * $base-font-size;
+      width: 12em;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+      vertical-align: top;
+      // font-family: $lato;
+      font-weight: 300;
+      border-radius: 0.2em;
+      @include glow-inner($col-content-lighter, 5);
+      font-size: 1.25 * $base-font-size;
+    }
+  }
+  // The submit button on the search form
+  .form-submit {
+    vertical-align: top;
+    // margin-top: 15px;
+    margin-left: 5px;
+    background-color: $col-links;
+    padding: 8px 10px;
+    border: 1px solid $col-links-darker;
+    border-radius: 0.2em;
+    &:hover {
+      @include glow-inner($col-links-darker, 10);
+    }
+  }
+}

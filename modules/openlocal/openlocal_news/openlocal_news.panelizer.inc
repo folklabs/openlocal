@@ -219,30 +219,6 @@ function openlocal_news_panelizer_defaults() {
   $display->content['new-e5d26a28-1bda-4d75-9838-1320f6941f14'] = $pane;
   $display->panels['half'][3] = 'new-e5d26a28-1bda-4d75-9838-1320f6941f14';
   $pane = new stdClass();
-  $pane->pid = 'new-9d8d6158-c30d-485c-b518-087ead0c2d96';
-  $pane->panel = 'half';
-  $pane->type = 'node_comment_form';
-  $pane->subtype = 'node_comment_form';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'anon_links' => 0,
-    'context' => 'panelizer',
-    'override_title' => 0,
-    'override_title_text' => '',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 4;
-  $pane->locks = array();
-  $pane->uuid = '9d8d6158-c30d-485c-b518-087ead0c2d96';
-  $display->content['new-9d8d6158-c30d-485c-b518-087ead0c2d96'] = $pane;
-  $display->panels['half'][4] = 'new-9d8d6158-c30d-485c-b518-087ead0c2d96';
-  $pane = new stdClass();
   $pane->pid = 'new-7c1d57f7-e644-4612-bd46-1c3a8f67928e';
   $pane->panel = 'quarter1';
   $pane->type = 'user_profile';

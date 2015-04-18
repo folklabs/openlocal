@@ -7,6 +7,7 @@ dependencies[] = rules
 dependencies[] = save_draft
 dependencies[] = workbench
 dependencies[] = workbench_moderation
+dependencies[] = workbench_moderation_buttons
 features[features_api][] = api:2
 features[rules_config][] = rules_ol_core_item_needs_moderation
 features[user_permission][] = access workbench

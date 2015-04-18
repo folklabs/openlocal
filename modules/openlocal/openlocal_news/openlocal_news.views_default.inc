@@ -148,7 +148,6 @@ Please add some news content.';
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'New Articles';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'ol-item-grid';
   $handler->display->display_options['display_description'] = 'This is a customizable list of news articles!';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;

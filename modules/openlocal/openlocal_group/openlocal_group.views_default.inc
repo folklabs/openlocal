@@ -70,18 +70,32 @@ function openlocal_group_views_default_views() {
   /* Display: List */
   $handler = $view->new_display('panel_pane', 'List', 'panel_pane_1');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'ol-item-grid';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
   $handler->display->display_options['pager']['options']['items_per_page'] = '12';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'responsive_grid';
+  $handler->display->display_options['style_options']['columns'] = '2';
+  $handler->display->display_options['style_options']['wrapper_classes'] = 'large-collapse';
+  $handler->display->display_options['style_options']['column_classes'] = 'columns large-6';
+  $handler->display->display_options['style_options']['first_column_classes'] = '';
+  $handler->display->display_options['style_options']['last_column_classes'] = '';
+  $handler->display->display_options['style_options']['row_classes'] = 'row ol-item';
+  $handler->display->display_options['style_options']['first_row_classes'] = '';
+  $handler->display->display_options['style_options']['last_row_classes'] = '';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Categories */
   $handler->display->display_options['fields']['field_featured_categories']['id'] = 'field_featured_categories';
   $handler->display->display_options['fields']['field_featured_categories']['table'] = 'field_data_field_featured_categories';
   $handler->display->display_options['fields']['field_featured_categories']['field'] = 'field_featured_categories';
   $handler->display->display_options['fields']['field_featured_categories']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_categories']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_categories']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_categories']['delta_offset'] = '0';
   /* Field: Field: Image */
@@ -89,6 +103,7 @@ function openlocal_group_views_default_views() {
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
@@ -100,14 +115,29 @@ function openlocal_group_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Description */
   $handler->display->display_options['fields']['field_ol_description']['id'] = 'field_ol_description';
   $handler->display->display_options['fields']['field_ol_description']['table'] = 'field_data_field_ol_description';
   $handler->display->display_options['fields']['field_ol_description']['field'] = 'field_ol_description';
   $handler->display->display_options['fields']['field_ol_description']['label'] = '';
+  $handler->display->display_options['fields']['field_ol_description']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ol_description']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="ol-grid-teaser">
+<div class="views-field ol-grid-teaser-title">[title]</div>
+<div>[field_featured_image]</div>
+<div class="views-field">[field_ol_description]</div>
+<div class="views-field ol-grid-teaser-categories">[field_featured_categories]</div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -134,7 +164,7 @@ function openlocal_group_views_default_views() {
   $handler->display->display_options['allow']['path_override'] = 0;
   $handler->display->display_options['allow']['title_override'] = 0;
   $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
-  $handler->display->display_options['allow']['fields_override'] = 'fields_override';
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['argument_input'] = array(
     'tid' => array(
       'type' => 'panel',

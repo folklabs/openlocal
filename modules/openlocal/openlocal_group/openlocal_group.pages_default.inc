@@ -421,10 +421,11 @@ Events',
   $pane->access = array();
   $pane->configuration = array(
     'fields_override' => array(
-      'field_featured_categories' => 1,
-      'field_featured_image' => 1,
-      'title' => 1,
-      'field_ol_description' => 1,
+      'field_featured_categories' => 0,
+      'field_featured_image' => 0,
+      'title' => 0,
+      'field_ol_description' => 0,
+      'nothing' => 1,
     ),
     'view_mode' => 'teaser',
     'widget_title' => NULL,
