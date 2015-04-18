@@ -263,8 +263,7 @@ function openlocal_group_strongarm() {
   $strongarm->name = 'node_options_ol_group_post';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
-    2 => 'revision',
+    1 => 'revision',
   );
   $export['node_options_ol_group_post'] = $strongarm;
 

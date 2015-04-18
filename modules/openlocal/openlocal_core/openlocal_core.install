@@ -14,4 +14,5 @@ function openlocal_core_install() {
   // Change some general Panopoly settings.
   variable_set('panopoly_core_breadcrumb_title', 0);
   variable_set('panopoly_magic_pane_add_preview', 2);
+  variable_set('panopoly_admin_advanced_plugins', 1);
 }
