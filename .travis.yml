@@ -57,6 +57,6 @@ script:
   # # - touch behat.local.yml
   # - ./bin/behat
 
-  - drush si openlocal --sites-subdir=default --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="OpenLocal" --yes
+  - php -d sendmail_path=/dev/null `which drush` si openlocal --sites-subdir=default --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=info@folklabs.com --site-name="OpenLocal" --yes
   - drush cc all --yes
   - cd ../
