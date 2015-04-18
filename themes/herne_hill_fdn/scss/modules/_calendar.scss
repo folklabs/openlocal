@@ -1,0 +1,110 @@
+.calendar-calendar {
+  .month-view .mini {}
+  border: 1px solid $main-bg;
+}
+
+.calendar-calendar .month-view .mini thead tr .days {
+  background-color: $col-content-lightest;
+  color: $col-content-lighter;
+  // font-family: $lato;
+  font-size: 1em;
+  font-weight: 900;
+  border-top: 1px solid $col-content-lighter;
+  border-bottom: 1px solid $col-content-lighter;
+  border-left: none;
+  border-right: none;
+  padding: 0.4em 0;
+}
+
+.calendar-calendar .has-no-events {
+  background-color: transparent;
+  border: 1px $main-bg solid;
+}
+
+// Sets the style of day number text
+.calendar-calendar td {
+  // font-family: $lato;
+  font-weight: 400;
+  font-size: 0.875 * $base-font-size;
+  color: $col-content-darkest;
+}
+
+// Styles date text inside day cells which have an event
+.calendar-calendar .mini-day-on {
+  background-color: $col-links-lighter;
+  &:hover {
+    background-color: $col-links;
+  }
+  a {
+    &:link {
+      font-weight: 900;
+      color: white;
+    }
+    text-decoration: none;
+  }
+}
+
+.calendar-calendar .mini .today {
+  background-color: $col-content-strong;
+  font-weight: 900;
+  color: $main-bg;
+}
+
+.calendar-calendar .month {
+  padding: 0.4em 0;
+}
+
+.calendar-calendar .month-view .mini .empty {
+  background-color: transparent;
+}
+
+.calendar-calendar .future {
+  background-color: $col-content-lightest;
+}
+
+.calendar-calendar .past {
+  color: $col-content-lighter;
+  .has-events {
+    color: $col-links;
+    background-color: $col-links-lightest;
+    &:hover {
+      background-color: $col-links;
+    }
+  }
+}
+
+.view-ol-event-calendar .date-nav-wrapper {
+  .date-nav {
+    margin-bottom: 0;
+  }
+  .date-heading h3 {
+    font-size: 1.0em;
+    vertical-align: bottom;
+  }
+  .pager {
+    ul {
+      line-height: 0;
+    }
+    li {
+      padding: 0;
+      background-color: transparent;
+      vertical-align: top;
+    }
+    a {
+      font-size: 2.5em;
+      padding: 0 5px;
+      margin: 0;
+      vertical-align: top;
+    }
+    .date-prev {
+      // float: left;
+      margin-left: 0;
+      left: 0;
+      right: auto;
+
+      // position: relative;
+    }
+  }
+}
+
+

@@ -224,8 +224,8 @@ $header-font-color: #4D3D44;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(32);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
+$h2-font-size: rem-calc(26);
+$h3-font-size: rem-calc(20);
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
@@ -441,7 +441,7 @@ $crumb-slash: ">";
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
 // $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
+$button-med: rem-calc(12);
 // $button-lrg: rem-calc(18);
 
 // We use this to control the display property.

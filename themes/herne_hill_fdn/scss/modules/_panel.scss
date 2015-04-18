@@ -68,7 +68,9 @@ $panel-row-divider: $body-bg solid 1px !default;
 // Drupal integration
 
 .pane-openlocal-group-panel-pane-3,
-.pane-ol-forum-recent-comments-panel-pane-1 {
+.pane-ol-forum-recent-comments-panel-pane-1,
+.pane-openlocal-event-panel-pane-2,
+.pane-openlocal-organisation-panel-pane-1 {
   h2 {
     @extend %ol-panel-title;
   }

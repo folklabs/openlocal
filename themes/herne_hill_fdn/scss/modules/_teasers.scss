@@ -29,6 +29,7 @@
 
 %ol-event-teaser-date {
   color: $secondary-color;
+  font-size: 1.1em;
   font-weight: 900;
   text-align: center;
 }
@@ -37,7 +38,8 @@
 //-----------------------------------------------------------------------------
 // Drupal integration
 
-.view-display-id-list_news_articles {
+.view-display-id-list_news_articles,
+.view-display-id-homepage_news_articles {
   .views-row {
     @extend %ol-teaser;
   }
@@ -61,16 +63,29 @@
   }
 }
 
-.pane-openlocal-event-panel-pane-2 {
-  h2 {
-    @extend %ol-panel-title;
+.view-display-id-article_archive {
+  h3 {
+    //TODO: move to var
+    padding-left: 5px;
   }
+}
+
+.view-ol-event-upcoming,
+.view-ol-event-upcoming-sidebar {
+  // h2 {
+  //   @extend %ol-panel-title;
+  // }
   table {
     background-color: transparent;
     border: none;
+    width: 100%;
+  }
+  tbody {
+    border-top: none;
   }
   tr.odd,
   tr.even {
+    border-bottom: $panel-row-divider;
     background-color: transparent;
   }
   td {
@@ -84,7 +99,8 @@
     @extend %ol-teaser-title;
   }
 
-  .views-field-field-ol-event-date-1 {
+  .views-field-field-ol-event-date-1,
+  .views-field-field-ol-event-date {
     @extend %ol-event-teaser-date;
   }
 
@@ -93,3 +109,13 @@
     width: 130px;
   }
 }
+
+.view-ol-event-upcoming {
+  .views-field-field-ol-event-date-1 {
+    width: 30px;
+  }
+  .views-field-field-featured-image {
+    width: 130px;
+  }
+}
+

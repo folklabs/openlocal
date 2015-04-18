@@ -427,7 +427,7 @@ Please add some news content.';
   $handler->display->display_options['display_description'] = 'A list of articles by month.';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
       'field' => 'created',
@@ -901,8 +901,6 @@ Please add some news content.';
   $handler = $view->new_display('panel_pane', 'Homepage News Articles', 'homepage_news_articles');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'New Articles';
-  $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'ol-item-grid';
   $handler->display->display_options['display_description'] = 'A list of news articles for homepage that excludes highlights.';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;

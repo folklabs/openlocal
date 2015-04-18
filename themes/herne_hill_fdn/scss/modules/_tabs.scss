@@ -1,0 +1,14 @@
+.main .button-group {
+  // border-bottom: 1px solid #B19FA7;
+  li {
+    margin-right: 3px;
+  }
+  li .button {
+    padding: 7px 15px;
+    margin: 0;
+
+    background-color: $main-bg;
+    border: 1px solid #B19FA7;
+    color: $primary-color;
+  }
+}
