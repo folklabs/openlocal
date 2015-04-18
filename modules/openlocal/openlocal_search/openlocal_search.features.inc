@@ -36,8 +36,6 @@ function openlocal_search_default_search_api_index() {
       "cron_limit" : "50",
       "fields" : {
         "field_featured_categories" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_ol_business_category" : { "type" : "integer", "entity_type" : "taxonomy_term" },
-        "field_ol_business_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_ol_description" : { "type" : "text" },
         "field_ol_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "nid" : { "type" : "integer" },
