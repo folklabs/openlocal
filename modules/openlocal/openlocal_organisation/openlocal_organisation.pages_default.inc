@@ -195,6 +195,10 @@ function openlocal_organisation_default_page_manager_pages() {
     'view_settings' => 'fields',
     'header_type' => 'none',
     'view_mode' => 'teaser',
+    'override_title' => '',
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+    'widget_title' => 'Recently added',
   );
   $pane->cache = array();
   $pane->style = array(
