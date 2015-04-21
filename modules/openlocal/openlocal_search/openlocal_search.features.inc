@@ -61,7 +61,12 @@ function openlocal_search_default_search_api_index() {
         "search_api_case_ignore" : {
           "status" : 1,
           "weight" : "0",
-          "settings" : { "fields" : { "title" : true } }
+          "settings" : { "fields" : {
+              "title" : true,
+              "field_featured_categories" : true,
+              "field_ol_tags" : true
+            }
+          }
         },
         "search_api_html_filter" : {
           "status" : 1,

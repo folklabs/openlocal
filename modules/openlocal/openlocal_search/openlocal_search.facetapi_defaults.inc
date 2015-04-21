@@ -40,14 +40,14 @@ function openlocal_search_facetapi_default_facet_settings() {
       'count' => '3',
       'indexed' => '4',
     ),
-    'empty_behavior' => 'none',
+    'empty_behavior' => 'text',
     'soft_limit' => '20',
     'nofollow' => 1,
     'show_expanded' => 0,
     'facet_more_text' => 'Show more',
     'facet_fewer_text' => 'Show fewer',
     'empty_text' => array(
-      'value' => '',
+      'value' => '<p>No matching terms.</p>',
       'format' => 'panopoly_wysiwyg_text',
     ),
   );
