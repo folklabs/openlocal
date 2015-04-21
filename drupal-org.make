@@ -285,6 +285,9 @@ projects[elements][subdir] = contrib
 projects[harmony_core][version] = 1.0-alpha2
 projects[harmony_core][subdir] = contrib
 
+projects[harmony_moderation][version] = 1.x-dev
+projects[harmony_moderation][subdir] = contrib
+
 projects[inline_entity_form][version] = 1.5
 projects[inline_entity_form][subdir] = contrib
 

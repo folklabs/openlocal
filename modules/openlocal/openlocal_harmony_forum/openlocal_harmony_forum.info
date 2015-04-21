@@ -8,6 +8,7 @@ dependencies[] = better_formats
 dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = harmony_core
+dependencies[] = harmony_moderation
 dependencies[] = menu
 dependencies[] = metatag
 features[defaultconfig][] = field_default_fields:user-user-field_harmony_thread_count
