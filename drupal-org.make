@@ -246,6 +246,7 @@ projects[workbench_moderation][version] = 1.4
 projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][1285090] = https://www.drupal.org/files/issues/playnicewithpanels-alternative-approach-1285090-29.patch
 
+projects[workbench_moderation_buttons][download][type] = git
 projects[workbench_moderation_buttons][download][url] = http://git.drupal.org/project/workbench_moderation_buttons.git
 projects[workbench_moderation_buttons][subdir] = contrib
 
