@@ -227,5 +227,12 @@ function openlocal_event_strongarm() {
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_ol_events_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_enabled_ol_event';
+  $strongarm->value = 0;
+  $export['save_draft_enabled_ol_event'] = $strongarm;
+
   return $export;
 }

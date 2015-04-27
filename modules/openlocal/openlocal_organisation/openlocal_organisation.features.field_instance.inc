@@ -645,6 +645,71 @@ function openlocal_organisation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ol_organisation-group_group'
+  $field_instances['node-ol_organisation-group_group'] = array(
+    'bundle' => 'ol_organisation',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Select this to add group membership features such as group posts, events and galleries.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'og_ui',
+        'settings' => array(
+          'field_name' => FALSE,
+        ),
+        'type' => 'og_group_subscribe',
+        'weight' => 26,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'display_label' => 1,
+    'entity_type' => 'node',
+    'field_name' => 'group_group',
+    'label' => 'Group',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'view modes' => array(
+      'full' => array(
+        'custom settings' => FALSE,
+        'label' => 'Full',
+        'type' => 'og_group_subscribe',
+      ),
+      'teaser' => array(
+        'custom settings' => FALSE,
+        'label' => 'Teaser',
+        'type' => 'og_group_subscribe',
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+        'og_hide' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 106,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Categories');
@@ -656,9 +721,11 @@ function openlocal_organisation_field_default_field_instances() {
   t('Enter your organisation contact email address.');
   t('Enter your organisation website address if you have one.');
   t('Facebook');
+  t('Group');
   t('Image');
   t('Locations');
   t('Organisation type');
+  t('Select this to add group membership features such as group posts, events and galleries.');
   t('Tags');
   t('Telephone');
   t('This will appear on list pages, e.g. Services.');

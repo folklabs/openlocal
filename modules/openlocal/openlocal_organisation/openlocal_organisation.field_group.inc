@@ -28,6 +28,7 @@ function openlocal_organisation_field_group_info() {
       2 => 'field_ol_organisation_type',
       3 => 'field_ol_telephone',
       4 => 'field_featured_image',
+      5 => 'group_group',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

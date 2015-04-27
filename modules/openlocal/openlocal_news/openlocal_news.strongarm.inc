@@ -225,5 +225,12 @@ function openlocal_news_strongarm() {
   $strongarm->value = 'news/[node:title]';
   $export['pathauto_node_ol_news_article_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_enabled_ol_news_article';
+  $strongarm->value = 0;
+  $export['save_draft_enabled_ol_news_article'] = $strongarm;
+
   return $export;
 }

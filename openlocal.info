@@ -38,17 +38,19 @@ dependencies[] = openlocal_workflow
 
 ; Optional features
 dependencies[] = openlocal_alert
-dependencies[] = openlocal_business
+;dependencies[] = openlocal_business
 dependencies[] = openlocal_event
-dependencies[] = openlocal_forum
+;dependencies[] = openlocal_forum
 dependencies[] = openlocal_highlight
 dependencies[] = openlocal_home
 dependencies[] = openlocal_issue
 dependencies[] = openlocal_gallery
-dependencies[] = openlocal_group
+;dependencies[] = openlocal_group
 dependencies[] = openlocal_location
 dependencies[] = openlocal_news
 dependencies[] = openlocal_organisation
+
+;dependencies[] = openlocal_harmony_forum
 
 ; Other OpenLocal recommended modules
 dependencies[] = adminimal_admin_menu

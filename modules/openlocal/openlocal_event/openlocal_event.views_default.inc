@@ -1077,6 +1077,10 @@ function openlocal_event_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'panopoly_categories' => 'panopoly_categories',
   );
+  /* Filter criterion: Taxonomy term: Parent term */
+  $handler->display->display_options['filters']['parent']['id'] = 'parent';
+  $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['filters']['parent']['field'] = 'parent';
 
   /* Display: List */
   $handler = $view->new_display('panel_pane', 'List', 'panel_pane_1');

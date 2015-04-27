@@ -10,13 +10,6 @@
 function openlocal_location_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer comments on own ol_location'.
-  $permissions['administer comments on own ol_location'] = array(
-    'name' => 'administer comments on own ol_location',
-    'roles' => array(),
-    'module' => 'commentaccess',
-  );
-
   // Exported permission: 'administer panelizer node ol_location breadcrumbs'.
   $permissions['administer panelizer node ol_location breadcrumbs'] = array(
     'name' => 'administer panelizer node ol_location breadcrumbs',
@@ -73,13 +66,6 @@ function openlocal_location_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'approve comments on own ol_location'.
-  $permissions['approve comments on own ol_location'] = array(
-    'name' => 'approve comments on own ol_location',
-    'roles' => array(),
-    'module' => 'commentaccess',
-  );
-
   // Exported permission: 'create ol_location content'.
   $permissions['create ol_location content'] = array(
     'name' => 'create ol_location content',
@@ -92,13 +78,6 @@ function openlocal_location_user_default_permissions() {
     'name' => 'delete any ol_location content',
     'roles' => array(),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete comments on own ol_location'.
-  $permissions['delete comments on own ol_location'] = array(
-    'name' => 'delete comments on own ol_location',
-    'roles' => array(),
-    'module' => 'commentaccess',
   );
 
   // Exported permission: 'delete own ol_location content'.

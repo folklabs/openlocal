@@ -83,6 +83,7 @@ features[variable][] = panelizer_defaults_node_ol_news_article
 features[variable][] = panelizer_node:ol_news_article_allowed_layouts_default
 features[variable][] = panelizer_node:ol_news_article_allowed_types_default
 features[variable][] = pathauto_node_ol_news_article_pattern
+features[variable][] = save_draft_enabled_ol_news_article
 features[views_view][] = openlocal_news
 features[views_view][] = openlocal_news_categories
 features_exclude[field_base][field_ol_radioactivity] = field_ol_radioactivity

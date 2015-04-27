@@ -7,7 +7,6 @@ project = openlocal_location
 dependencies[] = addressfield
 dependencies[] = autocomplete_deluxe
 dependencies[] = comment
-dependencies[] = commentaccess
 dependencies[] = ctools
 dependencies[] = email
 dependencies[] = entity

@@ -1,5 +1,6 @@
 name = OpenLocal SEO
 core = 7.x
+description = Modules and settings to improve SEO.
 package = OpenLocal
 version = 7.x-1.0-alpha1
 project = openlocal_seo

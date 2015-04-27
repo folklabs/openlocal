@@ -1,5 +1,6 @@
 name = OpenLocal Workflow
 core = 7.x
+description = Workflow to support contributions from the community.
 package = OpenLocal
 version = 7.x-1.0-alpha1
 project = openlocal_workflow

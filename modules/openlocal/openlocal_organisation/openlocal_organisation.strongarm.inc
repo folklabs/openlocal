@@ -14,7 +14,7 @@ function openlocal_organisation_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_ol_organisation';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-og';
   $export['additional_settings__active_tab_ol_organisation'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -18,13 +18,9 @@ function openlocal_group_default_page_manager_pages() {
   $page->path = 'node/%node/events';
   $page->access = array(
     'plugins' => array(
-      0 => array(
-        'name' => 'node_type',
-        'settings' => array(
-          'type' => array(
-            'ol_group' => 'ol_group',
-          ),
-        ),
+      1 => array(
+        'name' => 'og_is_node_group',
+        'settings' => NULL,
         'context' => 'argument_entity_id:node_1',
         'not' => FALSE,
       ),
@@ -102,28 +98,6 @@ Events',
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
-  $pane->pid = 'new-332f4c48-46ee-4de0-8249-fe343d01120c';
-  $pane->panel = 'column2';
-  $pane->type = 'block';
-  $pane->subtype = 'block-4';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'override_title' => 1,
-    'override_title_text' => '',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = '332f4c48-46ee-4de0-8249-fe343d01120c';
-  $display->content['new-332f4c48-46ee-4de0-8249-fe343d01120c'] = $pane;
-  $display->panels['column2'][0] = 'new-332f4c48-46ee-4de0-8249-fe343d01120c';
-  $pane = new stdClass();
   $pane->pid = 'new-20470b8b-8e67-40e8-885c-89efc11d8469';
   $pane->panel = 'column2';
   $pane->type = 'node_create_links';
@@ -143,11 +117,11 @@ Events',
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 0;
   $pane->locks = array();
   $pane->uuid = '20470b8b-8e67-40e8-885c-89efc11d8469';
   $display->content['new-20470b8b-8e67-40e8-885c-89efc11d8469'] = $pane;
-  $display->panels['column2'][1] = 'new-20470b8b-8e67-40e8-885c-89efc11d8469';
+  $display->panels['column2'][0] = 'new-20470b8b-8e67-40e8-885c-89efc11d8469';
   $pane = new stdClass();
   $pane->pid = 'new-1dd2bdb7-5776-4191-ad09-5538499cc4df';
   $pane->panel = 'contentmain';
@@ -474,13 +448,9 @@ Events',
   $page->access = array(
     'logic' => 'and',
     'plugins' => array(
-      1 => array(
-        'name' => 'node_type',
-        'settings' => array(
-          'type' => array(
-            'ol_group' => 'ol_group',
-          ),
-        ),
+      0 => array(
+        'name' => 'og_is_node_group',
+        'settings' => NULL,
         'context' => 'argument_entity_id:node_1',
         'not' => FALSE,
       ),

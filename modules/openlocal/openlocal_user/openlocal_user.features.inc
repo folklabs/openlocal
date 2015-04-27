@@ -34,8 +34,7 @@ function openlocal_user_default_profile2_type() {
     "type" : "ol_personal_info",
     "label" : "Personal info",
     "weight" : "0",
-    "data" : { "registration" : 1 },
-    "rdf_mapping" : []
+    "data" : { "registration" : 1 }
   }');
   return $items;
 }

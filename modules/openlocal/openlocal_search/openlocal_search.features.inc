@@ -37,6 +37,7 @@ function openlocal_search_default_search_api_index() {
       "fields" : {
         "field_featured_categories" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_ol_description" : { "type" : "text" },
+        "field_ol_organisation_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_ol_tags" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "nid" : { "type" : "integer" },
         "search_api_language" : { "type" : "string" },
@@ -61,12 +62,7 @@ function openlocal_search_default_search_api_index() {
         "search_api_case_ignore" : {
           "status" : 1,
           "weight" : "0",
-          "settings" : { "fields" : {
-              "title" : true,
-              "field_featured_categories" : true,
-              "field_ol_tags" : true
-            }
-          }
+          "settings" : { "fields" : { "title" : true } }
         },
         "search_api_html_filter" : {
           "status" : 1,

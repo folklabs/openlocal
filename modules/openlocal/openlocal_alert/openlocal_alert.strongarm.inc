@@ -70,7 +70,7 @@ function openlocal_alert_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_popup_authored_format_ol_alert';
-  $strongarm->value = 'j M Y - g:ia';
+  $strongarm->value = 'm/d/Y - H:i';
   $export['date_popup_authored_format_ol_alert'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -192,6 +192,13 @@ function openlocal_alert_strongarm() {
   $strongarm->name = 'pathauto_node_ol_alert_pattern';
   $strongarm->value = 'alerts/[node:title]';
   $export['pathauto_node_ol_alert_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_draft_enabled_ol_alert';
+  $strongarm->value = 0;
+  $export['save_draft_enabled_ol_alert'] = $strongarm;
 
   return $export;
 }
