@@ -1,14 +1,23 @@
 .main .button-group {
-  // border-bottom: 1px solid #B19FA7;
+  background-image: -moz-linear-gradient(center bottom , #B19FA7 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(bottom,#B19FA7 1px,rgba(0, 0, 0, 0) 1px);
+  margin: 1.5em 0;
+
   li {
-    margin-right: 3px;
+    margin-right: 1px;
+    // border-top: 1px solid #B19FA7;
+    border-right: 1px solid #B19FA7;
+
   }
+  li.active {
+    border-bottom: 1px solid $main-bg;
+  }
+
   li .button {
     padding: 7px 15px;
     margin: 0;
 
     background-color: $main-bg;
-    border: 1px solid #B19FA7;
     color: $primary-color;
   }
 }

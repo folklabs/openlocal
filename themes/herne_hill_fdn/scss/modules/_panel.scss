@@ -1,10 +1,8 @@
 
-$panel-title-divider: $col-content-lighter solid 1px !default;
-$panel-row-divider: $body-bg solid 1px !default;
 
 %ol-field-label {
   // TODO: why left padding?
-  padding: 0.75em 5px 0.05em 5px;
+  padding: $pane-field-padding;
 
   color: $col-content;
   font-family: $font-family-sans-serif;
@@ -95,4 +93,14 @@ $panel-row-divider: $body-bg solid 1px !default;
   @extend %ol-panel-list;
 }
 
+// TODO: Set up
+.pane-node-field-ol-locations-ref {
+  @extend %ol-panel;
+  h2 {
+    border-bottom: none;
+  }
+}
 
+.field-name-field-ol-address {
+
+}

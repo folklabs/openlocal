@@ -94,7 +94,7 @@
 
 // Styling for elements.
 // Optional.
-// @import "base/elements";
+@import "base/ol_settings";
 
 // Layout
 // Each section of the document has it's own partial seperated out to improve
@@ -109,6 +109,7 @@
 @import "modules/button";
 @import "modules/calendar";
 @import "modules/categories";
+@import "modules/fields";
 @import "modules/grid_teasers";
 @import "modules/metadata";
 @import "modules/panel";

@@ -1,0 +1,23 @@
+// Styles for all fields
+%ol-field {
+  padding: $pane-field-padding;
+}
+
+%ol-panel-field {
+  @extend %ol-field;
+  background-color: $panel-bg;
+}
+//-----------------------------------------------------------------------------
+// Drupal integration
+.field-name-field-ol-address {
+  @extend %ol-field;
+}
+
+.field-name-field-ol-event-date {
+  @extend %ol-panel-field;
+
+  .field-label {
+    @extend %ol-field-label;
+    padding: 0;
+  }
+}
