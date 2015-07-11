@@ -15,7 +15,7 @@ core = 7.x
 
 projects[panopoly_core][version] = 1.25
 projects[panopoly_core][subdir] = panopoly
-projects[panopoly_core][patch][] = https://raw.githubusercontent.com/pmackay/openlocal/master/patches/panopoly_core.patch
+;projects[panopoly_core][patch][] = https://raw.githubusercontent.com/pmackay/openlocal/master/patches/panopoly_core.patch
 
 projects[panopoly_images][version] = 1.25
 projects[panopoly_images][subdir] = panopoly
