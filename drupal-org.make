@@ -197,8 +197,14 @@ projects[og_extras][subdir] = contrib
 projects[radioactivity][version] = 2.9
 projects[radioactivity][subdir] = contrib
 
+projects[references_dialog][version] =	1.0-beta1
+projects[references_dialog][subdir] = contrib
+
 projects[registration][version] =	1.2
 projects[registration][subdir] = contrib
+
+projects[restful][version] = 1.0
+projects[restful][subdir] = contrib
 
 projects[rules][version] = 2.8
 projects[rules][subdir] = contrib
@@ -232,6 +238,9 @@ projects[twitter][subdir] = contrib
 
 projects[twitterfield][version] = 1.0-rc1
 projects[twitterfield][subdir] = contrib
+
+projects[views_data_export][version] = 3.0-beta8
+projects[views_data_export][subdir] = contrib
 
 projects[views_slideshow][version] = 3.1
 projects[views_slideshow][subdir] = contrib
