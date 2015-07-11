@@ -37,7 +37,7 @@ before_script:
   - mv profiles drupal/
   - cd drupal
   - drush make --prepare-install profiles/openlocal/build-openlocal.make --yes
-  - sudo chmod -R 777 sites/all/modules
+  # - sudo chmod -R 777 sites/all/modules
   # - drush si openlocal --sites-subdir=default --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="OpenLocal" --yes
   # - drush cc all --yes
   # - cd ../
