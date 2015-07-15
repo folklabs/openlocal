@@ -1,10 +1,10 @@
 diff --git a/panopoly_core.make b/panopoly_core.make
-index 0c1a39f..d597241 100644
+index 7711b1c..2896d40 100644
 --- a/panopoly_core.make
 +++ b/panopoly_core.make
-@@ -70,6 +70,7 @@ projects[transliteration][subdir] = contrib
+@@ -69,6 +69,7 @@ projects[transliteration][subdir] = contrib
 
- projects[date][version] = 2.8
+ projects[date][version] = 2.9-rc1
  projects[date][subdir] = contrib
 +projects[date][patch][2186191] = https://www.drupal.org/files/issues/date-fieldset-help-texts-2186191-5_0.patch
 
