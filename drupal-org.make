@@ -13,54 +13,54 @@ core = 7.x
 
 ; The Panopoly Foundation
 
-projects[panopoly_core][version] = 1.25
+projects[panopoly_core][version] = 1.34
 projects[panopoly_core][subdir] = panopoly
 projects[panopoly_core][patch][] = https://raw.githubusercontent.com/folklabs/openlocal/dev-combined/patches/panopoly_core.patch
 
-projects[panopoly_images][version] = 1.25
+projects[panopoly_images][version] = 1.34
 projects[panopoly_images][subdir] = panopoly
 
-projects[panopoly_theme][version] = 1.25
+projects[panopoly_theme][version] = 1.34
 projects[panopoly_theme][subdir] = panopoly
 
-projects[panopoly_magic][version] = 1.25
+projects[panopoly_magic][version] = 1.34
 projects[panopoly_magic][subdir] = panopoly
 
-projects[panopoly_widgets][version] = 1.25
+projects[panopoly_widgets][version] = 1.34
 projects[panopoly_widgets][subdir] = panopoly
 
-projects[panopoly_admin][version] = 1.25
+projects[panopoly_admin][version] = 1.34
 projects[panopoly_admin][subdir] = panopoly
 ;projects[panopoly_admin][patch][2152111] = https://www.drupal.org/files/issues/hide-featured-img-description-css-2152111-11_0.patch
 ; See https://www.drupal.org/node/2152111
 projects[panopoly_admin][patch][] = https://raw.githubusercontent.com/pmackay/openlocal/master/patches/panopoly_admin-save-draft-per-content-type-1409000.patch
 
-projects[panopoly_users][version] = 1.25
+projects[panopoly_users][version] = 1.34
 projects[panopoly_users][subdir] = panopoly
 
 
 ; The Panopoly Toolset
 
-projects[panopoly_pages][version] = 1.25
+projects[panopoly_pages][version] = 1.34
 projects[panopoly_pages][subdir] = panopoly
 
-projects[panopoly_wysiwyg][version] = 1.25
+projects[panopoly_wysiwyg][version] = 1.34
 projects[panopoly_wysiwyg][subdir] = panopoly
 
-projects[panopoly_search][version] = 1.25
+projects[panopoly_search][version] = 1.34
 projects[panopoly_search][subdir] = panopoly
 
 
 ; OpenLocal dependencies
 
-projects[adminimal_admin_menu][version] = 1.x-dev
+projects[adminimal_admin_menu][version] = 1.7
 projects[adminimal_admin_menu][subdir] = contrib
-projects[adminimal_admin_menu][patch][2137901] = https://www.drupal.org/files/issues/adminimal_admin_menu-top-margin-front-end-2137901-5.patch
+;projects[adminimal_admin_menu][patch][2137901] = https://www.drupal.org/files/issues/adminimal_admin_menu-top-margin-front-end-2137901-5.patch
 
-projects[advagg][version] = 2.7
+projects[advagg][version] = 2.18
 projects[advagg][subdir] = contrib
 
-projects[addressfield][version] = 1.0
+projects[addressfield][version] = 1.2
 projects[addressfield][subdir] = contrib
 
 projects[advanced_forum][version] = 2.5
@@ -73,7 +73,7 @@ projects[commentaccess][version] = 1.1
 projects[commentaccess][subdir] = contrib
 projects[commentaccess][patch][1875454] = https://www.drupal.org/files/commentaccess-1875454-4-conjunction-check-on-hook_query_TAG_alter.patch
 
-projects[comment_notify][version] = 1.2
+projects[comment_notify][version] = 1.3
 projects[comment_notify][subdir] = contrib
 
 projects[context][version] = 3.6
@@ -93,7 +93,7 @@ projects[calendar][subdir] = contrib
 projects[calendar][patch][2160183] = https://www.drupal.org/files/issues/calendar-groupby-times-2160183-1.patch
 ; See https://www.drupal.org/node/2160183
 
-projects[colorbox][version] = 2.8
+projects[colorbox][version] = 2.10
 projects[colorbox][subdir] = contrib
 
 projects[email][version] = 1.3
@@ -108,19 +108,19 @@ projects[globalredirect][subdir] = contrib
 projects[field_collection][version] = 1.0-beta8
 projects[field_collection][subdir] = contrib
 
-projects[flag][version] = 3.5
+projects[flag][version] = 3.7
 projects[flag][subdir] = contrib
 
-projects[features_extra][version] = 1.0-beta1
+projects[features_extra][version] = 1.0
 projects[features_extra][subdir] = contrib
 
-projects[forward][version] = 2.0
+projects[forward][version] = 2.1
 projects[forward][subdir] = contrib
 
 projects[geofield][version] = 2.3
 projects[geofield][subdir] = contrib
 
-projects[geocoder][version] = 1.2
+projects[geocoder][version] = 1.3
 projects[geocoder][subdir] = contrib
 
 projects[geo_filter][version] = 1.1
@@ -129,7 +129,7 @@ projects[geo_filter][subdir] = contrib
 projects[geophp][version] = 1.7
 projects[geophp][subdir] = contrib
 
-projects[honeypot][version] = 1.17
+projects[honeypot][version] = 1.22
 projects[honeypot][subdir] = contrib
 
 projects[imagefield_focus][version] = 1.0
@@ -146,7 +146,7 @@ projects[leaflet_more_maps][subdir] = contrib
 projects[logintoboggan][version] = 1.4
 projects[logintoboggan][subdir] = contrib
 
-projects[mailchimp][version] = 2.12
+projects[mailchimp][version] = 2.13
 projects[mailchimp][subdir] = contrib
 
 projects[maxlength][version] = 3.0
@@ -173,7 +173,7 @@ projects[http_client][subdir] = contrib
 projects[metatag][version] = 1.4
 projects[metatag][subdir] = contrib
 
-projects[mimemail][version] = 1.0-beta3
+projects[mimemail][version] = 1.0-beta4
 projects[mimemail][subdir] = contrib
 
 projects[mailsystem][version] = 2.34
@@ -188,7 +188,7 @@ projects[oauth][subdir] = contrib
 projects[office_hours][version] = 1.4
 projects[office_hours][subdir] = contrib
 
-projects[og][version] = 2.7
+projects[og][version] = 2.9
 projects[og][subdir] = contrib
 
 projects[og_extras][version] = 1.2
@@ -221,10 +221,10 @@ projects[service_links][subdir] = contrib
 projects[simplenews][version] = 1.1
 projects[simplenews][subdir] = contrib
 
-projects[site_map][version] = 1.2
+projects[site_map][version] = 1.3
 projects[site_map][subdir] = contrib
 
-projects[smtp][version] = 1.2
+projects[smtp][version] = 1.3
 projects[smtp][subdir] = contrib
 
 projects[super_login][version] = 1.0-beta6
@@ -233,13 +233,13 @@ projects[super_login][subdir] = contrib
 projects[telephone][version] = 1.0-alpha1
 projects[telephone][subdir] = contrib
 
-projects[twitter][version] = 5.8
+projects[twitter][version] = 5.11
 projects[twitter][subdir] = contrib
 
 projects[twitterfield][version] = 1.0-rc1
 projects[twitterfield][subdir] = contrib
 
-projects[views_data_export][version] = 3.0-beta8
+projects[views_data_export][version] = 3.0-beta9
 projects[views_data_export][subdir] = contrib
 
 projects[views_slideshow][version] = 3.1
@@ -297,7 +297,7 @@ projects[harmony_core][subdir] = contrib
 projects[harmony_moderation][version] = 1.x-dev
 projects[harmony_moderation][subdir] = contrib
 
-projects[inline_entity_form][version] = 1.5
+projects[inline_entity_form][version] = 1.8
 projects[inline_entity_form][subdir] = contrib
 
 projects[machine_name][version] = 1.0
