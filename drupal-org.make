@@ -15,7 +15,7 @@ core = 7.x
 
 projects[panopoly_core][version] = 1.34
 projects[panopoly_core][subdir] = panopoly
-projects[panopoly_core][patch][] = https://raw.githubusercontent.com/folklabs/openlocal/dev-combined/patches/panopoly_core.patch
+;projects[panopoly_core][patch][] = https://raw.githubusercontent.com/folklabs/openlocal/dev-combined/patches/panopoly_core.patch
 
 projects[panopoly_images][version] = 1.34
 projects[panopoly_images][subdir] = panopoly
@@ -327,7 +327,7 @@ libraries[colorbox][download][url] = https://github.com/jackmoore/colorbox/archi
 libraries[colorbox][destination] = libraries
 
 libraries[leaflet][download][type] = get
-libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.3.zip
+libraries[leaflet][download][url] = http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.zip
 libraries[leaflet][destination] = libraries
 
 libraries[mailchimp][download][type] = get
